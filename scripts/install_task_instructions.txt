@@ -1,0 +1,23 @@
+Para agendar no Windows Task Scheduler (executar toda terça e sexta ao meio-dia):
+
+1) Abra o Agendador de Tarefas (Task Scheduler).
+2) Clique em 'Criar Tarefa...'.
+3) Na aba Geral, dê um nome: 'ELO Fetch and Update'.
+   - Escolha 'Executar se o usuário estiver conectado ou não' se desejar.
+4) Aba Disparadores (Triggers):
+   - Novo -> Agendar: Semanal
+   - Marque terça-feira e sexta-feira
+   - Hora: 12:00:00
+   - OK
+5) Aba Ações: Novo
+   - Ação: Iniciar um programa
+   - Programa/script: path para seu executável Python, por exemplo: C:\\Python39\\python.exe
+   - Adicionar argumentos: "c:\Users\Alex Menezes\projetos\elo_rating\scripts\fetch_and_update.py"
+   - Iniciar em: c:\Users\Alex Menezes\projetos\elo_rating
+   - OK
+6) Aba Condições/Opcões: ajuste conforme necessário (ex.: não iniciar se em bateria, tentar novamente, etc.)
+7) Salve a tarefa.
+
+Nota: Se usa um ambiente virtual, aponte o Programa/script para o executável do venv (ex.: C:\\path\\to\\venv\\Scripts\\python.exe) e ajuste o argumento para o script.
+
+O script grava logs em scripts/fetch_and_update.log e baixa arquivos em data/ com nomes como E0_2526.csv.

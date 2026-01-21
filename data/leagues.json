@@ -1,0 +1,14 @@
+[
+  { "id": "laliga", "name": "La Liga", "continent": "Europe" },
+  { "id": "laliga2", "name": "La Liga 2", "continent": "Europe" },
+  { "id": "epl", "name": "Premier League", "continent": "Europe" },
+  { "id": "ep2", "name": "Championship", "continent": "Europe" },
+  { "id": "arg", "name": "Primera División Argentina", "continent": "South America" },
+  { "id": "ligue1", "name": "Ligue 1", "continent": "Europe" },
+  { "id": "ligue2", "name": "Ligue 2", "continent": "Europe" },
+  { "id": "seriea", "name": "Serie A", "continent": "Europe" },
+  { "id": "serieb", "name": "Serie B", "continent": "Europe" },
+  { "id": "bundesliga", "name": "Bundesliga", "continent": "Europe" },
+  { "id": "bundesliga2", "name": "Bundesliga 2", "continent": "Europe" },
+  { "id": "br", "name": "Brasileirão Série A", "continent": "South America" }
+]
