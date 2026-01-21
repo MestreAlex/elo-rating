@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ELO Football Analysis</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="site header-inner">
+      <div class="logo">
+        <div class="mark">EF</div>
+        <div>
+          <h1>ELO Football</h1>
+          <p>Ratings e previsões de partidas</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Início</a>
+        <a href="ranking.html">Ranking ELO</a>
+        <a href="predictions.html">Previsões</a>
+        <a href="fixtures.html">Próxima Rodada</a>
+        <a href="club.html">Times</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site">
+    <div class="hero">
+      <div>
+        <h2 class="title">Análises ELO para ligas europeias</h2>
+        <p class="subtitle">Rankings atualizados, previsões e histórico de partidas consolidadas.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="ranking.html" class="button">Ver Ranking</a>
+        <a href="predictions.html" class="button secondary">Fazer Previsão</a>
+      </div>
+    </div>
+
+    <section class="section" id="top10">
+      <h3>Top 10 por ELO</h3>
+      <div class="card">
+        <ul id="top10-list"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Sobre</h3>
+      <p>Este projeto calcula ratings ELO a partir de resultados históricos e gera previsões levando em conta o mando de campo e a margem de gols.</p>
+    </section>
+  </main>
+  <footer class="site footer">
+    <div class="footer">Dados compilados a partir de históricos CSV — gerado localmente.</div>
+  </footer>
+  <script type="module" src="js/index.js"></script>
+  <script src="js/auto_update.js"></script>
+</body>
+</html>

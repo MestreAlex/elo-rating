@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Previsões</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="site header-inner">
+      <div class="logo">
+        <div class="mark">EF</div>
+        <div>
+          <h1>Previsões</h1>
+          <p>Calcule probabilidades para um confronto</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="ranking.html">Ranking ELO</a>
+        <a href="predictions.html" class="active">Previsões</a>
+        <a href="fixtures.html">Próxima Rodada</a>
+        <a href="club.html">Times</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site">
+    <section class="section card predict-form">
+      <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;">
+        <label>Mandante:
+          <select id="home-select" style="min-width:220px;padding:.5rem;border-radius:8px;border:1px solid var(--border);"></select>
+        </label>
+        <label>Visitante:
+          <select id="away-select" style="min-width:220px;padding:.5rem;border-radius:8px;border:1px solid var(--border);"></select>
+        </label>
+        <label>Modo de Rating:
+          <select id="rating-mode">
+            <option value="home-away">Home / Away (recomendado)</option>
+            <option value="overall">Overall</option>
+            <option value="neutral">Neutral (sem vantagem de mandante)</option>
+          </select>
+        </label>
+        <button id="predict-btn" class="button">Calcular Previsão</button>
+      </div>
+    </section>
+
+    <section class="section card" id="results">
+      <h3>Resultado</h3>
+      <p id="elo-adjusted"></p>
+      <p id="probabilities"></p>
+      <p id="odds"></p>
+      <p id="likely-score"></p>
+      <p id="sample-size"></p>
+    </section>
+    <section class="section card">
+      <h3>Histórico de confrontos</h3>
+      <div style="margin-bottom:1rem;">
+        <label style="font-weight:600;">Visualização: </label>
+        <select id="h2h-mode" style="padding:0.3rem 0.7rem; font-size:1rem;">
+          <option value="all">Todos os Jogos</option>
+          <option value="homeaway">Casa/Fora</option>
+        </select>
+      </div>
+      <div class="table-wrap" style="margin-bottom:1.5rem;">
+        <h4>Últimos jogos da mandante (em casa, últimos 5 ou 10 jogos)</h4>
+        <table id="h2h-home-table" class="fixtures-table"></table>
+      </div>
+      <div class="table-wrap" style="margin-bottom:1.5rem;">
+        <h4>Últimos jogos da visitante (fora, últimos 5 ou 10 jogos)</h4>
+        <table id="h2h-away-table" class="fixtures-table"></table>
+      </div>
+      <div class="table-wrap">
+        <h4>Últimos confrontos diretos entre as equipes (últimos 5 ou 10 jogos)</h4>
+        <table id="h2h-direct-table" class="fixtures-table"></table>
+      </div>
+    </section>
+    
+  </main>
+  <footer class="site footer">Dados locais processados</footer>
+  <script type="module" src="js/predictions.js"></script>
+</body>
+</html>

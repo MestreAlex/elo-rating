@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Próxima Rodada</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ensure header background covers full viewport width */
+    body { margin: 0; }
+    /* center the content while keeping a small gap from top */
+    .fixtures-container { width: 1400px; max-width: 98%; margin: 1rem auto; }
+    .fixtures-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    .fixtures-table th, .fixtures-table td { padding: 8px; text-align: center; border-bottom: 1px solid #eee; }
+    .fixtures-table thead th { background: #fafafa; font-weight: 600; }
+    .fixtures-title { text-align: center; margin-bottom: .75rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site header-inner">
+      <div class="logo">
+        <div class="mark">EF</div>
+        <div>
+          <h1>Próxima Rodada</h1>
+          <p>Jogos previstos da próxima rodada</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="ranking.html">Ranking ELO</a>
+        <a href="predictions.html">Previsões</a>
+        <a href="fixtures.html" class="active">Próxima Rodada</a>
+        <a href="club.html">Times</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site">
+    <div class="fixtures-container">
+      <h1 class="fixtures-title">Próxima Rodada — Jogos</h1>
+      <div id="fixtures-root"></div>
+    </div>
+  </main>
+
+  <footer class="site footer">Dados locais processados</footer>
+  <script type="module" src="js/fixtures_round.js"></script>
+</body>
+</html>
