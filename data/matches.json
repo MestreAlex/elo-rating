@@ -1,0 +1,8 @@
+[
+  { "id": 1, "home": 1, "away": 2, "homeGoals": 2, "awayGoals": 1, "date": "2025-11-01" },
+  { "id": 2, "home": 2, "away": 1, "homeGoals": 1, "awayGoals": 1, "date": "2025-12-01" },
+  { "id": 3, "home": 3, "away": 1, "homeGoals": 3, "awayGoals": 2, "date": "2025-10-15" },
+  { "id": 4, "home": 4, "away": 2, "homeGoals": 0, "awayGoals": 2, "date": "2025-09-10" },
+  { "id": 5, "home": 9, "away": 5, "homeGoals": 2, "awayGoals": 2, "date": "2025-08-20" },
+  { "id": 6, "home": 7, "away": 8, "homeGoals": 1, "awayGoals": 0, "date": "2025-07-05" }
+]

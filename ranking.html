@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ranking ELO</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="site header-inner">
+      <div class="logo">
+        <div class="mark">EF</div>
+        <div>
+          <h1>Ranking ELO</h1>
+          <p>Posição atual dos clubes</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="ranking.html" class="active">Ranking ELO</a>
+        <a href="predictions.html">Previsões</a>
+        <a href="fixtures.html">Próxima Rodada</a>
+        <a href="club.html">Times</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site">
+    <section class="section filters">
+      <div class="filters">
+        <label>Liga:
+          <select id="league-filter"><option value="">Todas</option></select>
+        </label>
+        <label>Continente:
+          <select id="continent-filter">
+            <option value="">Todos</option>
+            <option value="Europe">Europe</option>
+            <option value="South America">South America</option>
+          </select>
+        </label>
+        <label>Período:
+          <select id="period-filter">
+            <option value="12m">Últimos 12 meses</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="table-wrap card">
+        <table id="ranking-table">
+          <thead>
+            <tr>
+              <th style="width:60px">#</th><th>Clube</th><th style="width:180px">Liga</th><th style="width:110px">ELO</th><th style="width:120px">Variação</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="site footer">Dados locais processados</footer>
+  <script type="module" src="js/ranking.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalhes do Clube</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="site header-inner">
+      <div class="logo">
+        <div class="mark">EF</div>
+        <div>
+          <h1>Times</h1>
+          <p>Informações e evolução do clube</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="ranking.html">Ranking ELO</a>
+        <a href="predictions.html">Previsões</a>
+        <a href="fixtures.html">Próxima Rodada</a>
+        <a href="club.html" class="active">Times</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site">
+    <section class="section card club-select">
+      <label>Selecione o clube:
+        <input id="club-input" list="clubs-list" placeholder="Digite ou escolha um clube..." />
+      </label>
+      <datalist id="clubs-list"></datalist>
+      <!-- Fallback visível: select preenchido pelo JS para mostrar lista suspensa clara -->
+      <div style="margin-top:.5rem;">
+        <label style="font-size:.9rem;color:var(--muted);margin-right:.5rem">ou escolha:</label>
+        <select id="club-select-fallback" style="min-width:280px;padding:.5rem;border-radius:8px;border:1px solid var(--border);"></select>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h3>Evolução do ELO (12 meses)</h3>
+      <canvas id="elo-chart" width="600" height="300"></canvas>
+    </section>
+
+    <section class="section card">
+      <h3>Últimos jogos</h3>
+      <ul id="recent-matches"></ul>
+    </section>
+
+    <section class="section card">
+      <h3>Próximos jogos e previsão</h3>
+      <ul id="upcoming-matches"></ul>
+    </section>
+  </main>
+  <footer class="site footer">Dados locais processados</footer>
+  <script type="module" src="js/club.js"></script>
+</body>
+</html>

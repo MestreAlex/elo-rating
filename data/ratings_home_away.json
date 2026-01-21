@@ -1,0 +1,2090 @@
+[
+  {
+    "clubId": 1,
+    "homeElo": 1797.24,
+    "awayElo": 1600.32,
+    "overallElo": 1698.78,
+    "homeGames": 93,
+    "awayGames": 93
+  },
+  {
+    "clubId": 2,
+    "homeElo": 1861.52,
+    "awayElo": 1751.56,
+    "overallElo": 1806.54,
+    "homeGames": 107,
+    "awayGames": 107
+  },
+  {
+    "clubId": 3,
+    "homeElo": 1735.33,
+    "awayElo": 1729.68,
+    "overallElo": 1732.51,
+    "homeGames": 95,
+    "awayGames": 95
+  },
+  {
+    "clubId": 4,
+    "homeElo": 1878.89,
+    "awayElo": 1763.07,
+    "overallElo": 1820.98,
+    "homeGames": 112,
+    "awayGames": 112
+  },
+  {
+    "clubId": 5,
+    "homeElo": 1682.79,
+    "awayElo": 1648.2,
+    "overallElo": 1665.49,
+    "homeGames": 102,
+    "awayGames": 103
+  },
+  {
+    "clubId": 6,
+    "homeElo": 1737.9,
+    "awayElo": 1701.13,
+    "overallElo": 1719.51,
+    "homeGames": 52,
+    "awayGames": 54
+  },
+  {
+    "clubId": 7,
+    "homeElo": 1838.65,
+    "awayElo": 1814.43,
+    "overallElo": 1826.54,
+    "homeGames": 102,
+    "awayGames": 102
+  },
+  {
+    "clubId": 8,
+    "homeElo": 1794.92,
+    "awayElo": 1737.04,
+    "overallElo": 1765.98,
+    "homeGames": 64,
+    "awayGames": 65
+  },
+  {
+    "clubId": 9,
+    "homeElo": 2196.76,
+    "awayElo": 2140.08,
+    "overallElo": 2168.42,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 10,
+    "homeElo": 2111.86,
+    "awayElo": 1982.06,
+    "overallElo": 2046.96,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 11,
+    "homeElo": 2010.33,
+    "awayElo": 2037.6,
+    "overallElo": 2023.96,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 12,
+    "homeElo": 1965.6,
+    "awayElo": 1890.15,
+    "overallElo": 1927.87,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 13,
+    "homeElo": 2187.21,
+    "awayElo": 1992.36,
+    "overallElo": 2089.79,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 14,
+    "homeElo": 1833.2,
+    "awayElo": 1745.17,
+    "overallElo": 1789.18,
+    "homeGames": 95,
+    "awayGames": 93
+  },
+  {
+    "clubId": 15,
+    "homeElo": 1883.57,
+    "awayElo": 1767.91,
+    "overallElo": 1825.74,
+    "homeGames": 102,
+    "awayGames": 102
+  },
+  {
+    "clubId": 16,
+    "homeElo": 1713.29,
+    "awayElo": 1712.69,
+    "overallElo": 1712.99,
+    "homeGames": 10,
+    "awayGames": 10
+  },
+  {
+    "clubId": 17,
+    "homeElo": 2192.01,
+    "awayElo": 2177.31,
+    "overallElo": 2184.66,
+    "homeGames": 104,
+    "awayGames": 106
+  },
+  {
+    "clubId": 18,
+    "homeElo": 1735.65,
+    "awayElo": 1620.79,
+    "overallElo": 1678.22,
+    "homeGames": 67,
+    "awayGames": 67
+  },
+  {
+    "clubId": 19,
+    "homeElo": 1743.74,
+    "awayElo": 1651.21,
+    "overallElo": 1697.47,
+    "homeGames": 82,
+    "awayGames": 84
+  },
+  {
+    "clubId": 20,
+    "homeElo": 2263.83,
+    "awayElo": 2209.85,
+    "overallElo": 2236.84,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 21,
+    "homeElo": 2002.59,
+    "awayElo": 1952.36,
+    "overallElo": 1977.48,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 22,
+    "homeElo": 1743.63,
+    "awayElo": 1667.49,
+    "overallElo": 1705.56,
+    "homeGames": 60,
+    "awayGames": 60
+  },
+  {
+    "clubId": 23,
+    "homeElo": 1814.02,
+    "awayElo": 1589.95,
+    "overallElo": 1701.98,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 24,
+    "homeElo": 1670.51,
+    "awayElo": 1728.99,
+    "overallElo": 1699.75,
+    "homeGames": 128,
+    "awayGames": 128
+  },
+  {
+    "clubId": 25,
+    "homeElo": 1768.98,
+    "awayElo": 1722.41,
+    "overallElo": 1745.7,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 26,
+    "homeElo": 1968.82,
+    "awayElo": 1944.31,
+    "overallElo": 1956.56,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 27,
+    "homeElo": 1701.99,
+    "awayElo": 1706.06,
+    "overallElo": 1704.03,
+    "homeGames": 10,
+    "awayGames": 9
+  },
+  {
+    "clubId": 28,
+    "homeElo": 1955.32,
+    "awayElo": 1904.71,
+    "overallElo": 1930.01,
+    "homeGames": 114,
+    "awayGames": 114
+  },
+  {
+    "clubId": 29,
+    "homeElo": 1687.4,
+    "awayElo": 1651.64,
+    "overallElo": 1669.52,
+    "homeGames": 78,
+    "awayGames": 76
+  },
+  {
+    "clubId": 30,
+    "homeElo": 2015.71,
+    "awayElo": 1888.34,
+    "overallElo": 1952.03,
+    "homeGames": 110,
+    "awayGames": 110
+  },
+  {
+    "clubId": 31,
+    "homeElo": 1735.36,
+    "awayElo": 1727.04,
+    "overallElo": 1731.2,
+    "homeGames": 95,
+    "awayGames": 95
+  },
+  {
+    "clubId": 32,
+    "homeElo": 1983.74,
+    "awayElo": 1832.99,
+    "overallElo": 1908.36,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 33,
+    "homeElo": 1994.82,
+    "awayElo": 1929.89,
+    "overallElo": 1962.36,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 34,
+    "homeElo": 1806.17,
+    "awayElo": 1741.98,
+    "overallElo": 1774.07,
+    "homeGames": 129,
+    "awayGames": 128
+  },
+  {
+    "clubId": 35,
+    "homeElo": 1794.6,
+    "awayElo": 1762.79,
+    "overallElo": 1778.69,
+    "homeGames": 96,
+    "awayGames": 94
+  },
+  {
+    "clubId": 36,
+    "homeElo": 1851.15,
+    "awayElo": 1852.72,
+    "overallElo": 1851.93,
+    "homeGames": 114,
+    "awayGames": 114
+  },
+  {
+    "clubId": 37,
+    "homeElo": 1826.48,
+    "awayElo": 1727.44,
+    "overallElo": 1776.96,
+    "homeGames": 108,
+    "awayGames": 108
+  },
+  {
+    "clubId": 38,
+    "homeElo": 1671.45,
+    "awayElo": 1588.3,
+    "overallElo": 1629.87,
+    "homeGames": 93,
+    "awayGames": 93
+  },
+  {
+    "clubId": 39,
+    "homeElo": 1860.75,
+    "awayElo": 1769.56,
+    "overallElo": 1815.16,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 40,
+    "homeElo": 1653.86,
+    "awayElo": 1639.94,
+    "overallElo": 1646.9,
+    "homeGames": 115,
+    "awayGames": 115
+  },
+  {
+    "clubId": 41,
+    "homeElo": 1772.34,
+    "awayElo": 1693.55,
+    "overallElo": 1732.95,
+    "homeGames": 29,
+    "awayGames": 29
+  },
+  {
+    "clubId": 42,
+    "homeElo": 1594.89,
+    "awayElo": 1558.94,
+    "overallElo": 1576.91,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 43,
+    "homeElo": 1875.94,
+    "awayElo": 1797.51,
+    "overallElo": 1836.72,
+    "homeGames": 53,
+    "awayGames": 53
+  },
+  {
+    "clubId": 44,
+    "homeElo": 1839.19,
+    "awayElo": 1790.97,
+    "overallElo": 1815.08,
+    "homeGames": 48,
+    "awayGames": 48
+  },
+  {
+    "clubId": 45,
+    "homeElo": 1958.28,
+    "awayElo": 1939.35,
+    "overallElo": 1948.82,
+    "homeGames": 106,
+    "awayGames": 104
+  },
+  {
+    "clubId": 46,
+    "homeElo": 1805.4,
+    "awayElo": 1784.6,
+    "overallElo": 1795.0,
+    "homeGames": 28,
+    "awayGames": 30
+  },
+  {
+    "clubId": 47,
+    "homeElo": 1781.74,
+    "awayElo": 1764.75,
+    "overallElo": 1773.25,
+    "homeGames": 11,
+    "awayGames": 11
+  },
+  {
+    "clubId": 48,
+    "homeElo": 1732.22,
+    "awayElo": 1704.34,
+    "overallElo": 1718.28,
+    "homeGames": 12,
+    "awayGames": 14
+  },
+  {
+    "clubId": 49,
+    "homeElo": 2054.69,
+    "awayElo": 1979.16,
+    "overallElo": 2016.93,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 50,
+    "homeElo": 1635.04,
+    "awayElo": 1684.39,
+    "overallElo": 1659.71,
+    "homeGames": 95,
+    "awayGames": 95
+  },
+  {
+    "clubId": 51,
+    "homeElo": 1735.15,
+    "awayElo": 1657.16,
+    "overallElo": 1696.15,
+    "homeGames": 100,
+    "awayGames": 101
+  },
+  {
+    "clubId": 52,
+    "homeElo": 2011.39,
+    "awayElo": 2005.81,
+    "overallElo": 2008.6,
+    "homeGames": 86,
+    "awayGames": 87
+  },
+  {
+    "clubId": 53,
+    "homeElo": 1777.74,
+    "awayElo": 1788.39,
+    "overallElo": 1783.07,
+    "homeGames": 32,
+    "awayGames": 32
+  },
+  {
+    "clubId": 54,
+    "homeElo": 1666.16,
+    "awayElo": 1613.45,
+    "overallElo": 1639.81,
+    "homeGames": 95,
+    "awayGames": 95
+  },
+  {
+    "clubId": 55,
+    "homeElo": 1917.75,
+    "awayElo": 1794.67,
+    "overallElo": 1856.21,
+    "homeGames": 128,
+    "awayGames": 129
+  },
+  {
+    "clubId": 56,
+    "homeElo": 1845.92,
+    "awayElo": 1876.96,
+    "overallElo": 1861.44,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 57,
+    "homeElo": 1919.2,
+    "awayElo": 1948.89,
+    "overallElo": 1934.04,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 58,
+    "homeElo": 1684.35,
+    "awayElo": 1712.88,
+    "overallElo": 1698.62,
+    "homeGames": 11,
+    "awayGames": 11
+  },
+  {
+    "clubId": 59,
+    "homeElo": 1865.09,
+    "awayElo": 1774.92,
+    "overallElo": 1820.01,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 60,
+    "homeElo": 1720.05,
+    "awayElo": 1736.62,
+    "overallElo": 1728.34,
+    "homeGames": 83,
+    "awayGames": 82
+  },
+  {
+    "clubId": 61,
+    "homeElo": 2128.49,
+    "awayElo": 2021.29,
+    "overallElo": 2074.89,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 62,
+    "homeElo": 1676.55,
+    "awayElo": 1656.85,
+    "overallElo": 1666.7,
+    "homeGames": 26,
+    "awayGames": 26
+  },
+  {
+    "clubId": 63,
+    "homeElo": 1862.2,
+    "awayElo": 1810.67,
+    "overallElo": 1836.44,
+    "homeGames": 84,
+    "awayGames": 83
+  },
+  {
+    "clubId": 64,
+    "homeElo": 1865.06,
+    "awayElo": 1682.74,
+    "overallElo": 1773.9,
+    "homeGames": 114,
+    "awayGames": 114
+  },
+  {
+    "clubId": 65,
+    "homeElo": 2000.48,
+    "awayElo": 1910.28,
+    "overallElo": 1955.38,
+    "homeGames": 93,
+    "awayGames": 95
+  },
+  {
+    "clubId": 66,
+    "homeElo": 1948.37,
+    "awayElo": 1791.84,
+    "overallElo": 1870.11,
+    "homeGames": 110,
+    "awayGames": 108
+  },
+  {
+    "clubId": 67,
+    "homeElo": 1684.58,
+    "awayElo": 1690.82,
+    "overallElo": 1687.7,
+    "homeGames": 42,
+    "awayGames": 42
+  },
+  {
+    "clubId": 68,
+    "homeElo": 1886.07,
+    "awayElo": 1874.34,
+    "overallElo": 1880.21,
+    "homeGames": 42,
+    "awayGames": 44
+  },
+  {
+    "clubId": 69,
+    "homeElo": 1754.1,
+    "awayElo": 1760.98,
+    "overallElo": 1757.54,
+    "homeGames": 106,
+    "awayGames": 104
+  },
+  {
+    "clubId": 70,
+    "homeElo": 1910.74,
+    "awayElo": 1868.86,
+    "overallElo": 1889.8,
+    "homeGames": 110,
+    "awayGames": 108
+  },
+  {
+    "clubId": 71,
+    "homeElo": 1903.4,
+    "awayElo": 1966.69,
+    "overallElo": 1935.05,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 72,
+    "homeElo": 1855.16,
+    "awayElo": 1797.52,
+    "overallElo": 1826.34,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 73,
+    "homeElo": 1599.2,
+    "awayElo": 1586.83,
+    "overallElo": 1593.02,
+    "homeGames": 42,
+    "awayGames": 42
+  },
+  {
+    "clubId": 74,
+    "homeElo": 1964.57,
+    "awayElo": 1862.36,
+    "overallElo": 1913.46,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 75,
+    "homeElo": 1737.09,
+    "awayElo": 1750.28,
+    "overallElo": 1743.69,
+    "homeGames": 95,
+    "awayGames": 93
+  },
+  {
+    "clubId": 76,
+    "homeElo": 1932.77,
+    "awayElo": 1857.6,
+    "overallElo": 1895.18,
+    "homeGames": 93,
+    "awayGames": 95
+  },
+  {
+    "clubId": 77,
+    "homeElo": 1878.76,
+    "awayElo": 1863.53,
+    "overallElo": 1871.14,
+    "homeGames": 104,
+    "awayGames": 106
+  },
+  {
+    "clubId": 78,
+    "homeElo": 1956.11,
+    "awayElo": 1899.79,
+    "overallElo": 1927.95,
+    "homeGames": 110,
+    "awayGames": 110
+  },
+  {
+    "clubId": 79,
+    "homeElo": 1850.26,
+    "awayElo": 1870.95,
+    "overallElo": 1860.6,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 80,
+    "homeElo": 1772.37,
+    "awayElo": 1804.61,
+    "overallElo": 1788.49,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 81,
+    "homeElo": 1831.58,
+    "awayElo": 1863.34,
+    "overallElo": 1847.46,
+    "homeGames": 109,
+    "awayGames": 109
+  },
+  {
+    "clubId": 82,
+    "homeElo": 1785.09,
+    "awayElo": 1728.92,
+    "overallElo": 1757.0,
+    "homeGames": 111,
+    "awayGames": 109
+  },
+  {
+    "clubId": 83,
+    "homeElo": 1737.56,
+    "awayElo": 1660.16,
+    "overallElo": 1698.86,
+    "homeGames": 103,
+    "awayGames": 102
+  },
+  {
+    "clubId": 84,
+    "homeElo": 1677.63,
+    "awayElo": 1609.01,
+    "overallElo": 1643.32,
+    "homeGames": 93,
+    "awayGames": 95
+  },
+  {
+    "clubId": 85,
+    "homeElo": 1781.76,
+    "awayElo": 1799.92,
+    "overallElo": 1790.84,
+    "homeGames": 103,
+    "awayGames": 102
+  },
+  {
+    "clubId": 86,
+    "homeElo": 1927.98,
+    "awayElo": 1785.62,
+    "overallElo": 1856.8,
+    "homeGames": 94,
+    "awayGames": 93
+  },
+  {
+    "clubId": 87,
+    "homeElo": 1817.76,
+    "awayElo": 1816.97,
+    "overallElo": 1817.37,
+    "homeGames": 93,
+    "awayGames": 95
+  },
+  {
+    "clubId": 88,
+    "homeElo": 1738.14,
+    "awayElo": 1742.54,
+    "overallElo": 1740.34,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 89,
+    "homeElo": 1768.21,
+    "awayElo": 1807.41,
+    "overallElo": 1787.81,
+    "homeGames": 95,
+    "awayGames": 93
+  },
+  {
+    "clubId": 90,
+    "homeElo": 1947.25,
+    "awayElo": 1912.57,
+    "overallElo": 1929.91,
+    "homeGames": 94,
+    "awayGames": 93
+  },
+  {
+    "clubId": 91,
+    "homeElo": 1777.39,
+    "awayElo": 1781.6,
+    "overallElo": 1779.49,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 92,
+    "homeElo": 1760.99,
+    "awayElo": 1668.2,
+    "overallElo": 1714.59,
+    "homeGames": 114,
+    "awayGames": 114
+  },
+  {
+    "clubId": 93,
+    "homeElo": 1734.55,
+    "awayElo": 1802.77,
+    "overallElo": 1768.66,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 94,
+    "homeElo": 2183.05,
+    "awayElo": 2172.0,
+    "overallElo": 2177.52,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 95,
+    "homeElo": 1862.21,
+    "awayElo": 1834.25,
+    "overallElo": 1848.23,
+    "homeGames": 56,
+    "awayGames": 54
+  },
+  {
+    "clubId": 96,
+    "homeElo": 1825.92,
+    "awayElo": 1749.54,
+    "overallElo": 1787.73,
+    "homeGames": 29,
+    "awayGames": 29
+  },
+  {
+    "clubId": 97,
+    "homeElo": 2123.6,
+    "awayElo": 2010.0,
+    "overallElo": 2066.8,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 98,
+    "homeElo": 1882.35,
+    "awayElo": 1729.6,
+    "overallElo": 1805.98,
+    "homeGames": 61,
+    "awayGames": 59
+  },
+  {
+    "clubId": 99,
+    "homeElo": 1835.34,
+    "awayElo": 1734.91,
+    "overallElo": 1785.13,
+    "homeGames": 93,
+    "awayGames": 95
+  },
+  {
+    "clubId": 100,
+    "homeElo": 1784.85,
+    "awayElo": 1842.63,
+    "overallElo": 1813.74,
+    "homeGames": 31,
+    "awayGames": 33
+  },
+  {
+    "clubId": 101,
+    "homeElo": 1829.82,
+    "awayElo": 1806.6,
+    "overallElo": 1818.21,
+    "homeGames": 112,
+    "awayGames": 112
+  },
+  {
+    "clubId": 102,
+    "homeElo": 1626.14,
+    "awayElo": 1693.08,
+    "overallElo": 1659.61,
+    "homeGames": 64,
+    "awayGames": 65
+  },
+  {
+    "clubId": 103,
+    "homeElo": 1933.82,
+    "awayElo": 1961.77,
+    "overallElo": 1947.79,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 104,
+    "homeElo": 1789.95,
+    "awayElo": 1860.5,
+    "overallElo": 1825.22,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 105,
+    "homeElo": 1832.48,
+    "awayElo": 1835.13,
+    "overallElo": 1833.8,
+    "homeGames": 10,
+    "awayGames": 9
+  },
+  {
+    "clubId": 106,
+    "homeElo": 1745.26,
+    "awayElo": 1778.15,
+    "overallElo": 1761.7,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 107,
+    "homeElo": 2039.14,
+    "awayElo": 1868.78,
+    "overallElo": 1953.96,
+    "homeGames": 114,
+    "awayGames": 114
+  },
+  {
+    "clubId": 108,
+    "homeElo": 1762.82,
+    "awayElo": 1801.13,
+    "overallElo": 1781.97,
+    "homeGames": 113,
+    "awayGames": 115
+  },
+  {
+    "clubId": 109,
+    "homeElo": 1771.61,
+    "awayElo": 1688.57,
+    "overallElo": 1730.09,
+    "homeGames": 112,
+    "awayGames": 113
+  },
+  {
+    "clubId": 110,
+    "homeElo": 2044.14,
+    "awayElo": 2052.78,
+    "overallElo": 2048.46,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 111,
+    "homeElo": 1834.3,
+    "awayElo": 1863.49,
+    "overallElo": 1848.89,
+    "homeGames": 109,
+    "awayGames": 112
+  },
+  {
+    "clubId": 112,
+    "homeElo": 2013.09,
+    "awayElo": 2059.61,
+    "overallElo": 2036.35,
+    "homeGames": 94,
+    "awayGames": 93
+  },
+  {
+    "clubId": 113,
+    "homeElo": 2068.88,
+    "awayElo": 1951.59,
+    "overallElo": 2010.23,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 114,
+    "homeElo": 2118.01,
+    "awayElo": 2046.6,
+    "overallElo": 2082.3,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 115,
+    "homeElo": 1994.5,
+    "awayElo": 1807.55,
+    "overallElo": 1901.03,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 116,
+    "homeElo": 1752.56,
+    "awayElo": 1634.27,
+    "overallElo": 1693.41,
+    "homeGames": 111,
+    "awayGames": 111
+  },
+  {
+    "clubId": 117,
+    "homeElo": 2068.88,
+    "awayElo": 1981.3,
+    "overallElo": 2025.09,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 118,
+    "homeElo": 1838.66,
+    "awayElo": 1828.12,
+    "overallElo": 1833.39,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 119,
+    "homeElo": 1755.0,
+    "awayElo": 1798.36,
+    "overallElo": 1776.68,
+    "homeGames": 59,
+    "awayGames": 61
+  },
+  {
+    "clubId": 120,
+    "homeElo": 1856.68,
+    "awayElo": 1817.89,
+    "overallElo": 1837.28,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 121,
+    "homeElo": 1867.26,
+    "awayElo": 1742.83,
+    "overallElo": 1805.04,
+    "homeGames": 95,
+    "awayGames": 95
+  },
+  {
+    "clubId": 122,
+    "homeElo": 1887.03,
+    "awayElo": 1778.87,
+    "overallElo": 1832.95,
+    "homeGames": 107,
+    "awayGames": 107
+  },
+  {
+    "clubId": 123,
+    "homeElo": 2182.46,
+    "awayElo": 2061.64,
+    "overallElo": 2122.05,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 124,
+    "homeElo": 1975.72,
+    "awayElo": 1916.84,
+    "overallElo": 1946.28,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 125,
+    "homeElo": 1706.6,
+    "awayElo": 1665.93,
+    "overallElo": 1686.27,
+    "homeGames": 29,
+    "awayGames": 29
+  },
+  {
+    "clubId": 126,
+    "homeElo": 2068.8,
+    "awayElo": 2020.73,
+    "overallElo": 2044.77,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 127,
+    "homeElo": 1679.69,
+    "awayElo": 1698.85,
+    "overallElo": 1689.27,
+    "homeGames": 17,
+    "awayGames": 17
+  },
+  {
+    "clubId": 128,
+    "homeElo": 1862.66,
+    "awayElo": 1798.12,
+    "overallElo": 1830.39,
+    "homeGames": 99,
+    "awayGames": 101
+  },
+  {
+    "clubId": 129,
+    "homeElo": 1841.44,
+    "awayElo": 1775.53,
+    "overallElo": 1808.48,
+    "homeGames": 128,
+    "awayGames": 129
+  },
+  {
+    "clubId": 130,
+    "homeElo": 2090.71,
+    "awayElo": 2083.72,
+    "overallElo": 2087.21,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 131,
+    "homeElo": 1804.18,
+    "awayElo": 1753.0,
+    "overallElo": 1778.59,
+    "homeGames": 129,
+    "awayGames": 128
+  },
+  {
+    "clubId": 132,
+    "homeElo": 1738.89,
+    "awayElo": 1697.33,
+    "overallElo": 1718.11,
+    "homeGames": 116,
+    "awayGames": 116
+  },
+  {
+    "clubId": 133,
+    "homeElo": 1777.97,
+    "awayElo": 1777.33,
+    "overallElo": 1777.65,
+    "homeGames": 67,
+    "awayGames": 67
+  },
+  {
+    "clubId": 134,
+    "homeElo": 1970.55,
+    "awayElo": 1884.89,
+    "overallElo": 1927.72,
+    "homeGames": 101,
+    "awayGames": 99
+  },
+  {
+    "clubId": 135,
+    "homeElo": 1702.54,
+    "awayElo": 1682.55,
+    "overallElo": 1692.55,
+    "homeGames": 101,
+    "awayGames": 100
+  },
+  {
+    "clubId": 136,
+    "homeElo": 1814.39,
+    "awayElo": 1787.38,
+    "overallElo": 1800.88,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 137,
+    "homeElo": 1618.48,
+    "awayElo": 1641.67,
+    "overallElo": 1630.08,
+    "homeGames": 47,
+    "awayGames": 48
+  },
+  {
+    "clubId": 138,
+    "homeElo": 1752.72,
+    "awayElo": 1811.85,
+    "overallElo": 1782.29,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 139,
+    "homeElo": 2118.95,
+    "awayElo": 2087.59,
+    "overallElo": 2103.27,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 140,
+    "homeElo": 2090.45,
+    "awayElo": 1917.55,
+    "overallElo": 2004.0,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 141,
+    "homeElo": 1960.77,
+    "awayElo": 1833.54,
+    "overallElo": 1897.16,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 142,
+    "homeElo": 1693.45,
+    "awayElo": 1688.31,
+    "overallElo": 1690.88,
+    "homeGames": 124,
+    "awayGames": 125
+  },
+  {
+    "clubId": 143,
+    "homeElo": 1878.85,
+    "awayElo": 1888.4,
+    "overallElo": 1883.62,
+    "homeGames": 114,
+    "awayGames": 114
+  },
+  {
+    "clubId": 144,
+    "homeElo": 1788.71,
+    "awayElo": 1731.46,
+    "overallElo": 1760.08,
+    "homeGames": 95,
+    "awayGames": 93
+  },
+  {
+    "clubId": 145,
+    "homeElo": 1939.89,
+    "awayElo": 1780.84,
+    "overallElo": 1860.36,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 146,
+    "homeElo": 1830.8,
+    "awayElo": 1757.11,
+    "overallElo": 1793.96,
+    "homeGames": 115,
+    "awayGames": 115
+  },
+  {
+    "clubId": 147,
+    "homeElo": 1671.03,
+    "awayElo": 1623.65,
+    "overallElo": 1647.34,
+    "homeGames": 36,
+    "awayGames": 36
+  },
+  {
+    "clubId": 148,
+    "homeElo": 1829.89,
+    "awayElo": 1862.29,
+    "overallElo": 1846.09,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 149,
+    "homeElo": 1744.65,
+    "awayElo": 1751.96,
+    "overallElo": 1748.3,
+    "homeGames": 10,
+    "awayGames": 10
+  },
+  {
+    "clubId": 150,
+    "homeElo": 1868.47,
+    "awayElo": 1823.21,
+    "overallElo": 1845.84,
+    "homeGames": 68,
+    "awayGames": 66
+  },
+  {
+    "clubId": 151,
+    "homeElo": 1872.41,
+    "awayElo": 1839.22,
+    "overallElo": 1855.82,
+    "homeGames": 101,
+    "awayGames": 103
+  },
+  {
+    "clubId": 152,
+    "homeElo": 2212.33,
+    "awayElo": 2207.97,
+    "overallElo": 2210.15,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 153,
+    "homeElo": 1842.3,
+    "awayElo": 1857.34,
+    "overallElo": 1849.82,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 154,
+    "homeElo": 1718.54,
+    "awayElo": 1707.49,
+    "overallElo": 1713.02,
+    "homeGames": 103,
+    "awayGames": 102
+  },
+  {
+    "clubId": 155,
+    "homeElo": 1634.72,
+    "awayElo": 1613.02,
+    "overallElo": 1623.87,
+    "homeGames": 30,
+    "awayGames": 28
+  },
+  {
+    "clubId": 156,
+    "homeElo": 1838.26,
+    "awayElo": 1806.15,
+    "overallElo": 1822.2,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 157,
+    "homeElo": 1729.31,
+    "awayElo": 1608.09,
+    "overallElo": 1668.7,
+    "homeGames": 46,
+    "awayGames": 46
+  },
+  {
+    "clubId": 158,
+    "homeElo": 1735.98,
+    "awayElo": 1630.59,
+    "overallElo": 1683.28,
+    "homeGames": 36,
+    "awayGames": 35
+  },
+  {
+    "clubId": 159,
+    "homeElo": 1778.13,
+    "awayElo": 1756.03,
+    "overallElo": 1767.08,
+    "homeGames": 129,
+    "awayGames": 128
+  },
+  {
+    "clubId": 160,
+    "homeElo": 1736.91,
+    "awayElo": 1699.82,
+    "overallElo": 1718.36,
+    "homeGames": 27,
+    "awayGames": 25
+  },
+  {
+    "clubId": 161,
+    "homeElo": 1763.76,
+    "awayElo": 1707.94,
+    "overallElo": 1735.85,
+    "homeGames": 128,
+    "awayGames": 129
+  },
+  {
+    "clubId": 162,
+    "homeElo": 2044.75,
+    "awayElo": 1906.57,
+    "overallElo": 1975.66,
+    "homeGames": 94,
+    "awayGames": 93
+  },
+  {
+    "clubId": 163,
+    "homeElo": 2201.37,
+    "awayElo": 2119.94,
+    "overallElo": 2160.65,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 164,
+    "homeElo": 1773.42,
+    "awayElo": 1805.21,
+    "overallElo": 1789.31,
+    "homeGames": 25,
+    "awayGames": 27
+  },
+  {
+    "clubId": 165,
+    "homeElo": 1705.16,
+    "awayElo": 1531.6,
+    "overallElo": 1618.38,
+    "homeGames": 68,
+    "awayGames": 68
+  },
+  {
+    "clubId": 166,
+    "homeElo": 1687.73,
+    "awayElo": 1663.32,
+    "overallElo": 1675.53,
+    "homeGames": 67,
+    "awayGames": 67
+  },
+  {
+    "clubId": 167,
+    "homeElo": 1845.93,
+    "awayElo": 1823.53,
+    "overallElo": 1834.73,
+    "homeGames": 100,
+    "awayGames": 101
+  },
+  {
+    "clubId": 168,
+    "homeElo": 2027.7,
+    "awayElo": 1916.48,
+    "overallElo": 1972.09,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 169,
+    "homeElo": 1771.36,
+    "awayElo": 1716.48,
+    "overallElo": 1743.92,
+    "homeGames": 103,
+    "awayGames": 101
+  },
+  {
+    "clubId": 170,
+    "homeElo": 2110.49,
+    "awayElo": 2018.22,
+    "overallElo": 2064.35,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 171,
+    "homeElo": 1760.59,
+    "awayElo": 1644.29,
+    "overallElo": 1702.44,
+    "homeGames": 95,
+    "awayGames": 95
+  },
+  {
+    "clubId": 172,
+    "homeElo": 1730.4,
+    "awayElo": 1635.01,
+    "overallElo": 1682.7,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 173,
+    "homeElo": 1889.3,
+    "awayElo": 1835.89,
+    "overallElo": 1862.59,
+    "homeGames": 75,
+    "awayGames": 73
+  },
+  {
+    "clubId": 174,
+    "homeElo": 1870.45,
+    "awayElo": 1886.74,
+    "overallElo": 1878.6,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 175,
+    "homeElo": 1857.02,
+    "awayElo": 1792.41,
+    "overallElo": 1824.71,
+    "homeGames": 93,
+    "awayGames": 95
+  },
+  {
+    "clubId": 176,
+    "homeElo": 1794.88,
+    "awayElo": 1836.82,
+    "overallElo": 1815.85,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 177,
+    "homeElo": 1786.38,
+    "awayElo": 1740.86,
+    "overallElo": 1763.62,
+    "homeGames": 119,
+    "awayGames": 121
+  },
+  {
+    "clubId": 178,
+    "homeElo": 1527.09,
+    "awayElo": 1604.01,
+    "overallElo": 1565.55,
+    "homeGames": 83,
+    "awayGames": 81
+  },
+  {
+    "clubId": 179,
+    "homeElo": 1887.82,
+    "awayElo": 1866.12,
+    "overallElo": 1876.97,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 180,
+    "homeElo": 1704.88,
+    "awayElo": 1700.08,
+    "overallElo": 1702.48,
+    "homeGames": 32,
+    "awayGames": 32
+  },
+  {
+    "clubId": 181,
+    "homeElo": 1727.16,
+    "awayElo": 1656.07,
+    "overallElo": 1691.62,
+    "homeGames": 112,
+    "awayGames": 113
+  },
+  {
+    "clubId": 182,
+    "homeElo": 1765.69,
+    "awayElo": 1748.14,
+    "overallElo": 1756.91,
+    "homeGames": 116,
+    "awayGames": 116
+  },
+  {
+    "clubId": 183,
+    "homeElo": 1738.35,
+    "awayElo": 1707.51,
+    "overallElo": 1722.93,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 184,
+    "homeElo": 1842.2,
+    "awayElo": 1781.87,
+    "overallElo": 1812.03,
+    "homeGames": 102,
+    "awayGames": 103
+  },
+  {
+    "clubId": 185,
+    "homeElo": 1758.22,
+    "awayElo": 1776.61,
+    "overallElo": 1767.42,
+    "homeGames": 92,
+    "awayGames": 95
+  },
+  {
+    "clubId": 186,
+    "homeElo": 1777.47,
+    "awayElo": 1721.26,
+    "overallElo": 1749.36,
+    "homeGames": 128,
+    "awayGames": 129
+  },
+  {
+    "clubId": 187,
+    "homeElo": 2009.63,
+    "awayElo": 1883.27,
+    "overallElo": 1946.45,
+    "homeGames": 100,
+    "awayGames": 100
+  },
+  {
+    "clubId": 188,
+    "homeElo": 1991.28,
+    "awayElo": 1989.16,
+    "overallElo": 1990.22,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 189,
+    "homeElo": 1741.33,
+    "awayElo": 1742.2,
+    "overallElo": 1741.77,
+    "homeGames": 66,
+    "awayGames": 68
+  },
+  {
+    "clubId": 190,
+    "homeElo": 1927.75,
+    "awayElo": 1827.46,
+    "overallElo": 1877.61,
+    "homeGames": 80,
+    "awayGames": 80
+  },
+  {
+    "clubId": 191,
+    "homeElo": 1749.74,
+    "awayElo": 1674.25,
+    "overallElo": 1712.0,
+    "homeGames": 129,
+    "awayGames": 128
+  },
+  {
+    "clubId": 192,
+    "homeElo": 1775.82,
+    "awayElo": 1623.05,
+    "overallElo": 1699.44,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 193,
+    "homeElo": 1838.18,
+    "awayElo": 1866.12,
+    "overallElo": 1852.15,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 194,
+    "homeElo": 1842.87,
+    "awayElo": 1920.31,
+    "overallElo": 1881.59,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 195,
+    "homeElo": 1898.8,
+    "awayElo": 1968.29,
+    "overallElo": 1933.54,
+    "homeGames": 101,
+    "awayGames": 99
+  },
+  {
+    "clubId": 196,
+    "homeElo": 1888.93,
+    "awayElo": 1786.33,
+    "overallElo": 1837.63,
+    "homeGames": 103,
+    "awayGames": 101
+  },
+  {
+    "clubId": 197,
+    "homeElo": 1822.0,
+    "awayElo": 1850.54,
+    "overallElo": 1836.27,
+    "homeGames": 106,
+    "awayGames": 105
+  },
+  {
+    "clubId": 198,
+    "homeElo": 1701.85,
+    "awayElo": 1691.88,
+    "overallElo": 1696.86,
+    "homeGames": 17,
+    "awayGames": 17
+  },
+  {
+    "clubId": 199,
+    "homeElo": 1861.07,
+    "awayElo": 1821.54,
+    "overallElo": 1841.3,
+    "homeGames": 94,
+    "awayGames": 94
+  },
+  {
+    "clubId": 200,
+    "homeElo": 1908.92,
+    "awayElo": 1786.44,
+    "overallElo": 1847.68,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 201,
+    "homeElo": 1724.58,
+    "awayElo": 1702.36,
+    "overallElo": 1713.47,
+    "homeGames": 110,
+    "awayGames": 110
+  },
+  {
+    "clubId": 202,
+    "homeElo": 1862.21,
+    "awayElo": 1829.71,
+    "overallElo": 1845.96,
+    "homeGames": 106,
+    "awayGames": 108
+  },
+  {
+    "clubId": 203,
+    "homeElo": 1951.82,
+    "awayElo": 1822.22,
+    "overallElo": 1887.02,
+    "homeGames": 105,
+    "awayGames": 105
+  },
+  {
+    "clubId": 204,
+    "homeElo": 1748.08,
+    "awayElo": 1781.42,
+    "overallElo": 1764.75,
+    "homeGames": 105,
+    "awayGames": 106
+  },
+  {
+    "clubId": 205,
+    "homeElo": 2069.35,
+    "awayElo": 2033.72,
+    "overallElo": 2051.53,
+    "homeGames": 105,
+    "awayGames": 104
+  },
+  {
+    "clubId": 206,
+    "homeElo": 1674.14,
+    "awayElo": 1612.86,
+    "overallElo": 1643.5,
+    "homeGames": 29,
+    "awayGames": 29
+  },
+  {
+    "clubId": 207,
+    "homeElo": 1792.78,
+    "awayElo": 1705.69,
+    "overallElo": 1749.23,
+    "homeGames": 125,
+    "awayGames": 123
+  },
+  {
+    "clubId": 208,
+    "homeElo": 1839.94,
+    "awayElo": 1869.04,
+    "overallElo": 1854.49,
+    "homeGames": 93,
+    "awayGames": 94
+  },
+  {
+    "clubId": 209,
+    "homeElo": 1790.66,
+    "awayElo": 1611.16,
+    "overallElo": 1700.91,
+    "homeGames": 124,
+    "awayGames": 125
+  },
+  {
+    "clubId": 210,
+    "homeElo": 1782.62,
+    "awayElo": 1827.65,
+    "overallElo": 1805.13,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 211,
+    "homeElo": 1785.41,
+    "awayElo": 1878.16,
+    "overallElo": 1831.79,
+    "homeGames": 95,
+    "awayGames": 93
+  },
+  {
+    "clubId": 212,
+    "homeElo": 1771.09,
+    "awayElo": 1761.57,
+    "overallElo": 1766.33,
+    "homeGames": 106,
+    "awayGames": 106
+  },
+  {
+    "clubId": 213,
+    "homeElo": 1801.17,
+    "awayElo": 1792.21,
+    "overallElo": 1796.69,
+    "homeGames": 14,
+    "awayGames": 13
+  },
+  {
+    "clubId": 214,
+    "homeElo": 1662.84,
+    "awayElo": 1713.34,
+    "overallElo": 1688.09,
+    "homeGames": 116,
+    "awayGames": 116
+  },
+  {
+    "clubId": 215,
+    "homeElo": 1713.0,
+    "awayElo": 1674.42,
+    "overallElo": 1693.71,
+    "homeGames": 63,
+    "awayGames": 63
+  },
+  {
+    "clubId": 216,
+    "homeElo": 1684.34,
+    "awayElo": 1662.72,
+    "overallElo": 1673.53,
+    "homeGames": 19,
+    "awayGames": 19
+  },
+  {
+    "clubId": 217,
+    "homeElo": 1754.56,
+    "awayElo": 1709.02,
+    "overallElo": 1731.79,
+    "homeGames": 42,
+    "awayGames": 42
+  },
+  {
+    "clubId": 218,
+    "homeElo": 1757.83,
+    "awayElo": 1729.52,
+    "overallElo": 1743.67,
+    "homeGames": 76,
+    "awayGames": 76
+  },
+  {
+    "clubId": 219,
+    "homeElo": 1637.81,
+    "awayElo": 1593.32,
+    "overallElo": 1615.57,
+    "homeGames": 46,
+    "awayGames": 46
+  },
+  {
+    "clubId": 220,
+    "homeElo": 1683.71,
+    "awayElo": 1684.57,
+    "overallElo": 1684.14,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 221,
+    "homeElo": 1645.5,
+    "awayElo": 1621.42,
+    "overallElo": 1633.46,
+    "homeGames": 46,
+    "awayGames": 46
+  },
+  {
+    "clubId": 222,
+    "homeElo": 1848.42,
+    "awayElo": 1669.62,
+    "overallElo": 1759.02,
+    "homeGames": 75,
+    "awayGames": 76
+  },
+  {
+    "clubId": 223,
+    "homeElo": 1754.05,
+    "awayElo": 1726.24,
+    "overallElo": 1740.15,
+    "homeGames": 19,
+    "awayGames": 19
+  },
+  {
+    "clubId": 224,
+    "homeElo": 1641.86,
+    "awayElo": 1633.58,
+    "overallElo": 1637.72,
+    "homeGames": 19,
+    "awayGames": 19
+  },
+  {
+    "clubId": 225,
+    "homeElo": 1867.0,
+    "awayElo": 1815.12,
+    "overallElo": 1841.06,
+    "homeGames": 19,
+    "awayGames": 19
+  },
+  {
+    "clubId": 226,
+    "homeElo": 1654.74,
+    "awayElo": 1650.76,
+    "overallElo": 1652.75,
+    "homeGames": 19,
+    "awayGames": 19
+  },
+  {
+    "clubId": 227,
+    "homeElo": 1689.1,
+    "awayElo": 1587.65,
+    "overallElo": 1638.38,
+    "homeGames": 38,
+    "awayGames": 38
+  },
+  {
+    "clubId": 228,
+    "homeElo": 1761.53,
+    "awayElo": 1706.03,
+    "overallElo": 1733.78,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 229,
+    "homeElo": 1622.71,
+    "awayElo": 1641.53,
+    "overallElo": 1632.12,
+    "homeGames": 34,
+    "awayGames": 34
+  },
+  {
+    "clubId": 230,
+    "homeElo": 1657.39,
+    "awayElo": 1681.65,
+    "overallElo": 1669.52,
+    "homeGames": 19,
+    "awayGames": 19
+  },
+  {
+    "clubId": 231,
+    "homeElo": 1676.88,
+    "awayElo": 1647.83,
+    "overallElo": 1662.35,
+    "homeGames": 42,
+    "awayGames": 42
+  },
+  {
+    "clubId": 232,
+    "homeElo": 1641.42,
+    "awayElo": 1630.34,
+    "overallElo": 1635.88,
+    "homeGames": 51,
+    "awayGames": 51
+  },
+  {
+    "clubId": 233,
+    "homeElo": 1661.85,
+    "awayElo": 1624.68,
+    "overallElo": 1643.26,
+    "homeGames": 92,
+    "awayGames": 92
+  },
+  {
+    "clubId": 234,
+    "homeElo": 1673.31,
+    "awayElo": 1647.7,
+    "overallElo": 1660.51,
+    "homeGames": 42,
+    "awayGames": 42
+  },
+  {
+    "clubId": 235,
+    "homeElo": 1635.56,
+    "awayElo": 1644.09,
+    "overallElo": 1639.83,
+    "homeGames": 17,
+    "awayGames": 17
+  },
+  {
+    "clubId": 236,
+    "homeElo": 1574.64,
+    "awayElo": 1570.03,
+    "overallElo": 1572.33,
+    "homeGames": 19,
+    "awayGames": 19
+  },
+  {
+    "clubId": 237,
+    "homeElo": 1692.45,
+    "awayElo": 1692.59,
+    "overallElo": 1692.52,
+    "homeGames": 21,
+    "awayGames": 21
+  },
+  {
+    "clubId": 238,
+    "homeElo": 1652.31,
+    "awayElo": 1595.9,
+    "overallElo": 1624.11,
+    "homeGames": 63,
+    "awayGames": 63
+  },
+  {
+    "clubId": 239,
+    "homeElo": 1716.71,
+    "awayElo": 1610.11,
+    "overallElo": 1663.41,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 240,
+    "homeElo": 1632.39,
+    "awayElo": 1588.28,
+    "overallElo": 1610.33,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 241,
+    "homeElo": 1621.19,
+    "awayElo": 1646.63,
+    "overallElo": 1633.91,
+    "homeGames": 34,
+    "awayGames": 34
+  },
+  {
+    "clubId": 242,
+    "homeElo": 1719.28,
+    "awayElo": 1717.65,
+    "overallElo": 1718.46,
+    "homeGames": 38,
+    "awayGames": 38
+  },
+  {
+    "clubId": 243,
+    "homeElo": 1683.93,
+    "awayElo": 1649.37,
+    "overallElo": 1666.65,
+    "homeGames": 23,
+    "awayGames": 23
+  },
+  {
+    "clubId": 244,
+    "homeElo": 1744.23,
+    "awayElo": 1737.99,
+    "overallElo": 1741.11,
+    "homeGames": 63,
+    "awayGames": 63
+  },
+  {
+    "clubId": 245,
+    "homeElo": 1624.36,
+    "awayElo": 1541.56,
+    "overallElo": 1582.96,
+    "homeGames": 38,
+    "awayGames": 38
+  },
+  {
+    "clubId": 246,
+    "homeElo": 1716.89,
+    "awayElo": 1734.04,
+    "overallElo": 1725.46,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 247,
+    "homeElo": 1735.13,
+    "awayElo": 1574.08,
+    "overallElo": 1654.6,
+    "homeGames": 69,
+    "awayGames": 69
+  },
+  {
+    "clubId": 248,
+    "homeElo": 1758.46,
+    "awayElo": 1730.31,
+    "overallElo": 1744.38,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 249,
+    "homeElo": 1638.41,
+    "awayElo": 1491.57,
+    "overallElo": 1564.99,
+    "homeGames": 69,
+    "awayGames": 69
+  },
+  {
+    "clubId": 250,
+    "homeElo": 1785.7,
+    "awayElo": 1770.37,
+    "overallElo": 1778.03,
+    "homeGames": 21,
+    "awayGames": 21
+  },
+  {
+    "clubId": 251,
+    "homeElo": 1638.58,
+    "awayElo": 1651.05,
+    "overallElo": 1644.81,
+    "homeGames": 51,
+    "awayGames": 51
+  },
+  {
+    "clubId": 252,
+    "homeElo": 1781.69,
+    "awayElo": 1736.42,
+    "overallElo": 1759.05,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 253,
+    "homeElo": 1700.69,
+    "awayElo": 1720.24,
+    "overallElo": 1710.46,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 254,
+    "homeElo": 1743.1,
+    "awayElo": 1712.64,
+    "overallElo": 1727.87,
+    "homeGames": 57,
+    "awayGames": 57
+  },
+  {
+    "clubId": 255,
+    "homeElo": 1666.25,
+    "awayElo": 1583.17,
+    "overallElo": 1624.71,
+    "homeGames": 76,
+    "awayGames": 75
+  },
+  {
+    "clubId": 256,
+    "homeElo": 1747.44,
+    "awayElo": 1713.32,
+    "overallElo": 1730.38,
+    "homeGames": 38,
+    "awayGames": 38
+  },
+  {
+    "clubId": 257,
+    "homeElo": 1733.39,
+    "awayElo": 1635.48,
+    "overallElo": 1684.43,
+    "homeGames": 42,
+    "awayGames": 42
+  },
+  {
+    "clubId": 258,
+    "homeElo": 1650.11,
+    "awayElo": 1664.26,
+    "overallElo": 1657.18,
+    "homeGames": 17,
+    "awayGames": 17
+  },
+  {
+    "clubId": 259,
+    "homeElo": 1648.22,
+    "awayElo": 1667.37,
+    "overallElo": 1657.8,
+    "homeGames": 23,
+    "awayGames": 23
+  },
+  {
+    "clubId": 260,
+    "homeElo": 1664.33,
+    "awayElo": 1653.17,
+    "overallElo": 1658.75,
+    "homeGames": 17,
+    "awayGames": 17
+  },
+  {
+    "clubId": 261,
+    "homeElo": 1755.26,
+    "awayElo": 1747.35,
+    "overallElo": 1751.3,
+    "homeGames": 23,
+    "awayGames": 23
+  }
+]

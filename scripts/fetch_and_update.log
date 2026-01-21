@@ -1,0 +1,78 @@
+[2026-01-19 21:00:43] Starting fetch_and_update
+[2026-01-19 21:00:43] Downloading https://www.football-data.co.uk/mmz4281/2526/E0.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\E0_2526.csv
+[2026-01-19 21:00:45]   OK
+[2026-01-19 21:00:45]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\E0_2526.csv.20260120_000045.gz
+[2026-01-19 21:00:45] Downloading https://www.football-data.co.uk/mmz4281/2526/E1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\E1_2526.csv
+[2026-01-19 21:00:47]   OK
+[2026-01-19 21:00:47]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\E1_2526.csv.20260120_000047.gz
+[2026-01-19 21:00:47] Downloading https://www.football-data.co.uk/mmz4281/2526/D1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\D1_2526.csv
+[2026-01-19 21:00:49]   OK
+[2026-01-19 21:00:49]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\D1_2526.csv.20260120_000049.gz
+[2026-01-19 21:00:49] Downloading https://www.football-data.co.uk/mmz4281/2526/D2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\D2_2526.csv
+[2026-01-19 21:00:51]   OK
+[2026-01-19 21:00:51]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\D2_2526.csv.20260120_000051.gz
+[2026-01-19 21:00:51] Downloading https://www.football-data.co.uk/mmz4281/2526/I1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\I1_2526.csv
+[2026-01-19 21:00:52]   OK
+[2026-01-19 21:00:52]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\I1_2526.csv.20260120_000052.gz
+[2026-01-19 21:00:52] Downloading https://www.football-data.co.uk/mmz4281/2526/I2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\I2_2526.csv
+[2026-01-19 21:00:54]   OK
+[2026-01-19 21:00:54]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\I2_2526.csv.20260120_000054.gz
+[2026-01-19 21:00:54] Downloading https://www.football-data.co.uk/mmz4281/2526/F1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\F1_2526.csv
+[2026-01-19 21:00:56]   OK
+[2026-01-19 21:00:56]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\F1_2526.csv.20260120_000056.gz
+[2026-01-19 21:00:56] Downloading https://www.football-data.co.uk/mmz4281/2526/F2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\F2_2526.csv
+[2026-01-19 21:00:57]   OK
+[2026-01-19 21:00:57]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\F2_2526.csv.20260120_000057.gz
+[2026-01-19 21:00:57] Downloading https://www.football-data.co.uk/mmz4281/2526/SP1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\SP1_2526.csv
+[2026-01-19 21:00:59]   OK
+[2026-01-19 21:00:59]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\SP1_2526.csv.20260120_000059.gz
+[2026-01-19 21:00:59] Downloading https://www.football-data.co.uk/mmz4281/2526/SP2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\SP2_2526.csv
+[2026-01-19 21:01:01]   OK
+[2026-01-19 21:01:01]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\SP2_2526.csv.20260120_000101.gz
+[2026-01-19 21:01:01] Running generator: C:\Users\Alex Menezes\projetos\elo_rating\scripts\generate_matches_and_ratings.py
+[2026-01-19 21:01:03] Generator stdout:
+[2026-01-19 21:01:03]   Processed matches: 21343, skipped (unmapped or invalid): 0
+[2026-01-19 21:01:03]   Wrote 21343 matches to C:\Users\Alex Menezes\projetos\elo_rating\data\matches_full.json
+[2026-01-19 21:01:03]   Wrote ratings for 261 clubs to C:\Users\Alex Menezes\projetos\elo_rating\data\ratings_home_away.json and overall to C:\Users\Alex Menezes\projetos\elo_rating\data\ratings.json
+[2026-01-19 21:01:03] Generator stderr:
+[2026-01-19 21:01:03] Generator exit code: 0
+[2026-01-19 21:01:03] fetch_and_update finished
+[2026-01-20 20:36:25] Starting fetch_and_update
+[2026-01-20 20:36:25] Downloading https://www.football-data.co.uk/mmz4281/2526/E0.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\E0_2526.csv
+[2026-01-20 20:36:28]   OK
+[2026-01-20 20:36:28]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\E0_2526.csv.20260120_233628.gz
+[2026-01-20 20:36:28] Downloading https://www.football-data.co.uk/mmz4281/2526/E1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\E1_2526.csv
+[2026-01-20 20:36:30]   OK
+[2026-01-20 20:36:30]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\E1_2526.csv.20260120_233630.gz
+[2026-01-20 20:36:30] Downloading https://www.football-data.co.uk/mmz4281/2526/D1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\D1_2526.csv
+[2026-01-20 20:36:31]   OK
+[2026-01-20 20:36:31]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\D1_2526.csv.20260120_233631.gz
+[2026-01-20 20:36:31] Downloading https://www.football-data.co.uk/mmz4281/2526/D2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\D2_2526.csv
+[2026-01-20 20:36:33]   OK
+[2026-01-20 20:36:33]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\D2_2526.csv.20260120_233633.gz
+[2026-01-20 20:36:33] Downloading https://www.football-data.co.uk/mmz4281/2526/I1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\I1_2526.csv
+[2026-01-20 20:36:35]   OK
+[2026-01-20 20:36:35]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\I1_2526.csv.20260120_233635.gz
+[2026-01-20 20:36:35] Downloading https://www.football-data.co.uk/mmz4281/2526/I2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\I2_2526.csv
+[2026-01-20 20:36:37]   OK
+[2026-01-20 20:36:37]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\I2_2526.csv.20260120_233637.gz
+[2026-01-20 20:36:37] Downloading https://www.football-data.co.uk/mmz4281/2526/F1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\F1_2526.csv
+[2026-01-20 20:36:38]   OK
+[2026-01-20 20:36:38]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\F1_2526.csv.20260120_233638.gz
+[2026-01-20 20:36:38] Downloading https://www.football-data.co.uk/mmz4281/2526/F2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\F2_2526.csv
+[2026-01-20 20:36:40]   OK
+[2026-01-20 20:36:40]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\F2_2526.csv.20260120_233640.gz
+[2026-01-20 20:36:40] Downloading https://www.football-data.co.uk/mmz4281/2526/SP1.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\SP1_2526.csv
+[2026-01-20 20:36:41]   OK
+[2026-01-20 20:36:41]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\SP1_2526.csv.20260120_233641.gz
+[2026-01-20 20:36:41] Downloading https://www.football-data.co.uk/mmz4281/2526/SP2.csv -> C:\Users\Alex Menezes\projetos\elo_rating\data\SP2_2526.csv
+[2026-01-20 20:36:43]   OK
+[2026-01-20 20:36:43]   Backup created: C:\Users\Alex Menezes\projetos\elo_rating\data\backups\SP2_2526.csv.20260120_233643.gz
+[2026-01-20 20:36:43] Running generator: C:\Users\Alex Menezes\projetos\elo_rating\scripts\generate_matches_and_ratings.py
+[2026-01-20 20:36:44] Generator stdout:
+[2026-01-20 20:36:44]   Processed matches: 21349, skipped (unmapped or invalid): 0
+[2026-01-20 20:36:44]   Wrote 21349 matches to C:\Users\Alex Menezes\projetos\elo_rating\data\matches_full.json
+[2026-01-20 20:36:44]   Wrote ratings for 261 clubs to C:\Users\Alex Menezes\projetos\elo_rating\data\ratings_home_away.json and overall to C:\Users\Alex Menezes\projetos\elo_rating\data\ratings.json
+[2026-01-20 20:36:44] Generator stderr:
+[2026-01-20 20:36:44] Generator exit code: 0
+[2026-01-20 20:36:44] fetch_and_update finished
