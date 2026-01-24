@@ -43,6 +43,71 @@ function extractCountryFromLeague(leagueName) {
   // Senão, retorna o nome completo (remove sufixo de números)
   return leagueName.replace(/\s*\d+\s*$/, '').trim();
 }
+
+// Resolve conflito de liga consultando o histórico: quando um fixture tem clubes de ligas diferentes,
+// busca na temporada atual qual é a liga correta para cada clube
+function resolveLeagueConflict(homeClub, awayClub, matchesHistory, clubs) {
+  if (!homeClub || !awayClub || !matchesHistory) return null;
+  
+  // Se as ligas são iguais, sem conflito
+  if ((homeClub.league || '').toLowerCase() === (awayClub.league || '').toLowerCase()) {
+    return (homeClub.league || '').toLowerCase();
+  }
+  
+  // Busca recentes matches de cada clube para determinar a liga correta
+  const currentYear = new Date().getFullYear();
+  const recentHome = matchesHistory
+    .filter(m => (m.home === homeClub.id || m.away === homeClub.id))
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 20);
+  
+  const recentAway = matchesHistory
+    .filter(m => (m.home === awayClub.id || m.away === awayClub.id))
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 20);
+  
+  if (recentHome.length === 0 || recentAway.length === 0) return null;
+  
+  // Encontra a liga do match mais recente de home
+  const homeMatch = recentHome[0];
+  const homeMatchClubs = clubs.filter(c => c.id === homeMatch.home || c.id === homeMatch.away);
+  const homeLeagueFromHistory = homeMatchClubs.find(c => c.id === (homeMatch.home === homeClub.id ? homeMatch.away : homeMatch.home))?.league ||
+                                homeClub.league;
+  
+  // Encontra a liga do match mais recente de away
+  const awayMatch = recentAway[0];
+  const awayMatchClubs = clubs.filter(c => c.id === awayMatch.home || c.id === awayMatch.away);
+  const awayLeagueFromHistory = awayMatchClubs.find(c => c.id === (awayMatch.home === awayClub.id ? awayMatch.away : awayMatch.home))?.league ||
+                                awayClub.league;
+  
+  // Se encontrou a mesma liga para ambos no histórico, usa ela
+  if ((homeLeagueFromHistory || '').toLowerCase() === (awayLeagueFromHistory || '').toLowerCase()) {
+    return (homeLeagueFromHistory || '').toLowerCase();
+  }
+  
+  // Fallback: usa a liga mais frequente nos últimos matches
+  const homeLeagueCounts = {};
+  recentHome.forEach(m => {
+    const code = getLeagueFromSource(m.source);
+    homeLeagueCounts[code] = (homeLeagueCounts[code] || 0) + 1;
+  });
+  
+  const awayLeagueCounts = {};
+  recentAway.forEach(m => {
+    const code = getLeagueFromSource(m.source);
+    awayLeagueCounts[code] = (awayLeagueCounts[code] || 0) + 1;
+  });
+  
+  const homeTopLeague = Object.keys(homeLeagueCounts).sort((a, b) => homeLeagueCounts[b] - homeLeagueCounts[a])[0];
+  const awayTopLeague = Object.keys(awayLeagueCounts).sort((a, b) => awayLeagueCounts[b] - awayLeagueCounts[a])[0];
+  
+  if (homeTopLeague === awayTopLeague) {
+    return homeTopLeague ? homeTopLeague.toLowerCase() : null;
+  }
+  
+  // Se ainda não conseguiu resolver, retorna null (será rejeitado o fixture)
+  return null;
+}
 // Métricas gerais de custo/valor de gol por liga (limitadas ao range de ELO atual)
 function calculateGeneralGoalMetrics(matchesHistory, leagueCode, homeEloTarget, awayEloTarget) {
   if (!matchesHistory || !leagueCode) return null;
@@ -781,7 +846,15 @@ async function init(){
       if (!h || !a) return false;
       const hl = (h.league||'').toLowerCase();
       const al = (a.league||'').toLowerCase();
-      // Validar: (1) ambas as ligas estão salvas, (2) são a mesma liga
+      
+      // Se as ligas são diferentes, tenta resolver consultando o histórico
+      if (hl && al && hl !== al) {
+        const resolvedLeague = resolveLeagueConflict(h, a, matchesHistory, clubs);
+        if (!resolvedLeague) return false; // Não conseguiu resolver o conflito
+        return leagueNames.has(resolvedLeague);
+      }
+      
+      // Se as ligas são iguais, valida normalmente
       return hl && al && hl === al && leagueNames.has(hl);
     });
     const toShow = filtered; // Mostrar apenas jogos das ligas salvas
