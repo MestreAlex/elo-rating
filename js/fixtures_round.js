@@ -783,7 +783,7 @@ async function init(){
       const al = (a.league||'').toLowerCase();
       return leagueNames.has(hl) && leagueNames.has(al);
     });
-    const toShow = filtered.length ? filtered : fixtures;
+    const toShow = filtered; // Mostrar apenas jogos das ligas salvas
     console.log(`Filtered to ${toShow.length} fixtures (after filtering by known clubs/leagues)`);
 
   // Criar seção de filtros
