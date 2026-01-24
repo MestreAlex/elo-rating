@@ -780,6 +780,10 @@
       let totalResultadoInvertido = 0;
 
       entradas.forEach(e => {
+        // considerar apenas partidas com placar lançado
+        const hasScore = e.gh !== undefined && e.ga !== undefined && e.gh !== '' && e.ga !== '' && !isNaN(parseFloat(e.gh)) && !isNaN(parseFloat(e.ga));
+        if (!hasScore) return;
+
         const gh = parseFloat(e.gh) || 0;
         const ga = parseFloat(e.ga) || 0;
         const oddH = parseFloat(e.oddH) || 0;
@@ -794,6 +798,10 @@
         const oddUsadaNormal = e.back === 'Home' ? oddH : oddA;
         if (oddUsadaNormal > 0) totalApostado += 1;
       });
+
+      // total de entradas passa a refletir somente partidas com placar lançado
+      const totalComPlacar = entradas.filter(e => e.gh !== undefined && e.ga !== undefined && e.gh !== '' && e.ga !== '' && !isNaN(parseFloat(e.gh)) && !isNaN(parseFloat(e.ga))).length;
+      document.getElementById('stat-total').textContent = totalComPlacar;
 
       const roiNormal = totalApostado > 0 ? ((totalResultadoNormal / totalApostado) * 100) : 0;
       const roiInvertido = totalApostado > 0 ? ((totalResultadoInvertido / totalApostado) * 100) : 0;
