@@ -100,7 +100,7 @@
       </div>
 
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; margin-bottom: 1rem;">
-        <h2 style="margin: 0; color: #0b6e4f; font-size: 1rem;">📊 Análise por Faixa de Odds</h2>
+        <h2 style="margin: 0; color: #0b6e4f; font-size: 1rem;">📊 Análise por Faixa de Odds <span style="font-size: 0.9rem; color: #555; font-weight: 500;">(apenas partidas com placar lançado)</span></h2>
         <button id="btn-toggle-odds" style="padding: 8px 15px; background: #0b6e4f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📊 Ocultar Tabelas</button>
       </div>
 
@@ -862,6 +862,12 @@
       entradas.forEach(e => {
         // Aplicar filtro de ELO
         if (!applyEloFilter(e)) return;
+
+        // Considerar apenas partidas com placar lançado manualmente
+        const ghRaw = e.gh;
+        const gaRaw = e.ga;
+        const hasScore = ghRaw !== undefined && ghRaw !== '' && gaRaw !== undefined && gaRaw !== '' && !isNaN(parseFloat(ghRaw)) && !isNaN(parseFloat(gaRaw));
+        if (!hasScore) return;
 
         const gh = parseFloat(e.gh) || 0;
         const ga = parseFloat(e.ga) || 0;
