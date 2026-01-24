@@ -155,6 +155,19 @@
       </div>
       <div id="pattern-analysis-container" style="display: none; background: #f5f5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
         <div id="pattern-results"></div>
+          <!-- Análise por Combinação de Filtros -->
+          <div style="margin: 2rem 0;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <h2 style="margin: 0; color: #0b6e4f; font-size: 1.2rem;">🎯 Análise de Combinações de Filtros</h2>
+              <div style="display: flex; gap: 0.5rem;">
+                <button id="btn-toggle-filters-analysis" style="padding: 8px 15px; background: #0b6e4f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📊 Ocultar Análise</button>
+                <button id="btn-analyze-filter-combinations" style="padding: 8px 15px; background: #0b6e4f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">🤖 IA - Analisar Combinações</button>
+              </div>
+            </div>
+            <div id="filter-analysis-container" style="display: none; background: #f5f5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+              <div id="filter-analysis-results"></div>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -1330,6 +1343,144 @@
       html += '</ul></div>';
 
       container.innerHTML = html;
+        // Analisar Combinações de Filtros
+        function analyzeFilterCombinations() {
+          const entradas = loadEntradas();
+          if (entradas.length === 0) {
+            alert('Nenhuma entrada registrada!');
+            return;
+          }
+      
+          const combinations = [];
+          const eloHomes = new Set();
+          const eloAways = new Set();
+          const oddRanges = new Set();
+          const backs = new Set();
+      
+          entradas.forEach(e => {
+            const gh = parseFloat(e.gh) || 0;
+            const ga = parseFloat(e.ga) || 0;
+            if (gh === 0 && ga === 0) return;
+            if (e.eloH) eloHomes.add(parseFloat(e.eloH) > 0 ? '▲' : parseFloat(e.eloH) < 0 ? '▼' : '●');
+            if (e.eloA) eloAways.add(parseFloat(e.eloA) > 0 ? '▲' : parseFloat(e.eloA) < 0 ? '▼' : '●');
+            if (e.oddH) oddRanges.add(getOddRange(parseFloat(e.oddH)));
+            if (e.oddA) oddRanges.add(getOddRange(parseFloat(e.oddA)));
+            if (e.back) backs.add(e.back);
+          });
+      
+          Array.from(eloHomes).forEach(eh => {
+            Array.from(eloAways).forEach(ea => {
+              Array.from(backs).forEach(back => {
+                Array.from(oddRanges).forEach(odd => {
+                  combinations.push({ eloHome: eh, eloAway: ea, back, oddRange: odd });
+                });
+              });
+            });
+          });
+      
+          const results = [];
+          combinations.forEach(combo => {
+            const filtered = entradas.filter(e => {
+              const gh = parseFloat(e.gh) || 0;
+              const ga = parseFloat(e.ga) || 0;
+              if (gh === 0 && ga === 0) return false;
+          
+              const eloH = parseFloat(e.eloH) || 0;
+              const eloA = parseFloat(e.eloA) || 0;
+              const symH = eloH > 0 ? '▲' : eloH < 0 ? '▼' : '●';
+              const symA = eloA > 0 ? '▲' : eloA < 0 ? '▼' : '●';
+          
+              if (symH !== combo.eloHome || symA !== combo.eloAway) return false;
+              if (e.back !== combo.back) return false;
+          
+              const oddUsed = combo.back === 'Home' ? parseFloat(e.oddH) : parseFloat(e.oddA);
+              if (getOddRange(oddUsed) !== combo.oddRange) return false;
+          
+              return true;
+            });
+        
+            if (filtered.length < 2) return;
+        
+            let profitN = 0, profitI = 0;
+            filtered.forEach(e => {
+              const gh = parseFloat(e.gh) || 0;
+              const ga = parseFloat(e.ga) || 0;
+              const oddH = parseFloat(e.oddH) || 0;
+              const oddA = parseFloat(e.oddA) || 0;
+              profitN += calcularPLNormal(e.back, gh, ga, oddH, oddA);
+              profitI += calcularPLInvertido(e.back, gh, ga, oddH, oddA);
+            });
+        
+            results.push({
+              label: `${combo.eloHome}/${combo.eloAway} · ${combo.back} · ${combo.oddRange}`,
+              qtd: filtered.length,
+              profitN: profitN,
+              roiN: ((profitN / filtered.length) * 100).toFixed(2),
+              profitI: profitI,
+              roiI: ((profitI / filtered.length) * 100).toFixed(2)
+            });
+          });
+      
+          renderFilterAnalysisResults(results);
+        }
+    
+        function renderFilterAnalysisResults(results) {
+          const container = document.getElementById('filter-analysis-results');
+          const analysisContainer = document.getElementById('filter-analysis-container');
+          analysisContainer.style.display = 'block';
+      
+          const topProfitN = [...results].sort((a, b) => b.profitN - a.profitN).slice(0, 5);
+          const topROIN = [...results].filter(r => r.roiN > 0).sort((a, b) => b.roiN - a.roiN).slice(0, 5);
+          const topProfitI = [...results].sort((a, b) => b.profitI - a.profitI).slice(0, 5);
+          const topROII = [...results].filter(r => r.roiI > 0).sort((a, b) => b.roiI - a.roiI).slice(0, 5);
+      
+          let html = '<h3 style="margin-top: 0; color: #0b6e4f;">🤖 Análise IA: Top Combinações de Filtros</h3>';
+          html += `<p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">Analisadas <strong>${results.length}</strong> combinações | Mostrando: <strong>Top 5</strong></p>`;
+          html += '<div style="display: flex; gap: 2rem;">';
+      
+          // P/L NORMAL
+          html += '<div style="flex: 1;"><h4 style="color: #0b6e4f; border-bottom: 2px solid #0b6e4f; padding-bottom: 0.5rem;">📈 P/L Normal</h4>';
+          html += '<h5 style="margin: 1rem 0 0.5rem; color: #0b6e4f; font-size: 0.95rem;">🏆 Top 5 - Maior Lucro</h5>';
+          html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;"><thead style="background: #0b6e4f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px;">Filtros</th><th style="border: 1px solid #ddd; padding: 6px;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px;">Lucro</th><th style="border: 1px solid #ddd; padding: 6px;">ROI</th></tr></thead><tbody>';
+          topProfitN.forEach((r, i) => {
+            const pColor = r.profitN >= 0 ? '#2e7d32' : '#d32f2f';
+            const rColor = r.roiN >= 0 ? '#2e7d32' : '#d32f2f';
+            html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-size: 0.75rem;">${r.label}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${r.qtd}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${pColor}; font-weight: 600;">R$ ${r.profitN.toFixed(2).replace('.', ',')}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${rColor}; font-weight: 600;">${r.roiN}%</td></tr>`;
+          });
+          html += '</tbody></table>';
+      
+          html += '<h5 style="margin: 1rem 0 0.5rem; color: #0b6e4f; font-size: 0.95rem;">🎯 Top 5 - Melhor ROI</h5>';
+          html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;"><thead style="background: #0b6e4f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px;">Filtros</th><th style="border: 1px solid #ddd; padding: 6px;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px;">Lucro</th><th style="border: 1px solid #ddd; padding: 6px;">ROI</th></tr></thead><tbody>';
+          topROIN.forEach((r, i) => {
+            const pColor = r.profitN >= 0 ? '#2e7d32' : '#d32f2f';
+            const rColor = r.roiN >= 0 ? '#2e7d32' : '#d32f2f';
+            html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-size: 0.75rem;">${r.label}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${r.qtd}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${pColor}; font-weight: 600;">R$ ${r.profitN.toFixed(2).replace('.', ',')}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${rColor}; font-weight: 600;">${r.roiN}%</td></tr>`;
+          });
+          html += '</tbody></table></div>';
+      
+          // P/L INVERTIDO
+          html += '<div style="flex: 1;"><h4 style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem;">📉 P/L Invertido</h4>';
+          html += '<h5 style="margin: 1rem 0 0.5rem; color: #d32f2f; font-size: 0.95rem;">🏆 Top 5 - Maior Lucro</h5>';
+          html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;"><thead style="background: #d32f2f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px;">Filtros</th><th style="border: 1px solid #ddd; padding: 6px;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px;">Lucro</th><th style="border: 1px solid #ddd; padding: 6px;">ROI</th></tr></thead><tbody>';
+          topProfitI.forEach((r, i) => {
+            const pColor = r.profitI >= 0 ? '#2e7d32' : '#d32f2f';
+            const rColor = r.roiI >= 0 ? '#2e7d32' : '#d32f2f';
+            html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-size: 0.75rem;">${r.label}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${r.qtd}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${pColor}; font-weight: 600;">R$ ${r.profitI.toFixed(2).replace('.', ',')}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${rColor}; font-weight: 600;">${r.roiI}%</td></tr>`;
+          });
+          html += '</tbody></table>';
+      
+          html += '<h5 style="margin: 1rem 0 0.5rem; color: #d32f2f; font-size: 0.95rem;">🎯 Top 5 - Melhor ROI</h5>';
+          html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;"><thead style="background: #d32f2f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px;">Filtros</th><th style="border: 1px solid #ddd; padding: 6px;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px;">Lucro</th><th style="border: 1px solid #ddd; padding: 6px;">ROI</th></tr></thead><tbody>';
+          topROII.forEach((r, i) => {
+            const pColor = r.profitI >= 0 ? '#2e7d32' : '#d32f2f';
+            const rColor = r.roiI >= 0 ? '#2e7d32' : '#d32f2f';
+            html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-size: 0.75rem;">${r.label}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${r.qtd}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${pColor}; font-weight: 600;">R$ ${r.profitI.toFixed(2).replace('.', ',')}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${rColor}; font-weight: 600;">${r.roiI}%</td></tr>`;
+          });
+          html += '</tbody></table></div>';
+      
+          html += '</div>';
+          container.innerHTML = html;
+        }
     }
 
     // Limpar todas as entradas
@@ -1359,6 +1510,18 @@
 
     document.getElementById('btn-analyze-patterns').addEventListener('click', () => {
       analyzePatterns();
+        document.getElementById('btn-toggle-filters-analysis').addEventListener('click', () => {
+          const container = document.getElementById('filter-analysis-container');
+          const btn = document.getElementById('btn-toggle-filters-analysis');
+          const isVisible = container.style.display !== 'none';
+          container.style.display = isVisible ? 'none' : 'block';
+          btn.textContent = isVisible ? '📊 Mostrar Análise' : '📊 Ocultar Análise';
+        });
+
+        document.getElementById('btn-analyze-filter-combinations').addEventListener('click', () => {
+          analyzeFilterCombinations();
+        });
+
     });
 
     document.getElementById('btn-clear-all').addEventListener('click', () => {
