@@ -781,7 +781,8 @@ async function init(){
       if (!h || !a) return false;
       const hl = (h.league||'').toLowerCase();
       const al = (a.league||'').toLowerCase();
-      return leagueNames.has(hl) && leagueNames.has(al);
+      // Validar: (1) ambas as ligas estão salvas, (2) são a mesma liga
+      return hl && al && hl === al && leagueNames.has(hl);
     });
     const toShow = filtered; // Mostrar apenas jogos das ligas salvas
     console.log(`Filtered to ${toShow.length} fixtures (after filtering by known clubs/leagues)`);
