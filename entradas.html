@@ -806,7 +806,6 @@
       const roiNormal = totalApostado > 0 ? ((totalResultadoNormal / totalApostado) * 100) : 0;
       const roiInvertido = totalApostado > 0 ? ((totalResultadoInvertido / totalApostado) * 100) : 0;
 
-      document.getElementById('stat-total').textContent = total;
       document.getElementById('stat-total-apostado').textContent = `R$ ${totalApostado.toFixed(2).replace('.', ',')}`;
 
       const resultadoNormalFormatado = totalResultadoNormal.toFixed(2).replace('.', ',');
@@ -819,7 +818,7 @@
       roiElement.className = roiNormal >= 0 ? 'positive' : 'negative';
 
       // Estatísticas P/L Invertido (Direita)
-      document.getElementById('stat-total-inv').textContent = total;
+      document.getElementById('stat-total-inv').textContent = totalComPlacar;
       document.getElementById('stat-total-apostado-inv').textContent = `R$ ${totalApostado.toFixed(2).replace('.', ',')}`;
 
       const resultadoInvertidoFormatado = totalResultadoInvertido.toFixed(2).replace('.', ',');
