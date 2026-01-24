@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entradas — ELO Rating</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    main { zoom: 1.1; margin: 0 !important; padding: 0 2px !important; max-width: none !important; width: 100% !important; }
+    .entradas-container { width: 100%; max-width: 100%; margin: 0.3rem 0; padding: 0 2px; }
+    .entradas-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.7rem; }
+    .entradas-table thead { background: #0b6e4f; color: white; position: sticky; top: 0; }
+    .entradas-table th, .entradas-table td { border: 1px solid #ddd; padding: 4px 2px; text-align: center; overflow: hidden; }
+    .entradas-table th { font-weight: 600; font-size: 10px; }
+    .entradas-table tr:nth-child(even) { background: #f9f9f9; }
+    .entradas-table tr:hover { background: #e8f5f1; }
+    .entradas-table input { width: 100%; padding: 3px; font-size: 11px; border: 1px solid #ccc; border-radius: 2px; }
+    .entradas-table input:focus { outline: none; border-color: #0b6e4f; background: #fffacd; }
+    .btn-delete { padding: 3px 8px; background: #d32f2f; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; }
+    .btn-delete:hover { background: #b71c1c; }
+    .btn-clear-all { padding: 8px 15px; background: #d32f2f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; margin: 1rem 0; }
+    .btn-clear-all:hover { background: #b71c1c; }
+    .stats { display: flex; gap: 2rem; margin: 1rem 0; font-weight: 600; font-size: 1rem; }
+    .stat-item { display: flex; flex-direction: column; gap: 4px; }
+    .stat-label { font-size: 0.9rem; color: #666; }
+    .stat-value { font-size: 1.2rem; }
+    .positive { color: #2e7d32; }
+    .negative { color: #d32f2f; }
+    .neutral { color: #666; }
+    .entradas-title { margin: 0 0 1rem 0; font-size: 1.5rem; color: #0b6e4f; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site header-inner">
+      <a href="/" class="site-logo" style="margin-right: auto;">ELO Rating</a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="fixtures.html">Próxima Rodada</a>
+        <a href="ranking.html">Ranking</a>
+        <a href="predictions.html">Previsões</a>
+        <a href="entradas.html">Entradas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="entradas-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h1 class="entradas-title" style="margin: 0;">📊 Entradas — Registro de Apostas</h1>
+        <button id="btn-toggle-stats" style="padding: 8px 15px; background: #0b6e4f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📊 Ocultar Análises</button>
+      </div>
+      
+      <div id="stats-container" style="display: flex; gap: 2rem; justify-content: space-between; margin-bottom: 1rem;">
+        <!-- Estatísticas P/L (R$) - Esquerda -->
+        <div style="flex: 1;">
+          <h3 style="margin: 0 0 0.5rem 0; color: #0b6e4f; font-size: 1.1rem;">📈 P/L Normal (R$)</h3>
+          <div class="stats" style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div class="stat-item">
+              <span class="stat-label">Total de Entradas:</span>
+              <span class="stat-value" id="stat-total">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Total Apostado (R$):</span>
+              <span class="stat-value" id="stat-total-apostado">R$ 0,00</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Resultado P/L (R$):</span>
+              <span class="stat-value" id="stat-resultado">R$ 0,00</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">ROI (%):</span>
+              <span class="stat-value" id="stat-roi">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estatísticas P/L(inv) - Direita -->
+        <div style="flex: 1;">
+          <h3 style="margin: 0 0 0.5rem 0; color: #d32f2f; font-size: 1.1rem;">📉 P/L Invertido</h3>
+          <div class="stats" style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div class="stat-item">
+              <span class="stat-label">Total de Entradas:</span>
+              <span class="stat-value" id="stat-total-inv">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Total Apostado (R$):</span>
+              <span class="stat-value" id="stat-total-apostado-inv">R$ 0,00</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Resultado P/L(inv):</span>
+              <span class="stat-value" id="stat-resultado-inv">R$ 0,00</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">ROI (%):</span>
+              <span class="stat-value" id="stat-roi-inv">0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; margin-bottom: 1rem;">
+        <h2 style="margin: 0; color: #0b6e4f; font-size: 1rem;">📊 Análise por Faixa de Odds</h2>
+        <button id="btn-toggle-odds" style="padding: 8px 15px; background: #0b6e4f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📊 Ocultar Tabelas</button>
+      </div>
+
+      <!-- Tabelas de Análise por Faixa de Odds -->
+      <div id="odds-container" style="display: flex; gap: 2rem; justify-content: space-between; margin: 2rem 0;">
+        <!-- Análise P/L Normal por Faixa de Odds -->
+        <div style="flex: 1;">
+          <h3 style="margin: 0 0 0.5rem 0; color: #0b6e4f; font-size: 1rem;">📊 Análise por Faixa de Odds - P/L Normal</h3>
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;">
+            <thead style="background: #0b6e4f; color: white;">
+              <tr>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Faixa</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Qtd</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Apostado</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Resultado</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">ROI %</th>
+              </tr>
+            </thead>
+            <tbody id="faixa-odds-normal">
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Análise P/L Invertido por Faixa de Odds -->
+        <div style="flex: 1;">
+          <h3 style="margin: 0 0 0.5rem 0; color: #d32f2f; font-size: 1rem;">📊 Análise por Faixa de Odds - P/L Invertido</h3>
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;">
+            <thead style="background: #d32f2f; color: white;">
+              <tr>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Faixa</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Qtd</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Apostado</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">Resultado</th>
+                <th style="border: 1px solid #ddd; padding: 5px; text-align: center;">ROI %</th>
+              </tr>
+            </thead>
+            <tbody id="faixa-odds-inv">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Análise Inteligente de Padrões -->
+    <div style="margin: 2rem 0;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h2 style="margin: 0; color: #0b6e4f; font-size: 1.2rem;">🤖 Análise Inteligente de Padrões</h2>
+        <div style="display: flex; gap: 0.5rem;">
+          <button id="btn-toggle-patterns" style="padding: 8px 15px; background: #0b6e4f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📊 Ocultar Análise</button>
+          <button id="btn-analyze-patterns" style="padding: 8px 15px; background: #0b6e4f; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">🔍 Analisar Padrões</button>
+        </div>
+      </div>
+      <div id="pattern-analysis-container" style="display: none; background: #f5f5f5; padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+        <div id="pattern-results"></div>
+      </div>
+    </div>
+
+    <button class="btn-clear-all" id="btn-clear-all">🗑️ Limpar Todas as Entradas</button>
+
+      <div style="overflow-x: auto;">
+        <table class="entradas-table">
+          <thead>
+            <tr>
+              <th style="width: 70px;">Data</th>
+              <th style="width: 70px; position: relative;">
+                ELO H
+                <div style="display: flex; gap: 3px; margin-top: 3px; justify-content: center;">
+                  <button id="btn-filter-up-h" onclick="setEloFilterHome('▲')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 12px; opacity: 0.4; transition: opacity 0.2s;">▲</button>
+                  <button id="btn-filter-neutral-h" onclick="setEloFilterHome('●')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 12px; opacity: 0.4; transition: opacity 0.2s;">●</button>
+                  <button id="btn-filter-down-h" onclick="setEloFilterHome('▼')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 12px; opacity: 0.4; transition: opacity 0.2s;">▼</button>
+                </div>
+              </th>
+              <th style="width: 110px;">Mandante</th>
+              <th style="width: 110px;">Visitante</th>
+              <th style="width: 70px; position: relative;">
+                ELO A
+                <div style="display: flex; gap: 3px; margin-top: 3px; justify-content: center;">
+                  <button id="btn-filter-up-a" onclick="setEloFilterAway('▲')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 12px; opacity: 0.4; transition: opacity 0.2s;">▲</button>
+                  <button id="btn-filter-neutral-a" onclick="setEloFilterAway('●')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 12px; opacity: 0.4; transition: opacity 0.2s;">●</button>
+                  <button id="btn-filter-down-a" onclick="setEloFilterAway('▼')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 12px; opacity: 0.4; transition: opacity 0.2s;">▼</button>
+                </div>
+              </th>
+              <th style="width: 65px; position: relative;">
+                Odd_H
+                <select id="filter-odds-h" multiple onchange="updateOddFilters()" style="width: 100%; padding: 3px; font-size: 11px; margin-top: 3px; cursor: pointer;">
+                  <option value="1,00-1,25">1,00-1,25</option>
+                  <option value="1,25-1,43">1,25-1,43</option>
+                  <option value="1,47-1,67">1,47-1,67</option>
+                  <option value="1,67-2,00">1,67-2,00</option>
+                  <option value="2,00-2,50">2,00-2,50</option>
+                  <option value="2,50-3,33">2,50-3,33</option>
+                  <option value="3,33-5,00">3,33-5,00</option>
+                  <option value="5,00+">5,00+</option>
+                </select>
+              </th>
+              <th style="width: 40px;">Odd_D</th>
+              <th style="width: 65px; position: relative;">
+                Odd_A
+                <select id="filter-odds-a" multiple onchange="updateOddFilters()" style="width: 100%; padding: 3px; font-size: 11px; margin-top: 3px; cursor: pointer;">
+                  <option value="1,00-1,25">1,00-1,25</option>
+                  <option value="1,25-1,43">1,25-1,43</option>
+                  <option value="1,47-1,67">1,47-1,67</option>
+                  <option value="1,67-2,00">1,67-2,00</option>
+                  <option value="2,00-2,50">2,00-2,50</option>
+                  <option value="2,50-3,33">2,50-3,33</option>
+                  <option value="3,33-5,00">3,33-5,00</option>
+                  <option value="5,00+">5,00+</option>
+                </select>
+              </th>
+              <th style="width: 40px; position: relative;" title="Diferença CGH - CGA">
+                Dif_CG
+                <div style="display: flex; gap: 3px; margin-top: 3px; justify-content: center;">
+                  <button id="btn-filter-difcg-neg" onclick="setDiffCgFilter('-')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s;" title="CG- (Menor custo para mandante)">-</button>
+                  <button id="btn-filter-difcg-zero" onclick="setDiffCgFilter('0')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s;" title="CG0 (Igual)">0</button>
+                  <button id="btn-filter-difcg-pos" onclick="setDiffCgFilter('+')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s;" title="CG+ (Maior custo para mandante)">+</button>
+                </div>
+              </th>
+              <th style="width: 40px; position: relative;" title="Diferença VGH - VGA">
+                Dif_VG
+                <div style="display: flex; gap: 3px; margin-top: 3px; justify-content: center;">
+                  <button id="btn-filter-difvg-neg" onclick="setDiffVgFilter('-')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s;" title="VG- (Menor valor para mandante)">-</button>
+                  <button id="btn-filter-difvg-zero" onclick="setDiffVgFilter('0')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s;" title="VG0 (Igual)">0</button>
+                  <button id="btn-filter-difvg-pos" onclick="setDiffVgFilter('+')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s;" title="VG+ (Maior valor para mandante)">+</button>
+                </div>
+              </th>
+              <th style="width: 45px;">CASA</th>
+              <th style="width: 45px;">FORA</th>
+              <th style="width: 35px;">GH</th>
+              <th style="width: 35px;">GA</th>
+              <th style="width: 60px; position: relative;">
+                Back
+                <div style="display: flex; gap: 3px; margin-top: 3px; justify-content: center;">
+                  <button id="btn-filter-back-home" onclick="setBackFilter('Home')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s; font-weight: 600;">H</button>
+                  <button id="btn-filter-back-away" onclick="setBackFilter('Away')" style="padding: 2px 5px; background: white; border: 1px solid #0b6e4f; border-radius: 3px; cursor: pointer; font-size: 11px; opacity: 0.4; transition: opacity 0.2s; font-weight: 600;">A</button>
+                </div>
+              </th>
+              <th style="width: 65px;">P/L (R$)</th>
+              <th style="width: 55px;">P/L(inv)</th>
+              <th style="width: 50px;">Ação</th>
+            </tr>
+          </thead>
+          <tbody id="entradas-tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Carregar entradas do localStorage
+    function loadEntradas() {
+      try {
+        const data = localStorage.getItem('entradas');
+        return data ? JSON.parse(data) : [];
+      } catch (e) {
+        console.error('Erro ao carregar entradas:', e);
+        return [];
+      }
+    }
+
+    // Salvar entradas no localStorage
+    function saveEntradas(entradas) {
+      try {
+        localStorage.setItem('entradas', JSON.stringify(entradas));
+        updateStats();
+      } catch (e) {
+        console.error('Erro ao salvar entradas:', e);
+      }
+    }
+
+    // Função para preencher Dif_CG e Dif_VG nas entradas existentes (executar apenas uma vez)
+    function preencherDifCGeDifVG() {
+      const entradas = loadEntradas();
+      let modified = false;
+      entradas.forEach(entrada => {
+        // Se a entrada não tem cgh, cga, vgh ou vga definidos, adicionar como undefined
+        if (entrada.cgh === undefined) { entrada.cgh = undefined; modified = true; }
+        if (entrada.cga === undefined) { entrada.cga = undefined; modified = true; }
+        if (entrada.vgh === undefined) { entrada.vgh = undefined; modified = true; }
+        if (entrada.vga === undefined) { entrada.vga = undefined; modified = true; }
+      });
+      if (modified) {
+        saveEntradas(entradas);
+        console.log('✅ Propriedades Dif_CG e Dif_VG adicionadas às entradas existentes.');
+        alert('✅ Propriedades atualizadas! As novas entradas mostrarão Dif_CG e Dif_VG.');
+      } else {
+        console.log('ℹ️ Todas as entradas já possuem as propriedades.');
+        alert('ℹ️ Todas as entradas já estão atualizadas.');
+      }
+    }
+
+    // Sincroniza Dif_CG/Dif_VG usando fixtures_cache (gerado em fixtures.html)
+    function syncWithFixturesCache() {
+      let cache = [];
+      try {
+        cache = JSON.parse(localStorage.getItem('fixtures_cache') || '[]');
+      } catch (e) {
+        console.warn('Não foi possível ler fixtures_cache:', e);
+      }
+      if (!Array.isArray(cache) || cache.length === 0) return;
+
+      const norm = (s) => (s || '').toString().normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().trim();
+      const entradas = loadEntradas();
+      let modified = false;
+
+      entradas.forEach(ent => {
+        if (Number.isFinite(ent.cgh) && Number.isFinite(ent.cga) && Number.isFinite(ent.vgh) && Number.isFinite(ent.vga)) {
+          return; // já preenchido
+        }
+        const match = cache.find(c => {
+          const dtC = parseDatePtBr(c.date);
+          const dtE = parseDatePtBr(ent.data);
+          const sameDate = dtC && dtE && dtC.getFullYear() === dtE.getFullYear() && dtC.getMonth() === dtE.getMonth() && dtC.getDate() === dtE.getDate();
+          return sameDate && norm(c.home) === norm(ent.mandante) && norm(c.away) === norm(ent.visitante);
+        });
+        if (match) {
+          ent.cgh = match.cgh;
+          ent.cga = match.cga;
+          ent.vgh = match.vgh;
+          ent.vga = match.vga;
+          modified = true;
+        }
+      });
+
+      if (modified) {
+        saveEntradas(entradas);
+        console.log('✅ Entradas sincronizadas com fixtures_cache');
+      }
+    }
+
+    function parseDatePtBr(s) {
+      if (!s) return null;
+      const parts = s.split(/[\/\-]/).map(Number);
+      if (parts.length !== 3 || parts.some(isNaN)) return null;
+      const [d, m, y] = parts;
+      const year = y < 100 ? 2000 + y : y;
+      return new Date(year, m - 1, d);
+    }
+
+    async function syncDifFromMatchesFull() {
+      let clubs = [];
+      let matches = [];
+      try {
+        clubs = await fetch('data/clubs.json').then(r => r.json());
+        matches = await fetch('data/matches_full.json').then(r => r.json());
+      } catch (e) {
+        console.warn('Falha ao carregar matches_full.json ou clubs.json', e);
+        return;
+      }
+
+      const clubMap = new Map();
+      clubs.forEach(c => {
+        if (c && c.id !== undefined && c.name) {
+          clubMap.set(String(c.id), c.name);
+        }
+      });
+
+      const keyFrom = (dateIso, homeId, awayId) => {
+        const homeName = clubMap.get(String(homeId)) || '';
+        const awayName = clubMap.get(String(awayId)) || '';
+        const norm = (s) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().trim();
+        return `${dateIso}|${norm(homeName)}|${norm(awayName)}`;
+      };
+
+      const matchesMap = new Map();
+      matches.forEach(m => {
+        if (!m || !m.date || m.home === undefined || m.away === undefined) return;
+        const dateIso = m.date.slice(0, 10);
+        const key = keyFrom(dateIso, m.home, m.away);
+        matchesMap.set(key, m);
+      });
+
+      const entradas = loadEntradas();
+      let modified = false;
+      const norm = (s) => (s || '').toString().normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().trim();
+
+      entradas.forEach(ent => {
+        const dt = parseDatePtBr(ent.data);
+        if (!dt) return;
+        const iso = dt.toISOString().slice(0, 10);
+        const key = `${iso}|${norm(ent.mandante)}|${norm(ent.visitante)}`;
+        const m = matchesMap.get(key);
+        if (!m) return;
+        const cgh = Number(m.homeGoalCost);
+        const cga = Number(m.awayGoalCost);
+        const vgh = Number(m.homeGoalValue);
+        const vga = Number(m.awayGoalValue);
+        if (Number.isFinite(cgh)) { ent.cgh = cgh; modified = true; }
+        if (Number.isFinite(cga)) { ent.cga = cga; modified = true; }
+        if (Number.isFinite(vgh)) { ent.vgh = vgh; modified = true; }
+        if (Number.isFinite(vga)) { ent.vga = vga; modified = true; }
+      });
+
+      if (modified) {
+        saveEntradas(entradas);
+        console.log('✅ Diferenças sincronizadas direto do matches_full.json para 17-21/01/2026');
+      }
+    }
+
+    function parseDatePtBr(s) {
+      if (!s) return null;
+      const parts = s.split(/[\/\-]/).map(Number);
+      if (parts.length !== 3 || parts.some(isNaN)) return null;
+      const [d, m, y] = parts;
+      const year = y < 100 ? 2000 + y : y;
+      return new Date(year, m - 1, d);
+    }
+
+    // Calcula e grava difs para partidas entre 17/01/2026 e 21/01/2026
+    function atualizarDifPeriodo() {
+      const inicio = new Date(2026, 0, 17); // 17/01/2026
+      const fim = new Date(2026, 0, 21);    // 21/01/2026
+      const entradas = loadEntradas();
+      let modified = false;
+      entradas.forEach(ent => {
+        const dt = parseDatePtBr(ent.data);
+        if (!dt || dt < inicio || dt > fim) return;
+        const hasCG = Number.isFinite(ent.cgh) && Number.isFinite(ent.cga);
+        const hasVG = Number.isFinite(ent.vgh) && Number.isFinite(ent.vga);
+        if (hasCG) ent.difCG = Number(ent.cgh) - Number(ent.cga);
+        if (hasVG) ent.difVG = Number(ent.vgh) - Number(ent.vga);
+        if (hasCG || hasVG) modified = true;
+      });
+      if (modified) {
+        saveEntradas(entradas);
+        console.log('✅ Dif_CG/Dif_VG calculadas para 17/01/2026 a 21/01/2026');
+      }
+    }
+
+    // Definir faixas de odds padrão
+    const oddRanges = [
+      { label: '1,00-1,25', min: 1.00, max: 1.25 },
+      { label: '1,25-1,43', min: 1.25, max: 1.43 },
+      { label: '1,47-1,67', min: 1.47, max: 1.67 },
+      { label: '1,67-2,00', min: 1.67, max: 2.00 },
+      { label: '2,00-2,50', min: 2.00, max: 2.50 },
+      { label: '2,50-3,33', min: 2.50, max: 3.33 },
+      { label: '3,33-5,00', min: 3.33, max: 5.00 },
+      { label: '5,00+', min: 5.00, max: Infinity }
+    ];
+
+    function getOddRange(odd) {
+      const oddNum = parseFloat(odd);
+      if (isNaN(oddNum)) return null;
+      const range = oddRanges.find(r => oddNum >= r.min && oddNum <= r.max);
+      return range ? range.label : null;
+    }
+
+    // Filtros de ELO (▲ = >10% acima média, ▼ = >10% abaixo média, ● = ±10% da média)
+    let eloFilterHome = null; // '▲', '▼', '●', ou null (sem filtro)
+    let eloFilterAway = null; // '▲', '▼', '●', ou null (sem filtro)
+    
+    // Filtro de Back (Home, Away, ou null)
+    let backFilter = null; // 'Home', 'Away', ou null (sem filtro)
+
+    // Filtros de Odds (arrays de faixas selecionadas)
+    let oddFilterH = []; // Array com faixas de Odd_H selecionadas
+    let oddFilterA = []; // Array com faixas de Odd_A selecionadas
+
+    // Filtros de Diferenças (CG/VG): '-', '0', '+', ou null
+    let diffCgFilter = null;
+    let diffVgFilter = null;
+
+    function updateOddFilters() {
+      const selectH = document.getElementById('filter-odds-h');
+      const selectA = document.getElementById('filter-odds-a');
+      
+      if (selectH) {
+        oddFilterH = Array.from(selectH.selectedOptions).map(opt => opt.value);
+      }
+      if (selectA) {
+        oddFilterA = Array.from(selectA.selectedOptions).map(opt => opt.value);
+      }
+      
+      updateOddsRangeAnalysis();
+    }
+
+    function setEloFilterHome(symbol) {
+      if (eloFilterHome === symbol) {
+        eloFilterHome = null; // Desativar filtro se clicar novamente
+      } else {
+        eloFilterHome = symbol;
+      }
+      updateFilterButtons();
+      updateOddsRangeAnalysis();
+    }
+
+    function setEloFilterAway(symbol) {
+      if (eloFilterAway === symbol) {
+        eloFilterAway = null; // Desativar filtro se clicar novamente
+      } else {
+        eloFilterAway = symbol;
+      }
+      updateFilterButtons();
+      updateOddsRangeAnalysis();
+    }
+
+    function setDiffCgFilter(symbol) {
+      if (diffCgFilter === symbol) {
+        diffCgFilter = null;
+      } else {
+        diffCgFilter = symbol;
+      }
+      updateFilterButtons();
+      updateOddsRangeAnalysis();
+    }
+
+    function setDiffVgFilter(symbol) {
+      if (diffVgFilter === symbol) {
+        diffVgFilter = null;
+      } else {
+        diffVgFilter = symbol;
+      }
+      updateFilterButtons();
+      updateOddsRangeAnalysis();
+    }
+
+    function updateFilterButtons() {
+      // Botões Home
+      const btnUpH = document.getElementById('btn-filter-up-h');
+      const btnNeutralH = document.getElementById('btn-filter-neutral-h');
+      const btnDownH = document.getElementById('btn-filter-down-h');
+      
+      if (btnUpH) btnUpH.style.opacity = eloFilterHome === '▲' ? '1' : '0.4';
+      if (btnNeutralH) btnNeutralH.style.opacity = eloFilterHome === '●' ? '1' : '0.4';
+      if (btnDownH) btnDownH.style.opacity = eloFilterHome === '▼' ? '1' : '0.4';
+
+      // Botões Away
+      const btnUpA = document.getElementById('btn-filter-up-a');
+      const btnNeutralA = document.getElementById('btn-filter-neutral-a');
+      const btnDownA = document.getElementById('btn-filter-down-a');
+      
+      if (btnUpA) btnUpA.style.opacity = eloFilterAway === '▲' ? '1' : '0.4';
+      if (btnNeutralA) btnNeutralA.style.opacity = eloFilterAway === '●' ? '1' : '0.4';
+      if (btnDownA) btnDownA.style.opacity = eloFilterAway === '▼' ? '1' : '0.4';
+
+      // Botões Back
+      const btnBackHome = document.getElementById('btn-filter-back-home');
+      const btnBackAway = document.getElementById('btn-filter-back-away');
+      
+      if (btnBackHome) btnBackHome.style.opacity = backFilter === 'Home' ? '1' : '0.4';
+      if (btnBackAway) btnBackAway.style.opacity = backFilter === 'Away' ? '1' : '0.4';
+
+      // Botões Dif_CG
+      const btnDiffCgNeg = document.getElementById('btn-filter-difcg-neg');
+      const btnDiffCgZero = document.getElementById('btn-filter-difcg-zero');
+      const btnDiffCgPos = document.getElementById('btn-filter-difcg-pos');
+      if (btnDiffCgNeg) btnDiffCgNeg.style.opacity = diffCgFilter === '-' ? '1' : '0.4';
+      if (btnDiffCgZero) btnDiffCgZero.style.opacity = diffCgFilter === '0' ? '1' : '0.4';
+      if (btnDiffCgPos) btnDiffCgPos.style.opacity = diffCgFilter === '+' ? '1' : '0.4';
+
+      // Botões Dif_VG
+      const btnDiffVgNeg = document.getElementById('btn-filter-difvg-neg');
+      const btnDiffVgZero = document.getElementById('btn-filter-difvg-zero');
+      const btnDiffVgPos = document.getElementById('btn-filter-difvg-pos');
+      if (btnDiffVgNeg) btnDiffVgNeg.style.opacity = diffVgFilter === '-' ? '1' : '0.4';
+      if (btnDiffVgZero) btnDiffVgZero.style.opacity = diffVgFilter === '0' ? '1' : '0.4';
+      if (btnDiffVgPos) btnDiffVgPos.style.opacity = diffVgFilter === '+' ? '1' : '0.4';
+    }
+
+    function setBackFilter(direction) {
+      if (backFilter === direction) {
+        backFilter = null; // Desativar filtro se clicar novamente
+      } else {
+        backFilter = direction;
+      }
+      updateFilterButtons();
+      updateOddsRangeAnalysis();
+    }
+
+    function getEloSymbol(eloString) {
+      if (!eloString) return null;
+      const str = String(eloString);
+      if (str.includes('▲')) return '▲';
+      if (str.includes('▼')) return '▼';
+      if (str.includes('●')) return '●';
+      return null;
+    }
+
+    function applyEloFilter(entrada) {
+      // Se não tem filtro ativo, passa tudo
+      if (!eloFilterHome && !eloFilterAway && !backFilter && oddFilterH.length === 0 && oddFilterA.length === 0 && !diffCgFilter && !diffVgFilter) return true;
+
+      const symbolH = getEloSymbol(entrada.eloH);
+      const symbolA = getEloSymbol(entrada.eloA);
+
+      // Se tem filtro Home ativo, verifica
+      if (eloFilterHome && symbolH !== eloFilterHome) return false;
+      
+      // Se tem filtro Away ativo, verifica
+      if (eloFilterAway && symbolA !== eloFilterAway) return false;
+
+      // Se tem filtro Back ativo, verifica
+      if (backFilter && entrada.back !== backFilter) return false;
+
+      // Se tem filtro Dif_CG ativo, verifica
+      if (diffCgFilter) {
+        const cgh = Number(entrada.cgh);
+        const cga = Number(entrada.cga);
+        if (Number.isFinite(cgh) && Number.isFinite(cga)) {
+          const dif = cgh - cga;
+          const sym = dif < 0 ? '-' : dif > 0 ? '+' : '0';
+          if (sym !== diffCgFilter) return false;
+        } else {
+          return false; // sem dados, não passa no filtro
+        }
+      }
+
+      // Se tem filtro Dif_VG ativo, verifica
+      if (diffVgFilter) {
+        const vgh = Number(entrada.vgh);
+        const vga = Number(entrada.vga);
+        if (Number.isFinite(vgh) && Number.isFinite(vga)) {
+          const dif = vgh - vga;
+          const sym = dif < 0 ? '-' : dif > 0 ? '+' : '0';
+          if (sym !== diffVgFilter) return false;
+        } else {
+          return false; // sem dados, não passa no filtro
+        }
+      }
+
+      // Se tem filtro Odd_H ativo, verifica
+      if (oddFilterH.length > 0) {
+        const rangeH = getOddRange(entrada.oddH);
+        if (!oddFilterH.includes(rangeH)) return false;
+      }
+
+      // Se tem filtro Odd_A ativo, verifica
+      if (oddFilterA.length > 0) {
+        const rangeA = getOddRange(entrada.oddA);
+        if (!oddFilterA.includes(rangeA)) return false;
+      }
+
+      return true;
+    }
+
+    // Calcular P/L (Back normal)
+    function calcularPLNormal(back, gh, ga, oddH, oddA) {
+      gh = parseFloat(gh) || 0;
+      ga = parseFloat(ga) || 0;
+      oddH = parseFloat(oddH) || 0;
+      oddA = parseFloat(oddA) || 0;
+
+      if (!back || (gh === 0 && ga === 0)) return 0;
+
+      if (back === 'Home') {
+        return gh > ga ? (oddH - 1) : -1;
+      } else if (back === 'Away') {
+        return gh < ga ? (oddA - 1) : -1;
+      }
+      return 0;
+    }
+
+    // Calcular P/L (Back invertido)
+    function calcularPLInvertido(back, gh, ga, oddH, oddA) {
+      gh = parseFloat(gh) || 0;
+      ga = parseFloat(ga) || 0;
+      oddH = parseFloat(oddH) || 0;
+      oddA = parseFloat(oddA) || 0;
+
+      if (!back || (gh === 0 && ga === 0)) return 0;
+
+      if (back === 'Home') {
+        return gh < ga ? (oddA - 1) : -1;
+      } else if (back === 'Away') {
+        return gh > ga ? (oddH - 1) : -1;
+      }
+      return 0;
+    }
+
+    // Mudar Back (Home/Away)
+    function toggleBack(idx) {
+      const entradas = loadEntradas();
+      if (idx >= 0 && idx < entradas.length) {
+        const current = entradas[idx].back;
+        entradas[idx].back = current === 'Home' ? 'Away' : 'Home';
+        saveEntradas(entradas);
+        renderTable();
+      }
+    }
+
+    // Renderizar tabela
+    function renderTable() {
+      let entradas = loadEntradas();
+      const tbody = document.getElementById('entradas-tbody');
+      tbody.innerHTML = '';
+
+      // Ordenar entradas por data (mais recentes primeiro)
+      entradas.sort((a, b) => {
+        const dateA = new Date(a.data.split('/').reverse().join('-'));
+        const dateB = new Date(b.data.split('/').reverse().join('-'));
+        return dateB - dateA;
+      });
+
+      // Salvar a ordem ordenada de volta no localStorage
+      saveEntradas(entradas);
+
+      entradas.forEach((entrada, idx) => {
+        const gh = parseFloat(entrada.gh) || 0;
+        const ga = parseFloat(entrada.ga) || 0;
+        const oddH = parseFloat(entrada.oddH) || 0;
+        const oddA = parseFloat(entrada.oddA) || 0;
+
+        const plNormal = calcularPLNormal(entrada.back, gh, ga, oddH, oddA);
+        const plInvertido = calcularPLInvertido(entrada.back, gh, ga, oddH, oddA);
+
+        const plNormalFormatado = plNormal.toFixed(2).replace('.', ',');
+        const plInvertidoFormatado = plInvertido.toFixed(2).replace('.', ',');
+
+        const tr = document.createElement('tr');
+        
+        const numCgh = entrada.cgh !== undefined ? Number(entrada.cgh) : NaN;
+        const numCga = entrada.cga !== undefined ? Number(entrada.cga) : NaN;
+        const numVgh = entrada.vgh !== undefined ? Number(entrada.vgh) : NaN;
+        const numVga = entrada.vga !== undefined ? Number(entrada.vga) : NaN;
+
+        const hasCG = Number.isFinite(numCgh) && Number.isFinite(numCga);
+        const hasVG = Number.isFinite(numVgh) && Number.isFinite(numVga);
+
+        const difCG = hasCG ? (numCgh - numCga).toFixed(2) : '—';
+        const difVG = hasVG ? (numVgh - numVga).toFixed(2) : '—';
+        const difCGColor = hasCG ? (parseFloat(difCG) < 0 ? '#2e7d32' : '#d32f2f') : '#666';
+        const difVGColor = hasVG ? (parseFloat(difVG) > 0 ? '#2e7d32' : '#d32f2f') : '#666';
+
+        tr.innerHTML = `
+          <td>${entrada.data || '—'}</td>
+          <td>${entrada.eloH || '—'}</td>
+          <td style="text-align: left; padding-left: 4px;">${entrada.mandante || '—'}</td>
+          <td style="text-align: left; padding-left: 4px;">${entrada.visitante || '—'}</td>
+          <td>${entrada.eloA || '—'}</td>
+          <td>${entrada.oddH ? parseFloat(entrada.oddH).toFixed(2) : '—'}</td>
+          <td>${entrada.oddD ? parseFloat(entrada.oddD).toFixed(2) : '—'}</td>
+          <td>${entrada.oddA ? parseFloat(entrada.oddA).toFixed(2) : '—'}</td>
+          <td style="color: ${difCGColor}; font-weight: 600;">${difCG}</td>
+          <td style="color: ${difVGColor}; font-weight: 600;">${difVG}</td>
+          <td>${entrada.casa || '—'}</td>
+          <td>${entrada.fora || '—'}</td>
+          <td><input type="number" step="0.1" value="${entrada.gh || ''}" placeholder="0" onchange="updateEntrada(${idx}, 'gh', this.value)"></td>
+          <td><input type="number" step="0.1" value="${entrada.ga || ''}" placeholder="0" onchange="updateEntrada(${idx}, 'ga', this.value)"></td>
+          <td><button onclick="toggleBack(${idx})" style="padding: 5px 10px; background: ${entrada.back === 'Home' ? '#0b6e4f' : '#d32f2f'}; color: white; border: none; border-radius: 3px; cursor: pointer; font-weight: bold; width: 100%;">${entrada.back || 'Back'}</button></td>
+          <td style="color: ${plNormal >= 0 ? '#2e7d32' : '#d32f2f'}; font-weight: 600;">R$ ${plNormalFormatado}</td>
+          <td style="color: ${plInvertido >= 0 ? '#2e7d32' : '#d32f2f'}; font-weight: 600;">R$ ${plInvertidoFormatado}</td>
+          <td><button class="btn-delete" onclick="deleteEntrada(${idx})">Deletar</button></td>
+        `;
+        
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Atualizar entrada individual
+    function updateEntrada(idx, field, value) {
+      const entradas = loadEntradas();
+      if (idx >= 0 && idx < entradas.length) {
+        entradas[idx][field] = value;
+        saveEntradas(entradas);
+        renderTable();
+      }
+    }
+
+    // Deletar entrada
+    function deleteEntrada(idx) {
+      if (confirm('Tem certeza que deseja deletar essa entrada?')) {
+        const entradas = loadEntradas();
+        entradas.splice(idx, 1);
+        saveEntradas(entradas);
+        renderTable();
+      }
+    }
+
+    // Atualizar estatísticas
+    function updateStats() {
+      const entradas = loadEntradas();
+      const total = entradas.length;
+
+      let totalApostado = 0;
+      let totalResultadoNormal = 0;
+      let totalResultadoInvertido = 0;
+
+      entradas.forEach(e => {
+        const gh = parseFloat(e.gh) || 0;
+        const ga = parseFloat(e.ga) || 0;
+        const oddH = parseFloat(e.oddH) || 0;
+        const oddA = parseFloat(e.oddA) || 0;
+
+        const plNormal = calcularPLNormal(e.back, gh, ga, oddH, oddA);
+        const plInvertido = calcularPLInvertido(e.back, gh, ga, oddH, oddA);
+
+        totalResultadoNormal += plNormal;
+        totalResultadoInvertido += plInvertido;
+
+        const oddUsadaNormal = e.back === 'Home' ? oddH : oddA;
+        if (oddUsadaNormal > 0) totalApostado += 1;
+      });
+
+      const roiNormal = totalApostado > 0 ? ((totalResultadoNormal / totalApostado) * 100) : 0;
+      const roiInvertido = totalApostado > 0 ? ((totalResultadoInvertido / totalApostado) * 100) : 0;
+
+      document.getElementById('stat-total').textContent = total;
+      document.getElementById('stat-total-apostado').textContent = `R$ ${totalApostado.toFixed(2).replace('.', ',')}`;
+
+      const resultadoNormalFormatado = totalResultadoNormal.toFixed(2).replace('.', ',');
+      const resultadoElement = document.getElementById('stat-resultado');
+      resultadoElement.textContent = `R$ ${resultadoNormalFormatado}`;
+      resultadoElement.className = totalResultadoNormal >= 0 ? 'positive' : 'negative';
+
+      const roiElement = document.getElementById('stat-roi');
+      roiElement.textContent = `${roiNormal.toFixed(2)}%`;
+      roiElement.className = roiNormal >= 0 ? 'positive' : 'negative';
+
+      // Estatísticas P/L Invertido (Direita)
+      document.getElementById('stat-total-inv').textContent = total;
+      document.getElementById('stat-total-apostado-inv').textContent = `R$ ${totalApostado.toFixed(2).replace('.', ',')}`;
+
+      const resultadoInvertidoFormatado = totalResultadoInvertido.toFixed(2).replace('.', ',');
+      const resultadoInvElement = document.getElementById('stat-resultado-inv');
+      resultadoInvElement.textContent = `R$ ${resultadoInvertidoFormatado}`;
+      resultadoInvElement.className = totalResultadoInvertido >= 0 ? 'positive' : 'negative';
+
+      const roiInvElement = document.getElementById('stat-roi-inv');
+      roiInvElement.textContent = `${roiInvertido.toFixed(2)}%`;
+      roiInvElement.className = roiInvertido >= 0 ? 'positive' : 'negative';
+
+      // Atualizar análise por faixa de odds
+      updateOddsRangeAnalysis();
+    }
+
+    // Atualizar análise por faixa de odds
+    function updateOddsRangeAnalysis() {
+      const entradas = loadEntradas();
+      
+      // Definir faixas de odds
+      const faixas = [
+        { label: '1,00-1,25', min: 1.00, max: 1.25 },
+        { label: '1,25-1,43', min: 1.25, max: 1.43 },
+        { label: '1,47-1,67', min: 1.47, max: 1.67 },
+        { label: '1,67-2,00', min: 1.67, max: 2.00 },
+        { label: '2,00-2,50', min: 2.00, max: 2.50 },
+        { label: '2,50-3,33', min: 2.50, max: 3.33 },
+        { label: '3,33-5,00', min: 3.33, max: 5.00 },
+        { label: '5,00+', min: 5.00, max: Infinity }
+      ];
+      
+      // Inicializar dados para cada faixa
+      const dadosNormal = faixas.map(f => ({ 
+        faixa: f.label, 
+        qtd: 0, 
+        apostado: 0, 
+        resultado: 0 
+      }));
+      
+      const dadosInvertido = faixas.map(f => ({ 
+        faixa: f.label, 
+        qtd: 0, 
+        apostado: 0, 
+        resultado: 0 
+      }));
+      
+      // Processar cada entrada
+      entradas.forEach(e => {
+        // Aplicar filtro de ELO
+        if (!applyEloFilter(e)) return;
+
+        const gh = parseFloat(e.gh) || 0;
+        const ga = parseFloat(e.ga) || 0;
+        const oddH = parseFloat(e.oddH) || 0;
+        const oddA = parseFloat(e.oddA) || 0;
+        
+        // Determinar odd usada para P/L Normal (mesma direção do Back)
+        const oddUsadaNormal = e.back === 'Home' ? oddH : oddA;
+        
+        // Determinar odd usada para P/L Invertido (direção oposta do Back)
+        const oddUsadaInvertida = e.back === 'Home' ? oddA : oddH;
+        
+        if (oddUsadaNormal === 0 || oddUsadaInvertida === 0) return; // Pular se não tem odds válidas
+        
+        // Calcular P/L
+        const plNormal = calcularPLNormal(e.back, gh, ga, oddH, oddA);
+        const plInvertido = calcularPLInvertido(e.back, gh, ga, oddH, oddA);
+        
+        // Encontrar faixa correspondente para Normal
+        const idxFaixaNormal = faixas.findIndex(f => oddUsadaNormal >= f.min && oddUsadaNormal <= f.max);
+        if (idxFaixaNormal !== -1) {
+          dadosNormal[idxFaixaNormal].qtd++;
+          dadosNormal[idxFaixaNormal].apostado += 1;
+          dadosNormal[idxFaixaNormal].resultado += plNormal;
+        }
+        
+        // Encontrar faixa correspondente para Invertido (usa odd inversa)
+        const idxFaixaInvertida = faixas.findIndex(f => oddUsadaInvertida >= f.min && oddUsadaInvertida <= f.max);
+        if (idxFaixaInvertida !== -1) {
+          dadosInvertido[idxFaixaInvertida].qtd++;
+          dadosInvertido[idxFaixaInvertida].apostado += 1;
+          dadosInvertido[idxFaixaInvertida].resultado += plInvertido;
+        }
+      });
+      
+      // Renderizar tabela Normal
+      const tbodyNormal = document.getElementById('faixa-odds-normal');
+      tbodyNormal.innerHTML = '';
+      dadosNormal.forEach(d => {
+        const roi = d.apostado > 0 ? ((d.resultado / d.apostado) * 100).toFixed(2) : 0;
+        const roiColor = roi >= 0 ? '#2e7d32' : '#d32f2f';
+        const resultadoFormatado = d.resultado.toFixed(2).replace('.', ',');
+        
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center; font-weight: 600;">${d.faixa}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center;">${d.qtd}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center;">R$ ${d.apostado.toFixed(2).replace('.', ',')}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center; color: ${roiColor}; font-weight: 600;">R$ ${resultadoFormatado}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center; color: ${roiColor}; font-weight: 600;">${roi}%</td>
+        `;
+        tbodyNormal.appendChild(tr);
+      });
+      
+      // Renderizar tabela Invertido
+      const tbodyInv = document.getElementById('faixa-odds-inv');
+      tbodyInv.innerHTML = '';
+      dadosInvertido.forEach(d => {
+        const roi = d.apostado > 0 ? ((d.resultado / d.apostado) * 100).toFixed(2) : 0;
+        const roiColor = roi >= 0 ? '#2e7d32' : '#d32f2f';
+        const resultadoFormatado = d.resultado.toFixed(2).replace('.', ',');
+        
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center; font-weight: 600;">${d.faixa}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center;">${d.qtd}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center;">R$ ${d.apostado.toFixed(2).replace('.', ',')}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center; color: ${roiColor}; font-weight: 600;">R$ ${resultadoFormatado}</td>
+          <td style="border: 1px solid #ddd; padding: 5px; text-align: center; color: ${roiColor}; font-weight: 600;">${roi}%</td>
+        `;
+        tbodyInv.appendChild(tr);
+      });
+    }
+
+    // Análise Inteligente de Padrões
+    function analyzePatterns() {
+      const entradas = loadEntradas();
+      
+      if (entradas.length < 10) {
+        alert('⚠️ Você precisa de pelo menos 10 entradas para uma análise significativa.');
+        return;
+      }
+
+      const patternsNormal = {
+        byEloSymbolCombination: {},
+        byBackDirection: { Home: { total: 0, wins: 0, profit: 0 }, Away: { total: 0, wins: 0, profit: 0 } },
+        byOddsRange: {},
+        byDiffCombo: {}
+      };
+
+      const patternsInvertido = {
+        byEloSymbolCombination: {},
+        byBackDirection: { Home: { total: 0, wins: 0, profit: 0 }, Away: { total: 0, wins: 0, profit: 0 } },
+        byOddsRange: {},
+        byDiffCombo: {}
+      };
+
+      entradas.forEach(e => {
+        const gh = parseFloat(e.gh) || 0;
+        const ga = parseFloat(e.ga) || 0;
+        const oddH = parseFloat(e.oddH) || 0;
+        const oddA = parseFloat(e.oddA) || 0;
+
+        if (gh === 0 && ga === 0) return; // Pular entradas sem resultado
+
+        const symbolH = getEloSymbol(e.eloH) || '?';
+        const symbolA = getEloSymbol(e.eloA) || '?';
+        const combo = `${symbolH} vs ${symbolA}`;
+
+        const plNormal = calcularPLNormal(e.back, gh, ga, oddH, oddA);
+        const plInvertido = calcularPLInvertido(e.back, gh, ga, oddH, oddA);
+        
+        const isWinNormal = plNormal > 0;
+        const isWinInvertido = plInvertido > 0;
+
+        // ===== ANÁLISE P/L NORMAL =====
+        
+        // Análise por combinação de símbolos ELO
+        if (!patternsNormal.byEloSymbolCombination[combo]) {
+          patternsNormal.byEloSymbolCombination[combo] = { total: 0, wins: 0, profit: 0 };
+        }
+        patternsNormal.byEloSymbolCombination[combo].total++;
+        if (isWinNormal) patternsNormal.byEloSymbolCombination[combo].wins++;
+        patternsNormal.byEloSymbolCombination[combo].profit += plNormal;
+
+        // Análise por direção de Back
+        if (e.back) {
+          patternsNormal.byBackDirection[e.back].total++;
+          if (isWinNormal) patternsNormal.byBackDirection[e.back].wins++;
+          patternsNormal.byBackDirection[e.back].profit += plNormal;
+        }
+
+        // Análise por faixa de odds (Normal usa a odd na direção do Back)
+        const oddUsedNormal = e.back === 'Home' ? oddH : oddA;
+        let rangeKeyNormal = '';
+        if (oddUsedNormal >= 1.00 && oddUsedNormal < 1.50) rangeKeyNormal = '1.00-1.50';
+        else if (oddUsedNormal >= 1.50 && oddUsedNormal < 2.00) rangeKeyNormal = '1.50-2.00';
+        else if (oddUsedNormal >= 2.00 && oddUsedNormal < 3.00) rangeKeyNormal = '2.00-3.00';
+        else if (oddUsedNormal >= 3.00) rangeKeyNormal = '3.00+';
+
+        if (rangeKeyNormal) {
+          if (!patternsNormal.byOddsRange[rangeKeyNormal]) {
+            patternsNormal.byOddsRange[rangeKeyNormal] = { total: 0, wins: 0, profit: 0 };
+          }
+          patternsNormal.byOddsRange[rangeKeyNormal].total++;
+          if (isWinNormal) patternsNormal.byOddsRange[rangeKeyNormal].wins++;
+          patternsNormal.byOddsRange[rangeKeyNormal].profit += plNormal;
+        }
+
+        // ===== ANÁLISE P/L INVERTIDO =====
+        
+        // Análise por combinação de símbolos ELO
+        if (!patternsInvertido.byEloSymbolCombination[combo]) {
+          patternsInvertido.byEloSymbolCombination[combo] = { total: 0, wins: 0, profit: 0 };
+        }
+        patternsInvertido.byEloSymbolCombination[combo].total++;
+        if (isWinInvertido) patternsInvertido.byEloSymbolCombination[combo].wins++;
+        patternsInvertido.byEloSymbolCombination[combo].profit += plInvertido;
+
+        // Análise por direção de Back
+        if (e.back) {
+          patternsInvertido.byBackDirection[e.back].total++;
+          if (isWinInvertido) patternsInvertido.byBackDirection[e.back].wins++;
+          patternsInvertido.byBackDirection[e.back].profit += plInvertido;
+        }
+
+        // Análise por faixa de odds (Invertido usa a odd oposta ao Back)
+        const oddUsedInvertido = e.back === 'Home' ? oddA : oddH;
+        let rangeKeyInvertido = '';
+        if (oddUsedInvertido >= 1.00 && oddUsedInvertido < 1.50) rangeKeyInvertido = '1.00-1.50';
+        else if (oddUsedInvertido >= 1.50 && oddUsedInvertido < 2.00) rangeKeyInvertido = '1.50-2.00';
+        else if (oddUsedInvertido >= 2.00 && oddUsedInvertido < 3.00) rangeKeyInvertido = '2.00-3.00';
+        else if (oddUsedInvertido >= 3.00) rangeKeyInvertido = '3.00+';
+
+        if (rangeKeyInvertido) {
+          if (!patternsInvertido.byOddsRange[rangeKeyInvertido]) {
+            patternsInvertido.byOddsRange[rangeKeyInvertido] = { total: 0, wins: 0, profit: 0 };
+          }
+          patternsInvertido.byOddsRange[rangeKeyInvertido].total++;
+          if (isWinInvertido) patternsInvertido.byOddsRange[rangeKeyInvertido].wins++;
+          patternsInvertido.byOddsRange[rangeKeyInvertido].profit += plInvertido;
+        }
+
+        // ===== ANÁLISE POR DIFERENÇAS CG/VG =====
+        const cgh = Number(e.cgh);
+        const cga = Number(e.cga);
+        const vgh = Number(e.vgh);
+        const vga = Number(e.vga);
+        const hasCG = Number.isFinite(cgh) && Number.isFinite(cga);
+        const hasVG = Number.isFinite(vgh) && Number.isFinite(vga);
+        if (hasCG && hasVG) {
+          const difCG = cgh - cga;
+          const difVG = vgh - vga;
+          const cgLabel = difCG < 0 ? 'CG-' : difCG > 0 ? 'CG+' : 'CG0';
+          const vgLabel = difVG < 0 ? 'VG-' : difVG > 0 ? 'VG+' : 'VG0';
+          const comboKey = `${cgLabel}/${vgLabel}`;
+
+          if (!patternsNormal.byDiffCombo[comboKey]) {
+            patternsNormal.byDiffCombo[comboKey] = { total: 0, wins: 0, profit: 0 };
+          }
+          patternsNormal.byDiffCombo[comboKey].total++;
+          if (isWinNormal) patternsNormal.byDiffCombo[comboKey].wins++;
+          patternsNormal.byDiffCombo[comboKey].profit += plNormal;
+
+          if (!patternsInvertido.byDiffCombo[comboKey]) {
+            patternsInvertido.byDiffCombo[comboKey] = { total: 0, wins: 0, profit: 0 };
+          }
+          patternsInvertido.byDiffCombo[comboKey].total++;
+          if (isWinInvertido) patternsInvertido.byDiffCombo[comboKey].wins++;
+          patternsInvertido.byDiffCombo[comboKey].profit += plInvertido;
+        }
+      });
+
+      // Renderizar análises
+      renderPatternAnalysis(patternsNormal, patternsInvertido);
+    }
+
+    function renderPatternAnalysis(patternsNormal, patternsInvertido) {
+      const container = document.getElementById('pattern-results');
+      const analysisContainer = document.getElementById('pattern-analysis-container');
+      analysisContainer.style.display = 'block';
+
+      let html = '<h3 style="margin-top: 0; color: #0b6e4f;">🎯 Padrões Identificados</h3>';
+      
+      html += '<div style="display: flex; gap: 2rem; margin-bottom: 2rem;">';
+      
+      // ===== COLUNA ESQUERDA: P/L NORMAL =====
+      html += '<div style="flex: 1;">';
+      html += '<h3 style="color: #0b6e4f; margin-top: 0; border-bottom: 2px solid #0b6e4f; padding-bottom: 0.5rem;">📈 P/L Normal</h3>';
+
+      // Melhores combinações de ELO - Normal
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #0b6e4f; margin-bottom: 0.5rem; font-size: 0.95rem;">🔥 Top Combinações ELO</h4>';
+      const eloRankedNormal = Object.entries(patternsNormal.byEloSymbolCombination)
+        .filter(([_, data]) => data.total >= 3)
+        .map(([combo, data]) => ({
+          combo,
+          winRate: ((data.wins / data.total) * 100).toFixed(1),
+          roi: ((data.profit / data.total) * 100).toFixed(1),
+          total: data.total,
+          profit: data.profit.toFixed(2)
+        }))
+        .sort((a, b) => parseFloat(b.roi) - parseFloat(a.roi))
+        .slice(0, 3);
+
+      if (eloRankedNormal.length > 0) {
+        html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #0b6e4f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Combinação</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+        eloRankedNormal.forEach(item => {
+          const roiColor = parseFloat(item.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${item.combo}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${item.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${item.roi}%</td></tr>`;
+        });
+        html += '</tbody></table>';
+      } else {
+        html += '<p style="color: #666; font-size: 0.85rem;">Dados insuficientes.</p>';
+      }
+      html += '</div>';
+
+      // Análise por Back Direction - Normal
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #0b6e4f; margin-bottom: 0.5rem; font-size: 0.95rem;">🎲 Por Back</h4>';
+      html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #0b6e4f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Back</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+      
+      ['Home', 'Away'].forEach(back => {
+        const data = patternsNormal.byBackDirection[back];
+        if (data.total > 0) {
+          const roi = ((data.profit / data.total) * 100).toFixed(1);
+          const roiColor = parseFloat(roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${back}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${data.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${roi}%</td></tr>`;
+        }
+      });
+      html += '</tbody></table></div>';
+
+      // Melhores faixas de odds - Normal
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #0b6e4f; margin-bottom: 0.5rem; font-size: 0.95rem;">📊 Por Faixa Odds</h4>';
+      const oddsRankedNormal = Object.entries(patternsNormal.byOddsRange)
+        .filter(([_, data]) => data.total >= 3)
+        .map(([range, data]) => ({
+          range,
+          roi: ((data.profit / data.total) * 100).toFixed(1),
+          total: data.total
+        }))
+        .sort((a, b) => parseFloat(b.roi) - parseFloat(a.roi));
+
+      if (oddsRankedNormal.length > 0) {
+        html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #0b6e4f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Faixa</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+        oddsRankedNormal.forEach(item => {
+          const roiColor = parseFloat(item.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${item.range}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${item.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${item.roi}%</td></tr>`;
+        });
+        html += '</tbody></table>';
+      } else {
+        html += '<p style="color: #666; font-size: 0.85rem;">Dados insuficientes.</p>';
+      }
+      html += '</div>';
+
+      // Por Diferenças CG/VG - Normal
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #0b6e4f; margin-bottom: 0.5rem; font-size: 0.95rem;">⚖️ Por Diferenças CG/VG</h4>';
+      const diffRankedNormal = Object.entries(patternsNormal.byDiffCombo)
+        .filter(([_, data]) => data.total >= 3)
+        .map(([combo, data]) => ({
+          combo,
+          roi: ((data.profit / data.total) * 100).toFixed(1),
+          total: data.total
+        }))
+        .sort((a, b) => parseFloat(b.roi) - parseFloat(a.roi));
+
+      if (diffRankedNormal.length > 0) {
+        html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #0b6e4f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Combinação</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+        diffRankedNormal.forEach(item => {
+          const roiColor = parseFloat(item.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${item.combo}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${item.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${item.roi}%</td></tr>`;
+        });
+        html += '</tbody></table>';
+      } else {
+        html += '<p style="color: #666; font-size: 0.85rem;">Dados insuficientes.</p>';
+      }
+      // Destaques Top 3
+      if (diffRankedNormal.length > 0) {
+        const tops = diffRankedNormal.slice(0, 3);
+        html += '<div style="margin-top: 0.5rem;">';
+        tops.forEach(t => {
+          const roiColor = parseFloat(t.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<span style="display: inline-block; margin-right: 6px; padding: 4px 8px; border-radius: 12px; background: #e8f5e9; border: 1px solid ${roiColor}; color: ${roiColor}; font-weight: 600;">${t.combo} · ROI ${t.roi}% · ${t.total}</span>`;
+        });
+        html += '</div>';
+      }
+      html += '</div>';
+
+      html += '</div>'; // Fim coluna esquerda
+
+      // ===== COLUNA DIREITA: P/L INVERTIDO =====
+      html += '<div style="flex: 1;">';
+      html += '<h3 style="color: #d32f2f; margin-top: 0; border-bottom: 2px solid #d32f2f; padding-bottom: 0.5rem;">📉 P/L Invertido</h3>';
+
+      // Melhores combinações de ELO - Invertido
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #d32f2f; margin-bottom: 0.5rem; font-size: 0.95rem;">🔥 Top Combinações ELO</h4>';
+      const eloRankedInvertido = Object.entries(patternsInvertido.byEloSymbolCombination)
+        .filter(([_, data]) => data.total >= 3)
+        .map(([combo, data]) => ({
+          combo,
+          winRate: ((data.wins / data.total) * 100).toFixed(1),
+          roi: ((data.profit / data.total) * 100).toFixed(1),
+          total: data.total,
+          profit: data.profit.toFixed(2)
+        }))
+        .sort((a, b) => parseFloat(b.roi) - parseFloat(a.roi))
+        .slice(0, 3);
+
+      if (eloRankedInvertido.length > 0) {
+        html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #d32f2f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Combinação</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+        eloRankedInvertido.forEach(item => {
+          const roiColor = parseFloat(item.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${item.combo}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${item.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${item.roi}%</td></tr>`;
+        });
+        html += '</tbody></table>';
+      } else {
+        html += '<p style="color: #666; font-size: 0.85rem;">Dados insuficientes.</p>';
+      }
+      html += '</div>';
+
+      // Análise por Back Direction - Invertido
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #d32f2f; margin-bottom: 0.5rem; font-size: 0.95rem;">🎲 Por Back</h4>';
+      html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #d32f2f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Back</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+      
+      ['Home', 'Away'].forEach(back => {
+        const data = patternsInvertido.byBackDirection[back];
+        if (data.total > 0) {
+          const roi = ((data.profit / data.total) * 100).toFixed(1);
+          const roiColor = parseFloat(roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${back}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${data.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${roi}%</td></tr>`;
+        }
+      });
+      html += '</tbody></table></div>';
+
+      // Melhores faixas de odds - Invertido
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #d32f2f; margin-bottom: 0.5rem; font-size: 0.95rem;">📊 Por Faixa Odds</h4>';
+      const oddsRankedInvertido = Object.entries(patternsInvertido.byOddsRange)
+        .filter(([_, data]) => data.total >= 3)
+        .map(([range, data]) => ({
+          range,
+          roi: ((data.profit / data.total) * 100).toFixed(1),
+          total: data.total
+        }))
+        .sort((a, b) => parseFloat(b.roi) - parseFloat(a.roi));
+
+      if (oddsRankedInvertido.length > 0) {
+        html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #d32f2f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Faixa</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+        oddsRankedInvertido.forEach(item => {
+          const roiColor = parseFloat(item.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${item.range}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${item.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${item.roi}%</td></tr>`;
+        });
+        html += '</tbody></table>';
+      } else {
+        html += '<p style="color: #666; font-size: 0.85rem;">Dados insuficientes.</p>';
+      }
+      html += '</div>';
+
+      // Por Diferenças CG/VG - Invertido
+      html += '<div style="margin-bottom: 1.5rem;"><h4 style="color: #d32f2f; margin-bottom: 0.5rem; font-size: 0.95rem;">⚖️ Por Diferenças CG/VG</h4>';
+      const diffRankedInvertido = Object.entries(patternsInvertido.byDiffCombo)
+        .filter(([_, data]) => data.total >= 3)
+        .map(([combo, data]) => ({
+          combo,
+          roi: ((data.profit / data.total) * 100).toFixed(1),
+          total: data.total
+        }))
+        .sort((a, b) => parseFloat(b.roi) - parseFloat(a.roi));
+
+      if (diffRankedInvertido.length > 0) {
+        html += '<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; background: white;"><thead style="background: #d32f2f; color: white;"><tr><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Combinação</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">Qtd</th><th style="border: 1px solid #ddd; padding: 6px; font-size: 0.8rem;">ROI %</th></tr></thead><tbody>';
+        diffRankedInvertido.forEach(item => {
+          const roiColor = parseFloat(item.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<tr><td style="border: 1px solid #ddd; padding: 6px; font-weight: 600;">${item.combo}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center;">${item.total}</td><td style="border: 1px solid #ddd; padding: 6px; text-align: center; color: ${roiColor}; font-weight: 600;">${item.roi}%</td></tr>`;
+        });
+        html += '</tbody></table>';
+      } else {
+        html += '<p style="color: #666; font-size: 0.85rem;">Dados insuficientes.</p>';
+      }
+      // Destaques Top 3
+      if (diffRankedInvertido.length > 0) {
+        const tops = diffRankedInvertido.slice(0, 3);
+        html += '<div style="margin-top: 0.5rem;">';
+        tops.forEach(t => {
+          const roiColor = parseFloat(t.roi) >= 0 ? '#2e7d32' : '#d32f2f';
+          html += `<span style="display: inline-block; margin-right: 6px; padding: 4px 8px; border-radius: 12px; background: #fdecea; border: 1px solid ${roiColor}; color: ${roiColor}; font-weight: 600;">${t.combo} · ROI ${t.roi}% · ${t.total}</span>`;
+        });
+        html += '</div>';
+      }
+      html += '</div>';
+
+      html += '</div>'; // Fim coluna direita
+      html += '</div>'; // Fim flex container
+
+      // Recomendações comparativas
+      html += '<div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 1rem; margin-top: 1.5rem;"><h4 style="margin-top: 0; color: #856404;">💡 Recomendações Comparativas</h4><ul style="margin: 0; padding-left: 1.5rem;">';
+      
+      // Comparar melhor estratégia geral
+      const profitNormalTotal = Object.values(patternsNormal.byBackDirection).reduce((sum, d) => sum + d.profit, 0);
+      const profitInvertidoTotal = Object.values(patternsInvertido.byBackDirection).reduce((sum, d) => sum + d.profit, 0);
+      
+      if (profitNormalTotal > profitInvertidoTotal) {
+        html += `<li><strong>P/L Normal</strong> é mais lucrativa no geral (Lucro: R$ ${profitNormalTotal.toFixed(2)} vs R$ ${profitInvertidoTotal.toFixed(2)}).</li>`;
+      } else if (profitInvertidoTotal > profitNormalTotal) {
+        html += `<li><strong>P/L Invertido</strong> é mais lucrativa no geral (Lucro: R$ ${profitInvertidoTotal.toFixed(2)} vs R$ ${profitNormalTotal.toFixed(2)}).</li>`;
+      }
+      
+      if (eloRankedNormal.length > 0 && parseFloat(eloRankedNormal[0].roi) > 0) {
+        html += `<li><strong>P/L Normal:</strong> Combinação <strong>${eloRankedNormal[0].combo}</strong> com ROI de ${eloRankedNormal[0].roi}%.</li>`;
+      }
+      
+      if (eloRankedInvertido.length > 0 && parseFloat(eloRankedInvertido[0].roi) > 0) {
+        html += `<li><strong>P/L Invertido:</strong> Combinação <strong>${eloRankedInvertido[0].combo}</strong> com ROI de ${eloRankedInvertido[0].roi}%.</li>`;
+      }
+      
+      html += '</ul></div>';
+
+      container.innerHTML = html;
+    }
+
+    // Limpar todas as entradas
+    document.getElementById('btn-toggle-stats').addEventListener('click', () => {
+      const container = document.getElementById('stats-container');
+      const btn = document.getElementById('btn-toggle-stats');
+      const isVisible = container.style.display !== 'none';
+      container.style.display = isVisible ? 'none' : 'flex';
+      btn.textContent = isVisible ? '📊 Mostrar Análises' : '📊 Ocultar Análises';
+    });
+
+    document.getElementById('btn-toggle-odds').addEventListener('click', () => {
+      const container = document.getElementById('odds-container');
+      const btn = document.getElementById('btn-toggle-odds');
+      const isVisible = container.style.display !== 'none';
+      container.style.display = isVisible ? 'none' : 'flex';
+      btn.textContent = isVisible ? '📊 Mostrar Tabelas' : '📊 Ocultar Tabelas';
+    });
+
+    document.getElementById('btn-toggle-patterns').addEventListener('click', () => {
+      const container = document.getElementById('pattern-analysis-container');
+      const btn = document.getElementById('btn-toggle-patterns');
+      const isVisible = container.style.display !== 'none';
+      container.style.display = isVisible ? 'none' : 'block';
+      btn.textContent = isVisible ? '📊 Mostrar Análise' : '📊 Ocultar Análise';
+    });
+
+    document.getElementById('btn-analyze-patterns').addEventListener('click', () => {
+      analyzePatterns();
+    });
+
+    document.getElementById('btn-clear-all').addEventListener('click', () => {
+      if (confirm('Tem certeza que deseja limpar TODAS as entradas? Esta ação não pode ser desfeita!')) {
+        localStorage.setItem('entradas', JSON.stringify([]));
+        renderTable();
+        updateStats();
+      }
+    });
+
+    // Inicializar
+    (async function init() {
+      preencherDifCGeDifVG(); // Executar apenas uma vez para popular entradas antigas
+      syncWithFixturesCache(); // Tenta preencher Dif_CG/Dif_VG usando fixtures.html
+      await syncDifFromMatchesFull(); // Busca diretamente em matches_full.json para 17-21/01/2026
+      renderTable();
+      updateStats();
+    })();
+  </script>
+</body>
+</html>
