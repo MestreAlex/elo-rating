@@ -1,1568 +1,5612 @@
 [
   {
     "id": 1,
-    "name": "Ajaccio",
-    "league": "Ligue 2",
+    "name": "A. Klagenfurt",
+    "league": "Bundesliga (Austria)",
     "continent": "Europe"
   },
   {
     "id": 2,
+    "name": "A. Lustenau",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 3,
+    "name": "AC Oulu",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 4,
+    "name": "AEK",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 5,
+    "name": "AFC Eskilstuna",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 6,
+    "name": "AIK",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 7,
+    "name": "AVS",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 8,
+    "name": "AZ Alkmaar",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 9,
+    "name": "Aalborg",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 10,
+    "name": "Aalesund",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 11,
+    "name": "Aarau",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 12,
+    "name": "Aarhus",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 13,
+    "name": "Aberdeen",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 14,
+    "name": "Academica",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 15,
+    "name": "Academica Clinceni",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 16,
+    "name": "Ad. Demirspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 17,
+    "name": "Adanaspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 18,
+    "name": "Admira",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 19,
+    "name": "Ajaccio",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 20,
+    "name": "Ajaccio GFCO",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 21,
+    "name": "Ajax",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 22,
+    "name": "Akhisar Belediyespor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 23,
+    "name": "Akhmat Grozny",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 24,
+    "name": "Akron Togliatti",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 25,
+    "name": "Alanyaspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 26,
     "name": "Alaves",
     "league": "La Liga",
     "continent": "Europe"
   },
   {
-    "id": 3,
-    "name": "Albacete",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 4,
-    "name": "Almeria",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 5,
-    "name": "Amiens",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 6,
-    "name": "Andorra",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 7,
-    "name": "Angers",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 8,
-    "name": "Annecy",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 9,
-    "name": "Arsenal",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 10,
-    "name": "Aston Villa",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 11,
-    "name": "Atalanta",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 12,
-    "name": "Ath Bilbao",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 13,
-    "name": "Ath Madrid",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 14,
-    "name": "Augsburg",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 15,
-    "name": "Auxerre",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 16,
-    "name": "Avellino",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 17,
-    "name": "Barcelona",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 18,
-    "name": "Bari",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 19,
-    "name": "Bastia",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 20,
-    "name": "Bayern Munich",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 21,
-    "name": "Betis",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 22,
-    "name": "Bielefeld",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 23,
-    "name": "Birmingham",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 24,
-    "name": "Blackburn",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 25,
-    "name": "Bochum",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 26,
-    "name": "Bologna",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
     "id": 27,
-    "name": "Boulogne",
-    "league": "Ligue 2",
+    "name": "Albacete",
+    "league": "La Liga 2",
     "continent": "Europe"
   },
   {
     "id": 28,
-    "name": "Bournemouth",
-    "league": "Premier League",
-    "continent": "Europe"
+    "name": "Albirex Niigata",
+    "league": "J-League",
+    "continent": "Asia"
   },
   {
     "id": 29,
-    "name": "Braunschweig",
-    "league": "Bundesliga 2",
+    "name": "Alcorcon",
+    "league": "La Liga 2",
     "continent": "Europe"
   },
   {
     "id": 30,
-    "name": "Brentford",
-    "league": "Premier League",
-    "continent": "Europe"
+    "name": "Aldosivi",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
   },
   {
     "id": 31,
-    "name": "Brescia",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 32,
-    "name": "Brest",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 33,
-    "name": "Brighton",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 34,
-    "name": "Bristol City",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 35,
-    "name": "Burgos",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 36,
-    "name": "Burnley",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 37,
-    "name": "Cadiz",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 38,
-    "name": "Caen",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 39,
-    "name": "Cagliari",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 40,
-    "name": "Cardiff",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 41,
-    "name": "Carrarese",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 42,
-    "name": "Cartagena",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 43,
-    "name": "Castellon",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 44,
-    "name": "Catanzaro",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 45,
-    "name": "Celta",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 46,
-    "name": "Cesena",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 47,
-    "name": "Ceuta",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 48,
-    "name": "Charlton",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 49,
-    "name": "Chelsea",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 50,
-    "name": "Cittadella",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 51,
-    "name": "Clermont",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 52,
-    "name": "Como",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 53,
-    "name": "Cordoba",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 54,
-    "name": "Cosenza",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 55,
-    "name": "Coventry",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 56,
-    "name": "Cremonese",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 57,
-    "name": "Crystal Palace",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 58,
-    "name": "Cultural Leonesa",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 59,
-    "name": "Darmstadt",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 60,
-    "name": "Derby",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 61,
-    "name": "Dortmund",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 62,
-    "name": "Dresden",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 63,
-    "name": "Dunkerque",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 64,
-    "name": "Eibar",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 65,
-    "name": "Ein Frankfurt",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 66,
-    "name": "Elche",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 67,
-    "name": "Eldense",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 68,
-    "name": "Elversberg",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 69,
-    "name": "Empoli",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 70,
-    "name": "Espanol",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 71,
-    "name": "Everton",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 72,
-    "name": "FC Koln",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 73,
-    "name": "Ferrol",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 74,
-    "name": "Fiorentina",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 75,
-    "name": "Fortuna Dusseldorf",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 76,
-    "name": "Freiburg",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 77,
-    "name": "Frosinone",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 78,
-    "name": "Fulham",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 79,
-    "name": "Genoa",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 80,
-    "name": "Getafe",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 81,
-    "name": "Girona",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 82,
-    "name": "Granada",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 83,
-    "name": "Grenoble",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 84,
-    "name": "Greuther Furth",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 85,
-    "name": "Guingamp",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 86,
-    "name": "Hamburg",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 87,
-    "name": "Hannover",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 88,
-    "name": "Heidenheim",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 89,
-    "name": "Hertha",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 90,
-    "name": "Hoffenheim",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 91,
-    "name": "Holstein Kiel",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 92,
-    "name": "Huesca",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 93,
-    "name": "Hull",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 94,
-    "name": "Inter",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 95,
-    "name": "Ipswich",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 96,
-    "name": "Juve Stabia",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 97,
-    "name": "Juventus",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 98,
-    "name": "Kaiserslautern",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 99,
-    "name": "Karlsruhe",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 100,
-    "name": "La Coruna",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 101,
-    "name": "Las Palmas",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 102,
-    "name": "Laval",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 103,
-    "name": "Lazio",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 104,
-    "name": "Le Havre",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 105,
-    "name": "Le Mans",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 106,
-    "name": "Lecce",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 107,
-    "name": "Leeds",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 108,
-    "name": "Leganes",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 109,
-    "name": "Leicester",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 110,
-    "name": "Lens",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 111,
-    "name": "Levante",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 112,
-    "name": "Leverkusen",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 113,
-    "name": "Lille",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 114,
-    "name": "Liverpool",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 115,
-    "name": "Lorient",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 116,
-    "name": "Luton",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 117,
-    "name": "Lyon",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 118,
-    "name": "M'gladbach",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 119,
-    "name": "Magdeburg",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 120,
-    "name": "Mainz",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 121,
-    "name": "Malaga",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 122,
-    "name": "Mallorca",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 123,
-    "name": "Man City",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 124,
-    "name": "Man United",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 125,
-    "name": "Mantova",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 126,
-    "name": "Marseille",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 127,
-    "name": "Martigues",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 128,
-    "name": "Metz",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 129,
-    "name": "Middlesbrough",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 130,
-    "name": "Milan",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 131,
-    "name": "Millwall",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 132,
-    "name": "Mirandes",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 133,
-    "name": "Modena",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 134,
-    "name": "Monaco",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 135,
-    "name": "Montpellier",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 136,
-    "name": "Monza",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 137,
-    "name": "Nancy",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 138,
-    "name": "Nantes",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 139,
-    "name": "Napoli",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 140,
-    "name": "Newcastle",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 141,
-    "name": "Nice",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 142,
-    "name": "Norwich",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 143,
-    "name": "Nott'm Forest",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 144,
-    "name": "Nurnberg",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 145,
-    "name": "Osasuna",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 146,
-    "name": "Oviedo",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 147,
-    "name": "Oxford",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 148,
-    "name": "Paderborn",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 149,
-    "name": "Padova",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 150,
-    "name": "Palermo",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 151,
-    "name": "Paris FC",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 152,
-    "name": "Paris SG",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 153,
-    "name": "Parma",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 154,
-    "name": "Pau FC",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 155,
-    "name": "Pescara",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 156,
-    "name": "Pisa",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 157,
-    "name": "Plymouth",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 158,
-    "name": "Portsmouth",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 159,
-    "name": "Preston",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 160,
-    "name": "Preußen Münster",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 161,
-    "name": "QPR",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 162,
-    "name": "RB Leipzig",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 163,
-    "name": "Real Madrid",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 164,
-    "name": "Red Star",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 165,
-    "name": "Regensburg",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 166,
-    "name": "Reggiana",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 167,
-    "name": "Reims",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 168,
-    "name": "Rennes",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 169,
-    "name": "Rodez",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 170,
-    "name": "Roma",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 171,
-    "name": "Salernitana",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 172,
-    "name": "Sampdoria",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 173,
-    "name": "Santander",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 174,
-    "name": "Sassuolo",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 175,
-    "name": "Schalke 04",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 176,
-    "name": "Sevilla",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 177,
-    "name": "Sheffield United",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 178,
-    "name": "Sheffield Weds",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 179,
-    "name": "Sociedad",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 180,
-    "name": "Sociedad B",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 181,
-    "name": "Southampton",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 182,
-    "name": "Sp Gijon",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 183,
-    "name": "Spezia",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 184,
-    "name": "St Etienne",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 185,
-    "name": "St Pauli",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 186,
-    "name": "Stoke",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 187,
-    "name": "Strasbourg",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 188,
-    "name": "Stuttgart",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 189,
-    "name": "Sudtirol",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 190,
-    "name": "Sunderland",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 191,
-    "name": "Swansea",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 192,
-    "name": "Tenerife",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 193,
-    "name": "Torino",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 194,
-    "name": "Tottenham",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 195,
-    "name": "Toulouse",
-    "league": "Ligue 1",
-    "continent": "Europe"
-  },
-  {
-    "id": 196,
-    "name": "Troyes",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 197,
-    "name": "Udinese",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 198,
-    "name": "Ulm",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 199,
-    "name": "Union Berlin",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 200,
-    "name": "Valencia",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 201,
-    "name": "Valladolid",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 202,
-    "name": "Vallecano",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 203,
-    "name": "Venezia",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 204,
-    "name": "Verona",
-    "league": "Serie A",
-    "continent": "Europe"
-  },
-  {
-    "id": 205,
-    "name": "Villarreal",
-    "league": "La Liga",
-    "continent": "Europe"
-  },
-  {
-    "id": 206,
-    "name": "Virtus Entella",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 207,
-    "name": "Watford",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 208,
-    "name": "Werder Bremen",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 209,
-    "name": "West Brom",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 210,
-    "name": "West Ham",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 211,
-    "name": "Wolfsburg",
-    "league": "Bundesliga",
-    "continent": "Europe"
-  },
-  {
-    "id": 212,
-    "name": "Wolves",
-    "league": "Premier League",
-    "continent": "Europe"
-  },
-  {
-    "id": 213,
-    "name": "Wrexham",
-    "league": "Championship",
-    "continent": "Europe"
-  },
-  {
-    "id": 214,
-    "name": "Zaragoza",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 215,
-    "name": "Alcorcon",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 216,
     "name": "Alessandria",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 217,
-    "name": "Amorebieta",
-    "league": "Segunda División",
+    "id": 32,
+    "name": "All Boys",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 33,
+    "name": "Almere City",
+    "league": "Eredivisie",
     "continent": "Europe"
   },
   {
-    "id": 218,
+    "id": 34,
+    "name": "Almeria",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 35,
+    "name": "Altach",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 36,
+    "name": "Altay",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 37,
+    "name": "Alverca",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 38,
+    "name": "America MG",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 39,
+    "name": "Amiens",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 40,
+    "name": "Amkar",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 41,
+    "name": "Amorebieta",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 42,
+    "name": "Anderlecht",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 43,
+    "name": "Andorra",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 44,
+    "name": "Angers",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 45,
+    "name": "Ankaragucu",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 46,
+    "name": "Annecy",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 47,
+    "name": "Antalyaspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 48,
+    "name": "Antwerp",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 49,
+    "name": "Apollon",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 50,
+    "name": "Argentinos Jrs",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 51,
+    "name": "Aris",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 52,
+    "name": "Arka Gdynia",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 53,
+    "name": "Arouca",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 54,
+    "name": "Arsenal",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 55,
+    "name": "Arsenal Sarandi",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 56,
+    "name": "Arsenal Tula",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 57,
     "name": "Ascoli",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 219,
+    "id": 58,
+    "name": "Asteras Tripolis",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 59,
+    "name": "Aston Villa",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 60,
+    "name": "Astra",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 61,
+    "name": "Atalanta",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 62,
+    "name": "Ath Bilbao",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 63,
+    "name": "Ath Bilbao B",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 64,
+    "name": "Ath Madrid",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 65,
+    "name": "Athens Kallithea",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 66,
+    "name": "Athletico-PR",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 67,
+    "name": "Atl. Rafaela",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 68,
+    "name": "Atl. San Luis",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 69,
+    "name": "Atl. Tucuman",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 70,
+    "name": "Atlanta Utd",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 71,
+    "name": "Atlante",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 72,
+    "name": "Atlas",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 73,
+    "name": "Atletico GO",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 74,
+    "name": "Atletico-MG",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 75,
+    "name": "Atromitos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 76,
+    "name": "Atvidabergs",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 77,
+    "name": "Augsburg",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 78,
+    "name": "Austin FC",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 79,
+    "name": "Austria Vienna",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 80,
+    "name": "Auxerre",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 81,
+    "name": "Avai",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 82,
+    "name": "Avellino",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 83,
+    "name": "Aves",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 84,
+    "name": "Avispa Fukuoka",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 85,
+    "name": "BW Linz",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 86,
+    "name": "Bahia",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 87,
+    "name": "Baltika",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 88,
+    "name": "Banfield",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 89,
+    "name": "Barcelona",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 90,
+    "name": "Barcelona B",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 91,
+    "name": "Bari",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 92,
     "name": "Barnsley",
     "league": "Championship",
     "continent": "Europe"
   },
   {
-    "id": 220,
-    "name": "Benevento",
-    "league": "Serie B",
+    "id": 93,
+    "name": "Barracas Central",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 94,
+    "name": "Basel",
+    "league": "Super League (Switzerland)",
     "continent": "Europe"
   },
   {
-    "id": 221,
+    "id": 95,
+    "name": "Bastia",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 96,
+    "name": "Bayern Munich",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 97,
+    "name": "Beerschot VA",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 98,
+    "name": "Beijing Guoan",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 99,
+    "name": "Beijing Renhe",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 100,
+    "name": "Belenenses",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 101,
+    "name": "Belgrano",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 102,
+    "name": "Benevento",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 103,
+    "name": "Benfica",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 104,
+    "name": "Besiktas",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 105,
+    "name": "Betis",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 106,
+    "name": "Beziers",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 107,
+    "name": "Bielefeld",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 108,
+    "name": "Birmingham",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 109,
+    "name": "Bistrita",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 110,
+    "name": "Blackburn",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 111,
     "name": "Blackpool",
     "league": "Championship",
     "continent": "Europe"
   },
   {
-    "id": 222,
+    "id": 112,
+    "name": "Boavista",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 113,
+    "name": "Boca Juniors",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 114,
+    "name": "Bochum",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 115,
+    "name": "Bodo/Glimt",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 116,
+    "name": "Bodrumspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 117,
+    "name": "Bologna",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 118,
+    "name": "Bolton",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 119,
     "name": "Bordeaux",
     "league": "Ligue 1",
     "continent": "Europe"
   },
   {
-    "id": 223,
+    "id": 120,
+    "name": "Botafogo RJ",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 121,
+    "name": "Boulogne",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 122,
+    "name": "Bourg Peronnas",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 123,
+    "name": "Bournemouth",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 124,
+    "name": "Bragantino",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 125,
+    "name": "Brage",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 126,
+    "name": "Brann",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 127,
+    "name": "Braunschweig",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 128,
+    "name": "Brentford",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 129,
+    "name": "Brescia",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 130,
+    "name": "Brest",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 131,
+    "name": "Brighton",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 132,
+    "name": "Bristol City",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 133,
+    "name": "Brommapojkarna",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 134,
+    "name": "Brondby",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 135,
+    "name": "Bryne",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 136,
+    "name": "Burgos",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 137,
+    "name": "Burnley",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 138,
+    "name": "Bursaspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 139,
+    "name": "Burton",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 140,
+    "name": "Buyuksehyr",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 141,
+    "name": "CF Montreal",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 142,
+    "name": "CFR Cluj",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 143,
+    "name": "CS Turnu Severin",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 144,
+    "name": "CSA",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 145,
+    "name": "CSKA Moscow",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 146,
+    "name": "Cadiz",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 147,
+    "name": "Caen",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 148,
+    "name": "Cagliari",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 149,
+    "name": "Calarasi",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 150,
+    "name": "Cambuur",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 151,
+    "name": "Cangzhou",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 152,
+    "name": "Cardiff",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 153,
+    "name": "Carpi",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 154,
+    "name": "Carrarese",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 155,
+    "name": "Cartagena",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 156,
+    "name": "Casa Pia",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 157,
+    "name": "Castellon",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 158,
+    "name": "Catanzaro",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 159,
+    "name": "Ceahlaul",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 160,
+    "name": "Ceara",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 161,
+    "name": "Celta",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 162,
+    "name": "Celtic",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 163,
+    "name": "Central Cordoba",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 164,
+    "name": "Cercle Brugge",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 165,
+    "name": "Cerezo Osaka",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 166,
+    "name": "Cesena",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 167,
+    "name": "Ceuta",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 168,
+    "name": "Chacarita Juniors",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 169,
     "name": "Chambly",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
-    "id": 224,
+    "id": 170,
+    "name": "Changchun Yatai",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 171,
+    "name": "Chapecoense-SC",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 172,
+    "name": "Charleroi",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 173,
+    "name": "Charlotte",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 174,
+    "name": "Charlton",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 175,
     "name": "Chateauroux",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
-    "id": 225,
+    "id": 176,
+    "name": "Chaves",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 177,
+    "name": "Chelsea",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 178,
+    "name": "Chengdu Rongcheng",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 179,
+    "name": "Chiapas",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 180,
+    "name": "Chicago Fire",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 181,
     "name": "Chievo",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 182,
+    "name": "Chindia Targoviste",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 183,
+    "name": "Chivas USA",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 184,
+    "name": "Chongqing Liangjiang Athletic",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 185,
+    "name": "Cittadella",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 226,
+    "id": 186,
+    "name": "Clermont",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 187,
+    "name": "Club America",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 188,
+    "name": "Club Brugge",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 189,
+    "name": "Club Leon",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 190,
+    "name": "Club Tijuana",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 191,
+    "name": "Colon Santa FE",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 192,
+    "name": "Colon Santa Fe",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 193,
+    "name": "Colorado Rapids",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 194,
+    "name": "Columbus Crew",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 195,
+    "name": "Como",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 196,
     "name": "Concarneau",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
-    "id": 227,
-    "name": "Crotone",
+    "id": 197,
+    "name": "Concordia",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 198,
+    "name": "Cordoba",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 199,
+    "name": "Corinthians",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 200,
+    "name": "Coritiba",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 201,
+    "name": "Corona Brasov",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 202,
+    "name": "Cosenza",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 228,
-    "name": "Dijon",
-    "league": "Ligue 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 229,
-    "name": "Erzgebirge Aue",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 230,
-    "name": "FeralpiSalo",
-    "league": "Serie B",
-    "continent": "Europe"
-  },
-  {
-    "id": 231,
-    "name": "Fuenlabrada",
-    "league": "Segunda División",
-    "continent": "Europe"
-  },
-  {
-    "id": 232,
-    "name": "Hansa Rostock",
-    "league": "Bundesliga 2",
-    "continent": "Europe"
-  },
-  {
-    "id": 233,
-    "name": "Huddersfield",
+    "id": 203,
+    "name": "Coventry",
     "league": "Championship",
     "continent": "Europe"
   },
   {
+    "id": 204,
+    "name": "Cracovia",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 205,
+    "name": "Cremonese",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 206,
+    "name": "Creteil",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 207,
+    "name": "Criciuma",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 208,
+    "name": "Crotone",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 209,
+    "name": "Crucero del Norte",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 210,
+    "name": "Cruz Azul",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 211,
+    "name": "Cruzeiro",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 212,
+    "name": "Crystal Palace",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 213,
+    "name": "Csikszereda M. Ciuc",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 214,
+    "name": "Cuiaba",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 215,
+    "name": "Cultural Leonesa",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 216,
+    "name": "DC United",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 217,
+    "name": "Daco-Getica Bucuresti",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 218,
+    "name": "Dalian Pro",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 219,
+    "name": "Dalian Yifang F.C.",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 220,
+    "name": "Dalian Yingbo",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 221,
+    "name": "Dalkurd",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 222,
+    "name": "Darmstadt",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 223,
+    "name": "Defensa y Justicia",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 224,
+    "name": "Degerfors",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 225,
+    "name": "Den Haag",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 226,
+    "name": "Dender",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 227,
+    "name": "Denizlispor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 228,
+    "name": "Dep. Riestra",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 229,
+    "name": "Derby",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 230,
+    "name": "Dijon",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 231,
+    "name": "Din. Bucuresti",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 232,
+    "name": "Djurgarden",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 233,
+    "name": "Dorados de Sinaloa",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
     "id": 234,
-    "name": "Ibiza",
-    "league": "Segunda División",
+    "name": "Dortmund",
+    "league": "Bundesliga",
     "continent": "Europe"
   },
   {
     "id": 235,
-    "name": "Ingolstadt",
+    "name": "Dresden",
     "league": "Bundesliga 2",
     "continent": "Europe"
   },
   {
     "id": 236,
-    "name": "Lecco",
-    "league": "Serie B",
+    "name": "Duisburg",
+    "league": "Bundesliga 2",
     "continent": "Europe"
   },
   {
     "id": 237,
-    "name": "Logrones",
-    "league": "Segunda División",
+    "name": "Dundee",
+    "league": "Scottish Premiership",
     "continent": "Europe"
   },
   {
     "id": 238,
-    "name": "Lugo",
-    "league": "Segunda División",
+    "name": "Dundee United",
+    "league": "Scottish Premiership",
     "continent": "Europe"
   },
   {
     "id": 239,
-    "name": "Nimes",
+    "name": "Dunkerque",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
     "id": 240,
+    "name": "Dynamo Makhachkala",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 241,
+    "name": "Dynamo Moscow",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 242,
+    "name": "Eibar",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 243,
+    "name": "Ein Frankfurt",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 244,
+    "name": "Ekenas",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 245,
+    "name": "Elche",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 246,
+    "name": "Eldense",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 247,
+    "name": "Elfsborg",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 248,
+    "name": "Elversberg",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 249,
+    "name": "Empoli",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 250,
+    "name": "Erzgebirge Aue",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 251,
+    "name": "Erzurum BB",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 252,
+    "name": "Esbjerg",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 253,
+    "name": "Eskisehirspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 254,
+    "name": "Espanol",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 255,
+    "name": "Estoril",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 256,
+    "name": "Estrela",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 257,
+    "name": "Estudiantes L.P.",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 258,
+    "name": "Eupen",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 259,
+    "name": "Everton",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 260,
+    "name": "Evian Thonon Gaillard",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 261,
+    "name": "Excelsior",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 262,
+    "name": "Extremadura UD",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 263,
+    "name": "Eyupspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 264,
+    "name": "FC Arges",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 265,
+    "name": "FC Botosani",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 266,
+    "name": "FC Brasov",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 267,
+    "name": "FC Cincinnati",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 268,
+    "name": "FC Copenhagen",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 269,
+    "name": "FC Dallas",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 270,
+    "name": "FC Emmen",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 271,
+    "name": "FC Hermannstadt",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 272,
+    "name": "FC Koln",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 273,
+    "name": "FC Rapid Bucuresti",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 274,
+    "name": "FC Tokyo",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 275,
+    "name": "FC Voluntari",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 276,
+    "name": "FCSB",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 277,
+    "name": "FK Anzi Makhackala",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 278,
+    "name": "FK Rostov",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 279,
+    "name": "Fakel Voronezh",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 280,
+    "name": "Falkenbergs",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 281,
+    "name": "Falkirk",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 282,
+    "name": "Famalicao",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 283,
+    "name": "Farense",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 284,
+    "name": "Farul Constanta",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 285,
+    "name": "Feirense",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 286,
+    "name": "Fenerbahce",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 287,
+    "name": "FeralpiSalo",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 288,
+    "name": "Ferrol",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 289,
+    "name": "Feyenoord",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 290,
+    "name": "Figueirense",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 291,
+    "name": "Fiorentina",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 292,
+    "name": "Flamengo RJ",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 293,
+    "name": "Fluminense",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 294,
+    "name": "Foggia",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 295,
+    "name": "For Sittard",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 296,
+    "name": "Fortaleza",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 297,
+    "name": "Fortuna Dusseldorf",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 298,
+    "name": "Frankfurt FSV",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 299,
+    "name": "Fredericia",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 300,
+    "name": "Fredrikstad",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 301,
+    "name": "Freiburg",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 302,
+    "name": "Frosinone",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 303,
+    "name": "Fuenlabrada",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 304,
+    "name": "Fulham",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 305,
+    "name": "GAIS",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 306,
+    "name": "GKS Belchatow",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 307,
+    "name": "GKS Katowice",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 308,
+    "name": "Galatasaray",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 309,
+    "name": "Gamba Osaka",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 310,
+    "name": "Gaz Metan Medias",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 311,
+    "name": "Gaziantep",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 312,
+    "name": "Gaziantepspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 313,
+    "name": "Gefle",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 314,
+    "name": "Genclerbirligi",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 315,
+    "name": "Genk",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 316,
+    "name": "Genoa",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 317,
+    "name": "Gent",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 318,
+    "name": "Getafe",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 319,
+    "name": "Giannina",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 320,
+    "name": "Gil Vicente",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 321,
+    "name": "Gimnasia L.P.",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 322,
+    "name": "Gimnastic",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 323,
+    "name": "Giresunspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 324,
+    "name": "Girona",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 325,
+    "name": "Gloria Buzau",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 326,
+    "name": "Gnistan",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 327,
+    "name": "Go Ahead Eagles",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 328,
+    "name": "Godoy Cruz",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 329,
+    "name": "Goias",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 330,
+    "name": "Gornik Z.",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 331,
+    "name": "Gornik Zabrze",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 332,
+    "name": "Goteborg",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 333,
+    "name": "Goztep",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 334,
+    "name": "Graafschap",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 335,
+    "name": "Granada",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 336,
+    "name": "Grasshoppers",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 337,
+    "name": "Grazer AK",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 338,
+    "name": "Gremio",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 339,
+    "name": "Grenoble",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 340,
+    "name": "Greuther Furth",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 341,
+    "name": "Grodig",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 342,
+    "name": "Groningen",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 343,
+    "name": "Guadalajara Chivas",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 344,
+    "name": "Guangzhou City",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 345,
+    "name": "Guangzhou Evergrande",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 346,
+    "name": "Guangzhou FC",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 347,
+    "name": "Guangzhou R&F",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 348,
+    "name": "Guimaraes",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 349,
+    "name": "Guingamp",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 350,
+    "name": "Guizhou Zhicheng",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 351,
+    "name": "HIFK",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 352,
+    "name": "HJK",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 353,
+    "name": "Hacken",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 354,
+    "name": "Haka",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 355,
+    "name": "Halmstad",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 356,
+    "name": "Ham-Kam",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 357,
+    "name": "HamKam",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 358,
+    "name": "Hamburg",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 359,
+    "name": "Hamilton",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 360,
+    "name": "Hammarby",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 361,
+    "name": "Hangzhou Greentown",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 362,
+    "name": "Hannover",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 363,
+    "name": "Hansa Rostock",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 364,
+    "name": "Hartberg",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 365,
+    "name": "Hatayspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 366,
+    "name": "Haugesund",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 367,
+    "name": "Hearts",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 368,
+    "name": "Hebei",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 369,
+    "name": "Heerenveen",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 370,
+    "name": "Heidenheim",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 371,
+    "name": "Helsingborg",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 372,
+    "name": "Helsingor",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 373,
+    "name": "Henan Songshan Longmen",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 374,
+    "name": "Heracles",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 375,
+    "name": "Hertha",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 376,
+    "name": "Hibernian",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 377,
+    "name": "Hobro",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 378,
+    "name": "Hoffenheim",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 379,
+    "name": "Hokkaido Consadole Sapporo",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 380,
+    "name": "Holstein Kiel",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 381,
+    "name": "Honefoss",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 382,
+    "name": "Honka",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 383,
+    "name": "Horsens",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 384,
+    "name": "Houston Dynamo",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 385,
+    "name": "Huddersfield",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 386,
+    "name": "Huesca",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 387,
+    "name": "Hull",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 388,
+    "name": "Huracan",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 389,
+    "name": "Hvidovre IF",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 390,
+    "name": "Ibiza",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 391,
+    "name": "Ilves",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 392,
+    "name": "Ind. Rivadavia",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 393,
+    "name": "Independiente",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 394,
+    "name": "Ingolstadt",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 395,
+    "name": "Instituto",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 396,
+    "name": "Inter",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 397,
+    "name": "Inter Miami",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 398,
+    "name": "Inter Turku",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 399,
+    "name": "Internacional",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 400,
+    "name": "Inverness C",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 401,
+    "name": "Ionikos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 402,
+    "name": "Ipswich",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 403,
+    "name": "Iraklis",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 404,
+    "name": "Istanbulspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 405,
+    "name": "Iwata",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 406,
+    "name": "JJK Jyvaskyla",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 407,
+    "name": "Jagiellonia",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 408,
+    "name": "Jaro",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 409,
+    "name": "Jerv",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 410,
+    "name": "Jiangsu Suning",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 411,
+    "name": "Joinville",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 412,
+    "name": "Jonkopings",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 413,
+    "name": "Juarez",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 414,
+    "name": "Juve Stabia",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 415,
+    "name": "Juventude",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 416,
+    "name": "Juventus",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 417,
+    "name": "KFUM Oslo",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 418,
+    "name": "KPV Kokkola",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 419,
+    "name": "KTP",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 420,
+    "name": "Kaiserslautern",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 421,
+    "name": "Kallonis",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 422,
+    "name": "Kalmar",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 423,
+    "name": "Karabukspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 424,
+    "name": "Karagumruk",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 425,
+    "name": "Karlsruhe",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 426,
+    "name": "Kashima Antlers",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 427,
+    "name": "Kashiwa Reysol",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 428,
+    "name": "Kasimpasa",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 429,
+    "name": "Kawasaki Frontale",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 430,
+    "name": "Kayserispor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 431,
+    "name": "Kerkyra",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 432,
+    "name": "Khimki",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 433,
+    "name": "Kifisia",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 434,
+    "name": "Kilmarnock",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 435,
+    "name": "Kocaelispor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 436,
+    "name": "Kofu",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 437,
+    "name": "Kongsvinger",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 438,
+    "name": "Konyaspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 439,
+    "name": "Korona Kielce",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 440,
+    "name": "Kortrijk",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 441,
+    "name": "Krasnodar",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 442,
+    "name": "Kristiansund",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 443,
+    "name": "Krylya Sovetov",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 444,
+    "name": "KuPS",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 445,
+    "name": "Kuban",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 446,
+    "name": "Kumamoto",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 447,
+    "name": "Kyoto",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 448,
+    "name": "LASK",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 449,
+    "name": "LKS Lodz",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 450,
+    "name": "La Coruna",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 451,
+    "name": "Lahti",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 452,
+    "name": "Lamia",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 453,
+    "name": "Landskrona",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 454,
+    "name": "Lanus",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 455,
+    "name": "Larisa",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 456,
+    "name": "Las Palmas",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 457,
+    "name": "Latina",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 458,
+    "name": "Lausanne",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 459,
+    "name": "Lausanne Ouchy",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 460,
+    "name": "Laval",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 461,
+    "name": "Lazio",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 462,
+    "name": "Le Havre",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 463,
+    "name": "Le Mans",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 464,
+    "name": "Lecce",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 465,
+    "name": "Lecco",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 466,
+    "name": "Lech Poznan",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 467,
+    "name": "Lechia Gdansk",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 468,
+    "name": "Leczna",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 469,
+    "name": "Leeds",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 470,
+    "name": "Leganes",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 471,
+    "name": "Legia",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 472,
+    "name": "Legnica",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 473,
+    "name": "Leicester",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 474,
+    "name": "Lens",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 475,
+    "name": "Leones Negros",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 476,
+    "name": "Leonesa",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 477,
+    "name": "Levadeiakos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 478,
+    "name": "Levante",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 479,
+    "name": "Leverkusen",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 480,
+    "name": "Liaoning",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 481,
+    "name": "Lille",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 482,
+    "name": "Lillestrom",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 483,
+    "name": "Liverpool",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 484,
+    "name": "Livingston",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 485,
+    "name": "Livorno",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 486,
+    "name": "Ljungskile",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 487,
+    "name": "Llagostera",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 488,
+    "name": "Lobos BUAP",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 489,
+    "name": "Logrones",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 490,
+    "name": "Lokeren",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 491,
+    "name": "Lokomotiv Moscow",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 492,
+    "name": "Lorca",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 493,
+    "name": "Lorient",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 494,
+    "name": "Los Angeles FC",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 495,
+    "name": "Los Angeles Galaxy",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 496,
+    "name": "Lugano",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 497,
+    "name": "Lugo",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 498,
+    "name": "Luton",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 499,
+    "name": "Luzern",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 500,
+    "name": "Lyngby",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 501,
+    "name": "Lyon",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 502,
+    "name": "M'gladbach",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 503,
+    "name": "M. Saransk",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 504,
+    "name": "Machida",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 505,
+    "name": "Magdeburg",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 506,
+    "name": "Mainz",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 507,
+    "name": "Malaga",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 508,
+    "name": "Mallorca",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 509,
+    "name": "Malmo FF",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 510,
+    "name": "Man City",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 511,
+    "name": "Man United",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 512,
+    "name": "Mantova",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 513,
+    "name": "Mariehamn",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 514,
+    "name": "Maritimo",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 515,
+    "name": "Marseille",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 516,
+    "name": "Martigues",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 517,
+    "name": "Mattersburg",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 518,
+    "name": "Mazatlan FC",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 519,
+    "name": "Mechelen",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 520,
+    "name": "Meizhou Hakka",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 521,
+    "name": "Mersin Idman Yurdu",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 522,
+    "name": "Metaloglobus Bucharest",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 523,
+    "name": "Metz",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 524,
+    "name": "Middlesbrough",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 525,
+    "name": "Midtjylland",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 526,
+    "name": "Milan",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 527,
+    "name": "Millwall",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 528,
+    "name": "Milton Keynes Dons",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 529,
+    "name": "Minnesota United",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 530,
+    "name": "Mioveni",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 531,
+    "name": "Mirandes",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 532,
+    "name": "Mirassol",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 533,
+    "name": "Mjallby",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 534,
+    "name": "Mjondalen",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 535,
+    "name": "Modena",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 536,
+    "name": "Molde",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 537,
+    "name": "Monaco",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 538,
+    "name": "Monarcas",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 539,
+    "name": "Montedio Yamagata",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 540,
+    "name": "Monterrey",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 541,
+    "name": "Montpellier",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 542,
+    "name": "Monza",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 543,
+    "name": "Moreirense",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 544,
+    "name": "Moss",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 545,
+    "name": "Motherwell",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 546,
+    "name": "Motor Lublin",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 547,
+    "name": "Mouscron",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 548,
+    "name": "Mouscron-Peruwelz",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 549,
+    "name": "Munich 1860",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 550,
+    "name": "MyPa",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 551,
+    "name": "NAC Breda",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 552,
+    "name": "Nacional",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 553,
+    "name": "Nagoya Grampus",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 554,
+    "name": "Nancy",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 555,
+    "name": "Nantes",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 556,
+    "name": "Nantong Zhiyun",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 557,
+    "name": "Napoli",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 558,
+    "name": "Nashville SC",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 559,
+    "name": "Nautico",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 560,
+    "name": "Navodari",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 561,
+    "name": "Necaxa",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 562,
+    "name": "Neustadt",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 563,
+    "name": "New England Revolution",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 564,
+    "name": "New York City",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 565,
+    "name": "New York Red Bulls",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 566,
+    "name": "Newcastle",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 567,
+    "name": "Newells Old Boys",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 568,
+    "name": "Nice",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 569,
+    "name": "Nijmegen",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 570,
+    "name": "Nimes",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 571,
     "name": "Niort",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
-    "id": 241,
+    "id": 572,
+    "name": "Nordsjaelland",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 573,
+    "name": "Norrkoping",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 574,
+    "name": "Norwich",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 575,
+    "name": "Nott'm Forest",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 576,
+    "name": "Novara",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 577,
+    "name": "Nueva Chicago",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 578,
+    "name": "Numancia",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 579,
+    "name": "Nurnberg",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 580,
+    "name": "OFI Crete",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 581,
+    "name": "Odd",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 582,
+    "name": "Odense",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 583,
+    "name": "Oita Trinita",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 584,
+    "name": "Okayama",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 585,
+    "name": "Olimpo Bahia Blanca",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 586,
+    "name": "Olympiakos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 587,
+    "name": "Omiya Ardija",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 588,
+    "name": "Oostende",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 589,
+    "name": "Orebro",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 590,
+    "name": "Orenburg",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 591,
+    "name": "Orlando City",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 592,
+    "name": "Orleans",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 593,
+    "name": "Osasuna",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 594,
+    "name": "Osmanlispor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 595,
     "name": "Osnabruck",
     "league": "Bundesliga 2",
     "continent": "Europe"
   },
   {
-    "id": 242,
+    "id": 596,
+    "name": "Oster",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 597,
+    "name": "Osters",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 598,
+    "name": "Ostersunds",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 599,
+    "name": "Otelul",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 600,
+    "name": "Oud-Heverlee Leuven",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 601,
+    "name": "Oviedo",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 602,
+    "name": "Oxford",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 603,
+    "name": "PAOK",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 604,
+    "name": "PK-35 Vantaa",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 605,
+    "name": "PS Kemi",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 606,
+    "name": "PSV Eindhoven",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 607,
+    "name": "Pachuca",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 608,
+    "name": "Pacos Ferreira",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 609,
+    "name": "Paderborn",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 610,
+    "name": "Padova",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 611,
+    "name": "Palermo",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 612,
+    "name": "Palmeiras",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 613,
+    "name": "Panathinaikos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 614,
+    "name": "Pandurii",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 615,
+    "name": "Panetolikos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 616,
+    "name": "Panionios",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 617,
+    "name": "Panserraikos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 618,
+    "name": "Panthrakikos",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 619,
+    "name": "Parana",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 620,
+    "name": "Pari NN",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 621,
+    "name": "Paris FC",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 622,
+    "name": "Paris SG",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 623,
+    "name": "Parma",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 624,
+    "name": "Partick",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 625,
+    "name": "Patronato",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 626,
+    "name": "Pau FC",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 627,
+    "name": "Pendikspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 628,
     "name": "Perugia",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 243,
+    "id": 629,
+    "name": "Pescara",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 630,
     "name": "Peterboro",
     "league": "Championship",
     "continent": "Europe"
   },
   {
-    "id": 244,
-    "name": "Ponferradina",
-    "league": "Segunda División",
+    "id": 631,
+    "name": "Petrolul",
+    "league": "Liga I",
     "continent": "Europe"
   },
   {
-    "id": 245,
+    "id": 632,
+    "name": "Philadelphia Union",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 633,
+    "name": "Piast Gliwice",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 634,
+    "name": "Pisa",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 635,
+    "name": "Platanias",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 636,
+    "name": "Platense",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 637,
+    "name": "Plymouth",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 638,
+    "name": "Podbeskidzie",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 639,
+    "name": "Pogon Szczecin",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 640,
+    "name": "Poli Iasi",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 641,
+    "name": "Poli Timisoara",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 642,
+    "name": "Polonia Warszawa",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 643,
+    "name": "Ponferradina",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 644,
+    "name": "Ponte Preta",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 645,
     "name": "Pordenone",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 246,
+    "id": 646,
+    "name": "Portimonense",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 647,
+    "name": "Portland Timbers",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 648,
+    "name": "Porto",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 649,
+    "name": "Portsmouth",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 650,
+    "name": "Portuguesa",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 651,
+    "name": "Preston",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 652,
+    "name": "Preußen Münster",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 653,
+    "name": "Pro Vercelli",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 654,
+    "name": "Puebla",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 655,
+    "name": "Puszcza",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 656,
+    "name": "QPR",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 657,
+    "name": "Qingdao FC",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 658,
+    "name": "Qingdao Hainiu",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 659,
+    "name": "Qingdao West Coast",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 660,
+    "name": "Queretaro",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 661,
     "name": "Quevilly Rouen",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
-    "id": 247,
+    "id": 662,
+    "name": "Quilmes",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 663,
+    "name": "R. Volgograd",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 664,
+    "name": "RAAL La Louviere",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 665,
+    "name": "RB Leipzig",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 666,
+    "name": "RWD Molenbeek",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 667,
+    "name": "Racing Club",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 668,
+    "name": "Radomiak Radom",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 669,
+    "name": "Rakow",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 670,
+    "name": "Randers FC",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 671,
+    "name": "Rangers",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 672,
+    "name": "Ranheim",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 673,
+    "name": "Rayo Majadahonda",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 674,
     "name": "Reading",
     "league": "Championship",
     "continent": "Europe"
   },
   {
-    "id": 248,
+    "id": 675,
+    "name": "Real Madrid",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 676,
+    "name": "Real Salt Lake",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 677,
+    "name": "Red Star",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 678,
+    "name": "Regensburg",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 679,
+    "name": "Reggiana",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 680,
     "name": "Reggina",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 249,
+    "id": 681,
+    "name": "Reims",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 682,
+    "name": "Rennes",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 683,
+    "name": "Reus Deportiu",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 684,
+    "name": "Ried",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 685,
+    "name": "Rio Ave",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 686,
+    "name": "River Plate",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 687,
+    "name": "Rizespor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 688,
+    "name": "Roda",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 689,
+    "name": "Rodez",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 690,
+    "name": "Rodina Moscow",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 691,
+    "name": "Roma",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 692,
+    "name": "Rosario Central",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 693,
+    "name": "Rosenborg",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 694,
+    "name": "Ross County",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 695,
     "name": "Rotherham",
     "league": "Championship",
     "continent": "Europe"
   },
   {
-    "id": 250,
-    "name": "Sabadell",
-    "league": "Segunda División",
+    "id": 696,
+    "name": "Rovaniemi",
+    "league": "Veikkausliiga",
     "continent": "Europe"
   },
   {
-    "id": 251,
+    "id": 697,
+    "name": "Rubin Kazan",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 698,
+    "name": "Ruch",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 699,
+    "name": "Ruch Chorzow",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 700,
+    "name": "SJK",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 701,
+    "name": "SK Rapid",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 702,
+    "name": "SKA Khabarovsk",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 703,
+    "name": "Sabadell",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 704,
+    "name": "Sagan Tosu",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 705,
+    "name": "Salernitana",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 706,
+    "name": "Salzburg",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 707,
+    "name": "Sampdoria",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 708,
+    "name": "Samsunspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 709,
+    "name": "San Diego FC",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 710,
+    "name": "San Jose Earthquakes",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 711,
+    "name": "San Lorenzo",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 712,
+    "name": "San Martin S.J.",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 713,
+    "name": "San Martin T.",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 714,
+    "name": "Sandecja Nowy S.",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 715,
+    "name": "Sandefjord",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 716,
     "name": "Sandhausen",
     "league": "Bundesliga 2",
     "continent": "Europe"
   },
   {
-    "id": 252,
+    "id": 717,
+    "name": "Sandnes",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 718,
+    "name": "Sanfrecce Hiroshima",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 719,
+    "name": "Santa Clara",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 720,
+    "name": "Santa Cruz",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 721,
+    "name": "Santander",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 722,
+    "name": "Santos",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 723,
+    "name": "Santos Laguna",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 724,
+    "name": "Sao Paulo",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 725,
+    "name": "Sarmiento Junin",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 726,
+    "name": "Sarpsborg 08",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 727,
+    "name": "Sassuolo",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 728,
+    "name": "Schaffhausen",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 729,
+    "name": "Schalke 04",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 730,
+    "name": "Seattle Sounders",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 731,
+    "name": "Sepsi Sf. Gheorghe",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 732,
+    "name": "Seraing",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 733,
+    "name": "Servette",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 734,
+    "name": "Setubal",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 735,
+    "name": "Sevilla",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 736,
+    "name": "Sevilla B",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 737,
+    "name": "Shandong Luneng",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 738,
+    "name": "Shandong Taishan",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 739,
+    "name": "Shanghai Port",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 740,
+    "name": "Shanghai SIPG",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 741,
+    "name": "Shanghai Shenhua",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 742,
+    "name": "Shanghai Shenxin",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 743,
+    "name": "Sheffield United",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 744,
+    "name": "Sheffield Weds",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 745,
+    "name": "Shenzhen",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 746,
+    "name": "Shenzhen Xinpengcheng",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 747,
+    "name": "Shijiazhuang",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 748,
+    "name": "Shimizu S-Pulse",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 749,
+    "name": "Shonan Bellmare",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 750,
+    "name": "Silkeborg",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 751,
+    "name": "Sion",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 752,
+    "name": "Sirius",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 753,
+    "name": "Sivasspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 754,
+    "name": "Slask Wroclaw",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 755,
     "name": "Sochaux",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
-    "id": 253,
+    "id": 756,
+    "name": "Sochi",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 757,
+    "name": "Sociedad",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 758,
+    "name": "Sociedad B",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 759,
+    "name": "Sogndal",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 760,
+    "name": "Sonderjyske",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 761,
+    "name": "Southampton",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 762,
+    "name": "Sp Braga",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 763,
+    "name": "Sp Gijon",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 764,
+    "name": "Sp Lisbon",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 765,
     "name": "Spal",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 766,
+    "name": "Sparta Rotterdam",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 767,
+    "name": "Spartak Moscow",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 768,
+    "name": "Spartak Nalchik",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 769,
+    "name": "Spezia",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 770,
+    "name": "Sport Recife",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 771,
+    "name": "Sporting Kansas City",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 772,
+    "name": "St Etienne",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 773,
+    "name": "St Johnstone",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 774,
+    "name": "St Mirren",
+    "league": "Scottish Premiership",
+    "continent": "Europe"
+  },
+  {
+    "id": 775,
+    "name": "St Pauli",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 776,
+    "name": "St Truiden",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 777,
+    "name": "St. Gallen",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 778,
+    "name": "St. Gilloise",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 779,
+    "name": "St. Louis City",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 780,
+    "name": "St. Polten",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 781,
+    "name": "Stabaek",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 782,
+    "name": "Stal Mielec",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 783,
+    "name": "Standard",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 784,
+    "name": "Start",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 785,
+    "name": "Stoke",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 786,
+    "name": "Strasbourg",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 787,
+    "name": "Stromsgodset",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 788,
+    "name": "Sturm Graz",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 789,
+    "name": "Stuttgart",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 790,
+    "name": "Sudtirol",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 254,
+    "id": 791,
+    "name": "Sunderland",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 792,
+    "name": "Sundsvall",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 793,
+    "name": "Swansea",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 794,
+    "name": "Syrianska",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 795,
+    "name": "T. Moscow",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 796,
+    "name": "TPS",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 797,
+    "name": "Talleres Cordoba",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 798,
+    "name": "Tambov",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 799,
+    "name": "Targu Mures",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 800,
+    "name": "Telstar",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 801,
+    "name": "Temperley",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 802,
+    "name": "Tenerife",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 803,
+    "name": "Termalica B-B.",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 804,
     "name": "Ternana",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 255,
+    "id": 805,
+    "name": "Thun",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 806,
+    "name": "Tianjin Jinmen Tiger",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 807,
+    "name": "Tianjin Quanjian",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 808,
+    "name": "Tianjin Tianhai",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 809,
+    "name": "Tigre",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 810,
+    "name": "Tigres UANL",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 811,
+    "name": "Tirol",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 812,
+    "name": "Tokushima",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 813,
+    "name": "Toluca",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 814,
+    "name": "Tomsk",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 815,
+    "name": "Tondela",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 816,
+    "name": "Torino",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 817,
+    "name": "Toronto FC",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 818,
+    "name": "Torpedo Moscow",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 819,
+    "name": "Tosno",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 820,
+    "name": "Tottenham",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 821,
+    "name": "Toulouse",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 822,
+    "name": "Tours",
+    "league": "Ligue 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 823,
+    "name": "Trabzonspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 824,
+    "name": "Trapani",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 825,
+    "name": "Trelleborgs",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 826,
+    "name": "Tromso",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 827,
+    "name": "Troyes",
+    "league": "Ligue 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 828,
+    "name": "Twente",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 829,
+    "name": "U Craiova",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 830,
+    "name": "U Craiova 1948",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 831,
+    "name": "U. Cluj",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 832,
+    "name": "UCAM Murcia",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 833,
+    "name": "UNAM Pumas",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 834,
+    "name": "UTA Arad",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 835,
+    "name": "Udinese",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 836,
+    "name": "Ufa",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 837,
+    "name": "Ull/Kisa",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 838,
+    "name": "Ulm",
+    "league": "Bundesliga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 839,
+    "name": "Umraniyespor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 840,
+    "name": "Uniao Madeira",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 841,
+    "name": "Union Berlin",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 842,
+    "name": "Union de Santa Fe",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 843,
+    "name": "Unirea Slobozia",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 844,
+    "name": "Univ. Craiova",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 845,
+    "name": "Ural",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 846,
+    "name": "Urawa Reds",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 847,
+    "name": "Utrecht",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 848,
+    "name": "V-Varen Nagasaki",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 849,
+    "name": "VPS",
+    "league": "Veikkausliiga",
+    "continent": "Europe"
+  },
+  {
+    "id": 850,
+    "name": "VVV Venlo",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 851,
+    "name": "Vaduz",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 852,
+    "name": "Valencia",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 853,
     "name": "Valenciennes",
     "league": "Ligue 2",
     "continent": "Europe"
   },
   {
-    "id": 256,
+    "id": 854,
+    "name": "Valerenga",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 855,
+    "name": "Valladolid",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 856,
+    "name": "Vallecano",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 857,
+    "name": "Vancouver Whitecaps",
+    "league": "MLS",
+    "continent": "North America"
+  },
+  {
+    "id": 858,
+    "name": "Varberg",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 859,
+    "name": "Varnamo",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 860,
+    "name": "Vasco",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 861,
+    "name": "Vaslui",
+    "league": "Liga I",
+    "continent": "Europe"
+  },
+  {
+    "id": 862,
+    "name": "Vasteras SK",
+    "league": "Allsvenskan",
+    "continent": "Europe"
+  },
+  {
+    "id": 863,
+    "name": "Vegalta Sendai",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 864,
+    "name": "Vejle",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 865,
+    "name": "Velez Sarsfield",
+    "league": "Torneo De La Liga Profesional",
+    "continent": "South America"
+  },
+  {
+    "id": 866,
+    "name": "Vendsyssel",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 867,
+    "name": "Venezia",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 868,
+    "name": "Veracruz",
+    "league": "Liga MX",
+    "continent": "South America"
+  },
+  {
+    "id": 869,
+    "name": "Verdy",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 870,
+    "name": "Veria",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 871,
+    "name": "Verona",
+    "league": "Serie A",
+    "continent": "Europe"
+  },
+  {
+    "id": 872,
+    "name": "Vestsjaelland",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 873,
+    "name": "Viborg",
+    "league": "Superligaen",
+    "continent": "Europe"
+  },
+  {
+    "id": 874,
     "name": "Vicenza",
     "league": "Serie B",
     "continent": "Europe"
   },
   {
-    "id": 257,
-    "name": "Villarreal B",
-    "league": "Segunda División",
+    "id": 875,
+    "name": "Viitorul Constanta",
+    "league": "Liga I",
     "continent": "Europe"
   },
   {
-    "id": 258,
+    "id": 876,
+    "name": "Viking",
+    "league": "Eliteserien",
+    "continent": "Europe"
+  },
+  {
+    "id": 877,
+    "name": "Villarreal",
+    "league": "La Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 878,
+    "name": "Villarreal B",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 879,
+    "name": "Virtus Entella",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 880,
+    "name": "Virtus Lanciano",
+    "league": "Serie B",
+    "continent": "Europe"
+  },
+  {
+    "id": 881,
+    "name": "Vissel Kobe",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 882,
+    "name": "Vitesse",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 883,
+    "name": "Vitoria",
+    "league": "Série A (Brazil)",
+    "continent": "South America"
+  },
+  {
+    "id": 884,
+    "name": "Vizela",
+    "league": "Primeira Liga",
+    "continent": "Europe"
+  },
+  {
+    "id": 885,
+    "name": "Vladikavkaz",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 886,
+    "name": "Volendam",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 887,
+    "name": "Volga N. Novgorod",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 888,
+    "name": "Volgar-Astrakhan",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 889,
+    "name": "Volos NFC",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 890,
+    "name": "Waalwijk",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 891,
+    "name": "Waasland-Beveren",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 892,
+    "name": "Wacker Innsbruck",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 893,
+    "name": "Waregem",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 894,
+    "name": "Warta Poznan",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 895,
+    "name": "Watford",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 896,
     "name": "Wehen",
     "league": "Bundesliga 2",
     "continent": "Europe"
   },
   {
-    "id": 259,
+    "id": 897,
+    "name": "Werder Bremen",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 898,
+    "name": "West Brom",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 899,
+    "name": "West Ham",
+    "league": "Premier League",
+    "continent": "Europe"
+  },
+  {
+    "id": 900,
+    "name": "Westerlo",
+    "league": "Jupiler League",
+    "continent": "Europe"
+  },
+  {
+    "id": 901,
+    "name": "Widzew Lodz",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 902,
     "name": "Wigan",
     "league": "Championship",
     "continent": "Europe"
   },
   {
-    "id": 260,
+    "id": 903,
+    "name": "Willem II",
+    "league": "Eredivisie",
+    "continent": "Europe"
+  },
+  {
+    "id": 904,
+    "name": "Winterthur",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 905,
+    "name": "Wisla",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 906,
+    "name": "Wisla Plock",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 907,
+    "name": "Wolfsberger AC",
+    "league": "Bundesliga (Austria)",
+    "continent": "Europe"
+  },
+  {
+    "id": 908,
+    "name": "Wolfsburg",
+    "league": "Bundesliga",
+    "continent": "Europe"
+  },
+  {
+    "id": 909,
+    "name": "Wolves",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 910,
+    "name": "Wrexham",
+    "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 911,
+    "name": "Wuhan FC",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 912,
+    "name": "Wuhan Three Towns",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 913,
     "name": "Wurzburger Kickers",
     "league": "Bundesliga 2",
     "continent": "Europe"
   },
   {
-    "id": 261,
+    "id": 914,
     "name": "Wycombe",
     "league": "Championship",
+    "continent": "Europe"
+  },
+  {
+    "id": 915,
+    "name": "Xamax",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 916,
+    "name": "Xanthi",
+    "league": "Super League",
+    "continent": "Europe"
+  },
+  {
+    "id": 917,
+    "name": "Yamaga",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 918,
+    "name": "Yanbian",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 919,
+    "name": "Yeni Malatyaspor",
+    "league": "Futbol Ligi 1",
+    "continent": "Europe"
+  },
+  {
+    "id": 920,
+    "name": "Yenisey",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 921,
+    "name": "Yokohama F. Marinos",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 922,
+    "name": "Yokohama FC",
+    "league": "J-League",
+    "continent": "Asia"
+  },
+  {
+    "id": 923,
+    "name": "Young Boys",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 924,
+    "name": "Yunnan Yukun",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 925,
+    "name": "Yverdon",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 926,
+    "name": "Zaglebie",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 927,
+    "name": "Zaglebie Sosnowiec",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 928,
+    "name": "Zaragoza",
+    "league": "La Liga 2",
+    "continent": "Europe"
+  },
+  {
+    "id": 929,
+    "name": "Zawisza",
+    "league": "Ekstraklasa",
+    "continent": "Europe"
+  },
+  {
+    "id": 930,
+    "name": "Zenit",
+    "league": "Premier League (Russia)",
+    "continent": "Europe"
+  },
+  {
+    "id": 931,
+    "name": "Zhejiang Greentown",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 932,
+    "name": "Zhejiang Professional",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 933,
+    "name": "Zhejiang Yiteng",
+    "league": "Super League (China)",
+    "continent": "Asia"
+  },
+  {
+    "id": 934,
+    "name": "Zurich",
+    "league": "Super League (Switzerland)",
+    "continent": "Europe"
+  },
+  {
+    "id": 935,
+    "name": "Zwolle",
+    "league": "Eredivisie",
     "continent": "Europe"
   }
 ]
